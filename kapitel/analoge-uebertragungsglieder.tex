@@ -1,0 +1,30 @@
+% kapitel/analoge-uebertragungsglieder.tex
+\section{Analoge \"Ubertragungsglieder (\"UTG)}
+\subsection{Begriffe und Eigenschaften}
+Ein \"Ubertragungsglied (\"UTG) beschreibt den Zusammenhang zwischen einem Eingangssignal
+(\glqq Ursache\grqq) $x_e(t)$ und einem Ausgangssignal (\glqq Wirkung\grqq) $x_a(t)$:
+\[
+  x_e(t)\;\longrightarrow\;\text{\"UTG}\;\longrightarrow\;x_a(t).
+\]
+Im Folgenden betrachten wir in erster Linie analoge, \textbf{lineare} und \textbf{zeitinvariante} Systeme
+(\textbf{LZI}-Systeme). F\"ur diese Systeme gelten besonders einfache Rechenregeln
+(Superposition, Faltung, Laplace- und Frequenzbereichsdarstellung).
+
+\paragraph{Linearit\"at (Superpositionsprinzip).}
+Ein System ist linear, wenn f\"ur beliebige Signale $x_1, x_2$ und Konstanten $a,b$ gilt:
+\[
+  x_e(t)=a\,x_1(t)+b\,x_2(t)\quad\Rightarrow\quad
+  x_a(t)=a\,y_1(t)+b\,y_2(t),
+\]
+wobei $y_i(t)$ die jeweilige Antwort auf $x_i(t)$ ist.
+
+\paragraph{Zeitinvarianz.}
+Ein System ist zeitinvariant, wenn eine zeitliche Verschiebung des Eingangssignals
+eine identische Verschiebung des Ausgangssignals bewirkt (bei gleichen Anfangsbedingungen):
+\[
+  x_e^{\ast}(t)=x_e(t-t_0)\quad\Rightarrow\quad x_a^{\ast}(t)=x_a(t-t_0).
+\]
+
+\paragraph{Beispiel (LZI).}
+Ein Verst\"arker mit $x_a(t)=2\,x_e(t)$ ist linear und zeitinvariant.
+Eine Rampe $x_e(t)=t\,\sigma(t)$ wird zu $x_a(t)=2t\,\sigma(t)$.

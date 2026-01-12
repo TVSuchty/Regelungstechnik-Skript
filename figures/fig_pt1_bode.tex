@@ -1,0 +1,29 @@
+
+% Bode diagram of a PT1 element
+\begin{figure}[tb]
+  \centering
+  \begin{tikzpicture}
+    \begin{groupplot}[
+      group style={group size=1 by 2, vertical sep=0.9cm},
+      width=0.78\textwidth, height=0.34\textwidth,
+      grid=both, grid style={line width=.1pt, draw=gray!20},
+      major grid style={line width=.2pt, draw=gray!35},
+      xmode=log,
+      xmin=1e-2, xmax=1e2,
+      axis lines=left,
+      tick label style={font=\small},
+      label style={font=\small},
+    ]
+      \nextgroupplot[ylabel={$L(\omega)$ / dB}, title={Bode-Diagramm (PT1, $K=1,\,T=1$)}]
+        \addplot[thick] table[x=w,y=mag_db,col sep=comma] {data/pt1_bode_K1_T1.csv};
+        \addplot[dashed] coordinates {(1,0) (1e2,-40)};
+        \addplot[dashed] coordinates {(1e-2,0) (1,0)};
+      \nextgroupplot[xlabel={$\omega T$}, ylabel={$\varphi(\omega)$ / $^\circ$}, ymin=-100, ymax=10]
+        \addplot[thick] table[x=w,y=phase_deg,col sep=comma] {data/pt1_bode_K1_T1.csv};
+        \addplot[dashed] coordinates {(1,-45) (1,-45)};
+        \addplot[dashed] coordinates {(1,-90) (1e2,-90)};
+    \end{groupplot}
+  \end{tikzpicture}
+  \caption{Bode-Diagramm des PT1-Glieds. Die gestrichelten Linien zeigen die asymptotischen Näherungen (0~dB bzw.\ $-20$~dB/dec, Phase gegen $-90^\circ$).}
+  \label{fig:pt1_bode}
+\end{figure}

@@ -1,0 +1,24 @@
+
+% Overshoot vs damping ratio
+\begin{figure}[tb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.70\textwidth, height=0.42\textwidth,
+      grid=both, grid style={line width=.1pt, draw=gray!20},
+      major grid style={line width=.2pt, draw=gray!35},
+      xlabel={Dämpfungsmaß $D$}, ylabel={$M_p$ / \%},
+      xmin=0, xmax=1,
+      ymin=0, ymax=110,
+      axis lines=left,
+      tick label style={font=\small},
+      label style={font=\small},
+    ]
+      \addplot[thick] table[x=D,y=Mp_percent,col sep=comma] {data/pt2_overshoot_vs_damping.csv};
+      \addplot[dashed] coordinates {(0.5,0) (0.5,110)};
+      \node[anchor=west, font=\small] at (axis cs:0.51,70) {$D=0{,}5 \Rightarrow M_p\approx16\%$};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Relatives Überschwingen $M_p=\exp\!\left(-\frac{D\pi}{\sqrt{1-D^2}}\right)$ (unterdämpfter Fall $0<D<1$). Mit wachsender Dämpfung sinkt das Überschwingen stark.}
+  \label{fig:overshoot_vs_damping}
+\end{figure}

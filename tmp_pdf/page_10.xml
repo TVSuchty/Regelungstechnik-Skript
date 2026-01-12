@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="24.04.0">
+<page number="10" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="0" size="15" family="GOJMDG+LMRoman10" color="#000000"/>
+	<fontspec id="1" size="15" family="GZORGJ+LMMathItalic10" color="#000000"/>
+	<fontspec id="2" size="10" family="HUVCNM+LMMathItalic7" color="#000000"/>
+	<fontspec id="3" size="16" family="GOJMDG+LMRoman10" color="#000000"/>
+	<fontspec id="4" size="16" family="GZORGJ+LMMathItalic10" color="#000000"/>
+	<fontspec id="5" size="16" family="EIKKXP+LMMathSymbols10" color="#000000"/>
+	<fontspec id="6" size="12" family="MCVKOF+LMRoman8" color="#000000"/>
+	<fontspec id="7" size="12" family="RPALPW+LMMathItalic8" color="#000000"/>
+	<fontspec id="8" size="16" family="GOJMDG+LMRoman10" color="#0000ff"/>
+	<fontspec id="9" size="15" family="TTPWHL+LMMathExtension10" color="#000000"/>
+	<fontspec id="10" size="16" family="TBCAEV+LMRoman10" color="#000000"/>
+	<fontspec id="11" size="16" family="HLFCVP+LMRoman10" color="#000000"/>
+<text top="348" left="224" width="7" height="19" font="0">0</text>
+<text top="348" left="273" width="7" height="19" font="0">2</text>
+<text top="348" left="321" width="7" height="19" font="0">4</text>
+<text top="348" left="369" width="7" height="19" font="0">6</text>
+<text top="348" left="418" width="7" height="19" font="0">8</text>
+<text top="348" left="462" width="15" height="19" font="0">10</text>
+<text top="348" left="511" width="15" height="19" font="0">12</text>
+<text top="348" left="559" width="15" height="19" font="0">14</text>
+<text top="348" left="607" width="15" height="19" font="0">16</text>
+<text top="348" left="656" width="15" height="19" font="0">18</text>
+<text top="348" left="704" width="15" height="19" font="0">20</text>
+<text top="328" left="212" width="7" height="19" font="0">0</text>
+<text top="260" left="200" width="7" height="19" font="0">0</text>
+<text top="264" left="208" width="4" height="13" font="1"><i>.</i></text>
+<text top="260" left="212" width="7" height="19" font="0">5</text>
+<text top="193" left="212" width="7" height="19" font="0">1</text>
+<text top="125" left="200" width="7" height="19" font="0">1</text>
+<text top="129" left="208" width="4" height="13" font="1"><i>.</i></text>
+<text top="125" left="212" width="7" height="19" font="0">5</text>
+<text top="375" left="458" width="22" height="13" font="1"><i>t/T</i></text>
+<text top="236" left="185" width="0" height="13" font="1"><i>x</i></text>
+<text top="230" left="187" width="0" height="9" font="2"><i>a</i></text>
+<text top="216" left="185" width="0" height="19" font="0">(</text>
+<text top="214" left="185" width="0" height="13" font="1"><i>t</i></text>
+<text top="205" left="185" width="0" height="19" font="0">)</text>
+<text top="203" left="185" width="0" height="13" font="1"><i>/K</i></text>
+<text top="246" left="642" width="12" height="13" font="1"><i>D</i></text>
+<text top="242" left="659" width="23" height="19" font="0">= 0</text>
+<text top="246" left="682" width="4" height="13" font="1"><i>,</i></text>
+<text top="242" left="687" width="7" height="19" font="0">2</text>
+<text top="264" left="642" width="12" height="13" font="1"><i>D</i></text>
+<text top="260" left="659" width="23" height="19" font="0">= 0</text>
+<text top="264" left="682" width="4" height="13" font="1"><i>,</i></text>
+<text top="260" left="687" width="7" height="19" font="0">5</text>
+<text top="283" left="642" width="12" height="13" font="1"><i>D</i></text>
+<text top="279" left="659" width="23" height="19" font="0">= 0</text>
+<text top="283" left="682" width="4" height="13" font="1"><i>,</i></text>
+<text top="279" left="687" width="7" height="19" font="0">8</text>
+<text top="301" left="642" width="12" height="13" font="1"><i>D</i></text>
+<text top="298" left="659" width="23" height="19" font="0">= 1</text>
+<text top="301" left="682" width="4" height="13" font="1"><i>,</i></text>
+<text top="298" left="687" width="7" height="19" font="0">0</text>
+<text top="320" left="642" width="12" height="13" font="1"><i>D</i></text>
+<text top="316" left="659" width="23" height="19" font="0">= 1</text>
+<text top="320" left="682" width="4" height="13" font="1"><i>,</i></text>
+<text top="316" left="687" width="7" height="19" font="0">2</text>
+<text top="414" left="93" width="443" height="21" font="3">Abbildung 4: Sprungantwort eines normierten PT2-Glieds (</text>
+<text top="418" left="535" width="10" height="15" font="4"><i>T</i></text>
+<text top="414" left="554" width="33" height="21" font="3">= 1,</text>
+<text top="418" left="593" width="14" height="15" font="4"><i>K</i></text>
+<text top="414" left="615" width="184" height="21" font="3">= 1) für unterschiedliche</text>
+<text top="434" left="94" width="116" height="21" font="3">Dämpfungsmaße</text>
+<text top="438" left="215" width="14" height="15" font="4"><i>D</i></text>
+<text top="434" left="229" width="132" height="21" font="3">. Unterdämpfung (</text>
+<text top="438" left="361" width="31" height="15" font="4"><i>D &lt;</i></text>
+<text top="434" left="397" width="355" height="21" font="3">1) führt zu Überschwingen und Schwingungen; bei</text>
+<text top="438" left="757" width="14" height="15" font="4"><i>D</i></text>
+<text top="437" left="776" width="13" height="15" font="5">≥</text>
+<text top="434" left="793" width="8" height="21" font="3">1</text>
+<text top="455" left="93" width="239" height="21" font="3">verschwindet das Überschwingen.</text>
+<text top="502" left="114" width="13" height="21" font="3">•</text>
+<text top="506" left="134" width="14" height="15" font="4"><i>D</i></text>
+<text top="502" left="154" width="221" height="21" font="3">. . . Dämpfungsmaß (entspricht</text>
+<text top="506" left="380" width="7" height="15" font="4"><i>ζ</i></text>
+<text top="502" left="389" width="11" height="21" font="3">).</text>
+<text top="532" left="114" width="13" height="21" font="3">•</text>
+<text top="536" left="134" width="10" height="15" font="4"><i>T</i></text>
+<text top="532" left="152" width="358" height="21" font="3">. . . Zeitkonstante (in dieser Normierung entspricht</text>
+<text top="536" left="515" width="10" height="15" font="4"><i>ω</i></text>
+<text top="541" left="526" width="6" height="11" font="6">0</text>
+<text top="532" left="537" width="13" height="21" font="3">=</text>
+<text top="532" left="557" width="6" height="11" font="6">1</text>
+<text top="544" left="556" width="7" height="11" font="7"><i>T</i></text>
+<text top="532" left="572" width="230" height="21" font="3">der ungedämpften Eigenkreisfre-</text>
+<text top="552" left="134" width="52" height="21" font="3">quenz).</text>
+<text top="583" left="119" width="142" height="21" font="3">Die Polstellen von <a href="page_10.html#9">(</a></text>
+<text top="583" left="261" width="8" height="21" font="8"><a href="page_10.html#9">1</a></text>
+<text top="583" left="269" width="41" height="21" font="3"><a href="page_10.html#9">) </a>sind</text>
+<text top="613" left="349" width="8" height="15" font="4"><i>s</i></text>
+<text top="619" left="356" width="6" height="11" font="6">1</text>
+<text top="618" left="363" width="4" height="11" font="7"><i>,</i></text>
+<text top="619" left="366" width="6" height="11" font="6">2</text>
+<text top="609" left="378" width="13" height="21" font="3">=</text>
+<text top="612" left="395" width="13" height="15" font="5">−</text>
+<text top="613" left="408" width="19" height="15" font="4"><i>ζω</i></text>
+<text top="619" left="426" width="6" height="11" font="6">0</text>
+<text top="612" left="437" width="13" height="15" font="5">±</text>
+<text top="613" left="453" width="21" height="15" font="4"><i>j ω</i></text>
+<text top="619" left="474" width="6" height="11" font="6">0</text>
+<text top="605" left="481" width="15" height="7" font="9">q</text>
+<text top="609" left="496" width="8" height="21" font="3">1</text>
+<text top="612" left="508" width="13" height="15" font="5">−</text>
+<text top="613" left="524" width="7" height="15" font="4"><i>ζ</i></text>
+<text top="611" left="533" width="6" height="11" font="6">2</text>
+<text top="613" left="540" width="5" height="15" font="4"><i>.</i></text>
+<text top="656" left="94" width="39" height="14" font="10"><b>7.2.1</b></text>
+<text top="656" left="151" width="127" height="14" font="10"><b>Dämpfungsfälle</b></text>
+<text top="682" left="114" width="13" height="21" font="3">•</text>
+<text top="687" left="134" width="31" height="15" font="4"><i>D &lt;</i></text>
+<text top="682" left="170" width="20" height="21" font="3">0 (</text>
+<text top="687" left="190" width="134" height="14" font="11"><i>negative Dämpfung</i></text>
+<text top="682" left="325" width="478" height="21" font="3">): Energiezufuhr statt Verlust, Schwingungen wachsen an (instabil).</text>
+<text top="712" left="114" width="29" height="21" font="3">• 0</text>
+<text top="716" left="147" width="49" height="15" font="4"><i>&lt; D &lt;</i></text>
+<text top="712" left="201" width="20" height="21" font="3">1 (</text>
+<text top="716" left="221" width="88" height="14" font="11"><i>unterdämpft</i></text>
+<text top="712" left="310" width="492" height="21" font="3">): komplex konjugierte Pole, schwingende Sprungantwort mit Über-</text>
+<text top="732" left="134" width="76" height="21" font="3">schwingen.</text>
+<text top="762" left="114" width="13" height="21" font="3">•</text>
+<text top="766" left="134" width="14" height="15" font="4"><i>D</i></text>
+<text top="762" left="153" width="37" height="21" font="3">= 1 (</text>
+<text top="766" left="190" width="121" height="14" font="11"><i>kritisch gedämpft</i></text>
+<text top="762" left="313" width="387" height="21" font="3">): Doppelpol, schnell ohne Überschwingen (Grenzfall).</text>
+<text top="791" left="114" width="13" height="21" font="3">•</text>
+<text top="795" left="134" width="31" height="15" font="4"><i>D &gt;</i></text>
+<text top="791" left="170" width="20" height="21" font="3">1 (</text>
+<text top="796" left="190" width="78" height="14" font="11"><i>überdämpft</i></text>
+<text top="791" left="269" width="474" height="21" font="3">): zwei reelle Pole, monotone Sprungantwort ohne Überschwingen.</text>
+<text top="853" left="94" width="39" height="14" font="10"><b>7.2.2</b></text>
+<text top="853" left="151" width="318" height="14" font="10"><b>Überschwingen bei der Sprungantwort</b></text>
+<text top="880" left="94" width="220" height="21" font="3">Betrachte einen Einheitssprung</text>
+<text top="884" left="319" width="9" height="15" font="4"><i>u</i></text>
+<text top="880" left="329" width="6" height="21" font="3">(</text>
+<text top="884" left="335" width="6" height="15" font="4"><i>t</i></text>
+<text top="880" left="341" width="36" height="21" font="3">) = 1</text>
+<text top="883" left="380" width="5" height="15" font="5">·</text>
+<text top="884" left="388" width="9" height="14" font="10"><b>1</b></text>
+<text top="880" left="398" width="6" height="21" font="3">(</text>
+<text top="884" left="404" width="6" height="15" font="4"><i>t</i></text>
+<text top="880" left="410" width="340" height="21" font="3">) am Eingang eines stabilen Systems der Form <a href="page_10.html#9">(</a></text>
+<text top="880" left="750" width="8" height="21" font="8"><a href="page_10.html#9">1</a></text>
+<text top="880" left="758" width="42" height="21" font="3"><a href="page_10.html#9">)</a>. Für</text>
+<text top="900" left="94" width="8" height="21" font="3">0</text>
+<text top="904" left="106" width="49" height="15" font="4"><i>&lt; D &lt;</i></text>
+<text top="900" left="159" width="569" height="21" font="3">1 zeigt die Sprungantwort typischerweise ein Maximum oberhalb des Endwerts.</text>
+<text top="925" left="119" width="140" height="14" font="10"><b>Überschwingmaß</b></text>
+<text top="920" left="265" width="178" height="21" font="3">(relative peak overshoot)</text>
+<text top="925" left="449" width="16" height="15" font="4"><i>M</i></text>
+<text top="930" left="464" width="6" height="11" font="7"><i>p</i></text>
+<text top="920" left="472" width="5" height="21" font="3">:</text>
+<text top="968" left="375" width="16" height="15" font="4"><i>M</i></text>
+<text top="973" left="391" width="6" height="11" font="7"><i>p</i></text>
+<text top="963" left="402" width="13" height="21" font="3">=</text>
+<text top="956" left="422" width="8" height="15" font="4"><i>y</i></text>
+<text top="962" left="430" width="24" height="11" font="6">max</text>
+<text top="956" left="458" width="13" height="15" font="5">−</text>
+<text top="956" left="474" width="8" height="15" font="4"><i>y</i></text>
+<text top="952" left="483" width="6" height="21" font="3">(</text>
+<text top="956" left="489" width="16" height="15" font="5">∞</text>
+<text top="952" left="505" width="6" height="21" font="3">)</text>
+<text top="979" left="448" width="8" height="15" font="4"><i>y</i></text>
+<text top="975" left="456" width="6" height="21" font="3">(</text>
+<text top="978" left="463" width="16" height="15" font="5">∞</text>
+<text top="975" left="479" width="6" height="21" font="3">)</text>
+<text top="968" left="513" width="5" height="15" font="4"><i>.</i></text>
+<text top="1006" left="94" width="245" height="21" font="3">Oft wird es in Prozent angegeben:</text>
+<text top="1010" left="343" width="16" height="15" font="4"><i>M</i></text>
+<text top="1016" left="359" width="6" height="11" font="7"><i>p</i></text>
+<text top="1006" left="367" width="69" height="21" font="3">[%] = 100</text>
+<text top="1009" left="439" width="5" height="15" font="5">·</text>
+<text top="1010" left="448" width="16" height="15" font="4"><i>M</i></text>
+<text top="1016" left="463" width="6" height="11" font="7"><i>p</i></text>
+<text top="1006" left="471" width="5" height="21" font="3">.</text>
+<text top="1026" left="119" width="355" height="21" font="3">Für das Standard-PT2 gilt (bei Einheitssprung, 0</text>
+<text top="1030" left="479" width="49" height="15" font="4"><i>&lt; D &lt;</i></text>
+<text top="1026" left="532" width="19" height="21" font="3">1):</text>
+<text top="1072" left="357" width="16" height="15" font="4"><i>M</i></text>
+<text top="1077" left="373" width="6" height="11" font="7"><i>p</i></text>
+<text top="1067" left="385" width="42" height="21" font="3">= exp</text>
+<text top="1061" left="427" width="11" height="7" font="9"></text>
+<text top="1071" left="438" width="13" height="15" font="5">−</text>
+<text top="1060" left="472" width="23" height="15" font="4"><i>Dπ</i></text>
+<text top="1070" left="453" width="14" height="15" font="5">√</text>
+<text top="1080" left="466" width="8" height="21" font="3">1</text>
+<text top="1084" left="478" width="13" height="15" font="5">−</text>
+<text top="1085" left="494" width="14" height="15" font="4"><i>D</i></text>
+<text top="1083" left="508" width="6" height="11" font="6">2</text>
+<text top="1061" left="517" width="11" height="7" font="9"></text>
+<text top="1072" left="531" width="5" height="15" font="4"><i>.</i></text>
+<text top="1067" left="780" width="21" height="21" font="3">(2)</text>
+<text top="1108" left="94" width="83" height="21" font="3">Umgekehrt:</text>
+<text top="1141" left="370" width="14" height="15" font="4"><i>D</i></text>
+<text top="1136" left="389" width="13" height="21" font="3">=</text>
+<text top="1129" left="430" width="13" height="15" font="5">−</text>
+<text top="1125" left="445" width="20" height="21" font="3">ln(</text>
+<text top="1130" left="465" width="16" height="15" font="4"><i>M</i></text>
+<text top="1135" left="481" width="6" height="11" font="7"><i>p</i></text>
+<text top="1125" left="488" width="6" height="21" font="3">)</text>
+<text top="1151" left="408" width="15" height="7" font="9">q</text>
+<text top="1158" left="423" width="9" height="15" font="4"><i>π</i></text>
+<text top="1157" left="433" width="6" height="11" font="6">2</text>
+<text top="1154" left="443" width="30" height="21" font="3">+ ln</text>
+<text top="1155" left="474" width="6" height="11" font="6">2</text>
+<text top="1154" left="481" width="6" height="21" font="3">(</text>
+<text top="1158" left="487" width="16" height="15" font="4"><i>M</i></text>
+<text top="1164" left="503" width="6" height="11" font="7"><i>p</i></text>
+<text top="1154" left="510" width="6" height="21" font="3">)</text>
+<text top="1141" left="518" width="5" height="15" font="4"><i>.</i></text>
+<text top="1199" left="438" width="16" height="21" font="3">10</text>
+</page>
+<outline>
+<item page="3">Analoge Übertragungsglieder (ÜTG)</item>
+<outline>
+<item page="3">Begriffe und Eigenschaften</item>
+</outline>
+<item page="3">Typische Signale</item>
+<outline>
+<item page="3">Aperiodische Eingangssignale</item>
+<item page="4">Impulsfunktion (Dirac-Stoß)</item>
+<item page="4">Antwortfunktionen eines LZI-ÜTG</item>
+</outline>
+<item page="5">Mathematische Beschreibung im Zeitbereich</item>
+<outline>
+<item page="5">Lineare Differentialgleichung mit konstanten Koeffizienten</item>
+<item page="5">Beispiele: typische ÜTG</item>
+</outline>
+<item page="5">Laplace-Transformation und Übertragungsfunktion</item>
+<outline>
+<item page="5">Exponentialansatz und Laplace-Operator</item>
+<item page="6">Laplace-Transformation des Dirac-Impulses</item>
+<item page="6">Übertragungsfunktion (ÜTF)</item>
+<item page="7">Übersicht: DGL zu ÜTF</item>
+</outline>
+<item page="7">Beschreibung im Frequenzbereich</item>
+<outline>
+<item page="7">Frequenzgang</item>
+<item page="8">Ortskurve</item>
+</outline>
+<item page="8">Bode-Diagramme</item>
+<outline>
+<item page="8">Amplitude in Dezibel</item>
+<item page="8">Beispiel: PT1-Glied</item>
+</outline>
+<item page="9">Dämpfungsphänomene und schwingungsfähige lineare ÜTG</item>
+<outline>
+<item page="9">Worum geht es?</item>
+<item page="9">Dämpfungsphänomene am Beispiel des PT2-Glieds</item>
+<outline>
+<item page="10">Dämpfungsfälle</item>
+<item page="10">Überschwingen bei der Sprungantwort</item>
+<item page="11">Eigenfrequenz vs. Resonanzfrequenz</item>
+<item page="11">Gütefaktor</item>
+</outline>
+</outline>
+<item page="12">Blockdiagramme</item>
+<outline>
+<item page="12">Grundidee und Motivation</item>
+<item page="12">Blöcke und Übertragungsfunktionen</item>
+<item page="13">Offener vs. geschlossener Regelkreis</item>
+<item page="13">Regeln zur Umformung (mit Formeln und Bildern)</item>
+<outline>
+<item page="13">Regel 1: Reihenschaltung (Kaskade)</item>
+<item page="13">Regel 2: Parallelschaltung</item>
+<item page="14">Regel 3: Rückführung (Feedback)</item>
+<item page="14">Regel 4: Summierstelle über einen Block verschieben</item>
+<item page="14">Regel 5: Abzweigstelle (Messabgriff) über einen Block verschieben</item>
+<item page="15">Regel 6: Innere Schleifen zuerst reduzieren</item>
+</outline>
+</outline>
+<item page="15">Einschleifiger Regelkreis: Standardformen</item>
+<outline>
+<item page="15">Struktur und Grundgleichungen</item>
+<item page="15">Führungs- und Störübertragungsfunktion</item>
+<item page="16">Statisches Verhalten, Regelfaktor</item>
+<item page="16">P-, I- und PI-Regler (Grundideen)</item>
+</outline>
+<item page="16">Stabilität linearer Regelkreise</item>
+<outline>
+<item page="16">Charakteristische Gleichung</item>
+<item page="16">Nyquist-Idee (qualitativ)</item>
+<item page="17">Nyquist-Diagramm und Nyquist-Kriterium</item>
+<item page="19">Hurwitz-Kriterium (Polynomkriterium)</item>
+<item page="19">Beispiel: PT2-Strecke mit PI-Regler (Stabilitätsgebiet)</item>
+</outline>
+<item page="20">Reglerstrukturen (PD, PID) und Realisierungshinweise</item>
+<outline>
+<item page="20">PD- und PID-Formen</item>
+<item page="21">(Invertierender) OPV-Grundsatz</item>
+</outline>
+<item page="21">Mini-Formelsammlung (Laplace)</item>
+<item page="21">Ausführliche Aufgaben</item>
+</outline>
+</pdf2xml>

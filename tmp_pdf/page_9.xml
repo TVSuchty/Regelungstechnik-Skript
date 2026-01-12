@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="24.04.0">
+<page number="9" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="0" size="15" family="GOJMDG+LMRoman10" color="#000000"/>
+	<fontspec id="1" size="10" family="NCIFLY+LMMathSymbols7" color="#000000"/>
+	<fontspec id="2" size="10" family="WFUDWU+LMRoman7" color="#000000"/>
+	<fontspec id="3" size="15" family="EIKKXP+LMMathSymbols10" color="#000000"/>
+	<fontspec id="4" size="15" family="GZORGJ+LMMathItalic10" color="#000000"/>
+	<fontspec id="5" size="16" family="GOJMDG+LMRoman10" color="#000000"/>
+	<fontspec id="6" size="16" family="GZORGJ+LMMathItalic10" color="#000000"/>
+	<fontspec id="7" size="16" family="EIKKXP+LMMathSymbols10" color="#000000"/>
+	<fontspec id="8" size="12" family="XBNJIJ+LMMathSymbols8" color="#000000"/>
+	<fontspec id="9" size="22" family="EBSTYJ+LMRoman12" color="#000000"/>
+	<fontspec id="10" size="18" family="EBSTYJ+LMRoman12" color="#000000"/>
+	<fontspec id="11" size="16" family="TBCAEV+LMRoman10" color="#000000"/>
+	<fontspec id="12" size="16" family="HLFCVP+LMRoman10" color="#000000"/>
+	<fontspec id="13" size="12" family="MCVKOF+LMRoman8" color="#000000"/>
+<text top="310" left="218" width="15" height="19" font="0">10</text>
+<text top="311" left="233" width="9" height="10" font="1">−</text>
+<text top="311" left="243" width="6" height="9" font="2">2</text>
+<text top="310" left="339" width="15" height="19" font="0">10</text>
+<text top="311" left="354" width="9" height="10" font="1">−</text>
+<text top="311" left="364" width="6" height="9" font="2">1</text>
+<text top="310" left="465" width="15" height="19" font="0">10</text>
+<text top="311" left="480" width="6" height="9" font="2">0</text>
+<text top="310" left="586" width="15" height="19" font="0">10</text>
+<text top="311" left="601" width="6" height="9" font="2">1</text>
+<text top="310" left="706" width="15" height="19" font="0">10</text>
+<text top="311" left="721" width="6" height="9" font="2">2</text>
+<text top="296" left="198" width="12" height="14" font="3">−</text>
+<text top="293" left="210" width="15" height="19" font="0">40</text>
+<text top="252" left="198" width="12" height="14" font="3">−</text>
+<text top="250" left="210" width="15" height="19" font="0">30</text>
+<text top="209" left="198" width="12" height="14" font="3">−</text>
+<text top="206" left="210" width="15" height="19" font="0">20</text>
+<text top="166" left="198" width="12" height="14" font="3">−</text>
+<text top="163" left="210" width="15" height="19" font="0">10</text>
+<text top="121" left="218" width="7" height="19" font="0">0</text>
+<text top="240" left="184" width="0" height="13" font="4"><i>L</i></text>
+<text top="226" left="184" width="0" height="19" font="0">(</text>
+<text top="224" left="184" width="0" height="13" font="4"><i>ω</i></text>
+<text top="210" left="184" width="0" height="19" font="0">)</text>
+<text top="200" left="184" width="0" height="19" font="0">/</text>
+<text top="187" left="184" width="0" height="19" font="0">dB</text>
+<text top="96" left="339" width="165" height="21" font="5">Bode-Diagramm (PT1,</text>
+<text top="100" left="509" width="14" height="15" font="6"><i>K</i></text>
+<text top="96" left="529" width="25" height="21" font="5">= 1</text>
+<text top="100" left="554" width="20" height="15" font="6"><i>, T</i></text>
+<text top="96" left="581" width="32" height="21" font="5">= 1)</text>
+<text top="521" left="218" width="15" height="19" font="0">10</text>
+<text top="522" left="233" width="9" height="10" font="1">−</text>
+<text top="522" left="243" width="6" height="9" font="2">2</text>
+<text top="521" left="339" width="15" height="19" font="0">10</text>
+<text top="522" left="354" width="9" height="10" font="1">−</text>
+<text top="522" left="364" width="6" height="9" font="2">1</text>
+<text top="521" left="465" width="15" height="19" font="0">10</text>
+<text top="522" left="480" width="6" height="9" font="2">0</text>
+<text top="521" left="586" width="15" height="19" font="0">10</text>
+<text top="522" left="601" width="6" height="9" font="2">1</text>
+<text top="521" left="706" width="15" height="19" font="0">10</text>
+<text top="522" left="721" width="6" height="9" font="2">2</text>
+<text top="507" left="191" width="12" height="14" font="3">−</text>
+<text top="504" left="203" width="22" height="19" font="0">100</text>
+<text top="428" left="198" width="12" height="14" font="3">−</text>
+<text top="425" left="210" width="15" height="19" font="0">50</text>
+<text top="347" left="218" width="7" height="19" font="0">0</text>
+<text top="546" left="465" width="19" height="13" font="4"><i>ωT</i></text>
+<text top="445" left="176" width="0" height="13" font="4"><i>φ</i></text>
+<text top="431" left="176" width="0" height="19" font="0">(</text>
+<text top="429" left="176" width="0" height="13" font="4"><i>ω</i></text>
+<text top="416" left="176" width="0" height="19" font="0">)</text>
+<text top="405" left="176" width="0" height="19" font="0">/</text>
+<text top="399" left="171" width="0" height="10" font="1">◦</text>
+<text top="582" left="93" width="706" height="21" font="5">Abbildung 3: Bode-Diagramm des PT1-Glieds. Die gestrichelten Linien zeigen die asymptotischen</text>
+<text top="602" left="94" width="170" height="21" font="5">Näherungen (0 dB bzw.</text>
+<text top="605" left="269" width="13" height="15" font="7">−</text>
+<text top="602" left="282" width="172" height="21" font="5">20 dB/dec, Phase gegen</text>
+<text top="605" left="459" width="13" height="15" font="7">−</text>
+<text top="602" left="472" width="16" height="21" font="5">90</text>
+<text top="602" left="488" width="6" height="11" font="8">◦</text>
+<text top="602" left="496" width="11" height="21" font="5">).</text>
+<text top="655" left="94" width="12" height="19" font="9"><b>7</b></text>
+<text top="655" left="130" width="631" height="19" font="9"><b>Dämpfungsphänomene und schwingungsfähige lineare ÜTG</b></text>
+<text top="695" left="94" width="26" height="16" font="10"><b>7.1</b></text>
+<text top="695" left="139" width="143" height="16" font="10"><b>Worum geht es?</b></text>
+<text top="722" left="94" width="708" height="21" font="5">In vielen technischen Systemen (Regelkreise, Filter, mechanische Strukturen, elektrische Netzwerke)</text>
+<text top="742" left="94" width="706" height="21" font="5">tritt nach einer plötzlichen Änderung des Eingangssignals (z. B. Sprung) eine dynamische Antwort</text>
+<text top="763" left="94" width="248" height="21" font="5">auf. Dabei beobachtet man häufig:</text>
+<text top="801" left="114" width="13" height="21" font="5">•</text>
+<text top="805" left="134" width="207" height="14" font="11"><b>Schwingen/Oszillationen:</b></text>
+<text top="801" left="347" width="326" height="21" font="5">Das Ausgangssignal zeigt periodische Anteile.</text>
+<text top="835" left="114" width="13" height="21" font="5">•</text>
+<text top="839" left="134" width="233" height="14" font="11"><b>Überschwingen (Overshoot):</b></text>
+<text top="835" left="373" width="429" height="21" font="5">Der Ausgang überschreitet kurzzeitig den späteren Endwert.</text>
+<text top="869" left="114" width="13" height="21" font="5">•</text>
+<text top="873" left="134" width="140" height="14" font="11"><b>Eigenfrequenzen:</b></text>
+<text top="869" left="280" width="520" height="21" font="5">Frequenzen, bei denen das System ohne äußere Anregung (frei) schwingt</text>
+<text top="889" left="134" width="333" height="21" font="5">bzw. besonders stark auf Anregungen reagiert.</text>
+<text top="927" left="119" width="89" height="21" font="5">Wichtig: Ein</text>
+<text top="931" left="213" width="85" height="14" font="12"><i>PT1-System</i></text>
+<text top="927" left="305" width="497" height="21" font="5">(z. B. einfacher RC-Tiefpass) besitzt nur einen Pol und zeigt typischer-</text>
+<text top="948" left="93" width="38" height="21" font="5">weise</text>
+<text top="952" left="136" width="30" height="14" font="12"><i>kein</i></text>
+<text top="948" left="173" width="483" height="21" font="5">Überschwingen. Überschwingen ist ein Kennzeichen von Systemen</text>
+<text top="952" left="661" width="138" height="14" font="12"><i>mindestens zweiter</i></text>
+<text top="972" left="92" width="62" height="14" font="12"><i>Ordnung</i></text>
+<text top="968" left="160" width="335" height="21" font="5">(z. B. RLC-Netzwerke, PT2, viele Regelkreise).</text>
+<text top="1015" left="94" width="26" height="16" font="10"><b>7.2</b></text>
+<text top="1015" left="139" width="451" height="16" font="10"><b>Dämpfungsphänomene am Beispiel des PT2-Glieds</b></text>
+<text top="1054" left="352" width="13" height="15" font="6"><i>G</i></text>
+<text top="1049" left="365" width="6" height="21" font="5">(</text>
+<text top="1054" left="371" width="8" height="15" font="6"><i>p</i></text>
+<text top="1049" left="380" width="24" height="21" font="5">) =</text>
+<text top="1043" left="464" width="14" height="15" font="6"><i>K</i></text>
+<text top="1061" left="410" width="36" height="21" font="5">1 + 2</text>
+<text top="1065" left="446" width="34" height="15" font="6"><i>DT p</i></text>
+<text top="1061" left="484" width="13" height="21" font="5">+</text>
+<text top="1065" left="500" width="10" height="15" font="6"><i>T</i></text>
+<text top="1063" left="512" width="6" height="11" font="13">2</text>
+<text top="1065" left="519" width="8" height="15" font="6"><i>p</i></text>
+<text top="1063" left="527" width="6" height="11" font="13">2</text>
+<text top="1054" left="536" width="5" height="15" font="6"><i>.</i></text>
+<text top="1086" left="94" width="285" height="21" font="5">Eine häufige, normierte Schreibweise ist</text>
+<text top="1136" left="358" width="13" height="15" font="6"><i>G</i></text>
+<text top="1132" left="371" width="6" height="21" font="5">(</text>
+<text top="1136" left="377" width="8" height="15" font="6"><i>s</i></text>
+<text top="1132" left="385" width="24" height="21" font="5">) =</text>
+<text top="1125" left="463" width="10" height="15" font="6"><i>ω</i></text>
+<text top="1122" left="474" width="6" height="11" font="13">2</text>
+<text top="1133" left="473" width="6" height="11" font="13">0</text>
+<text top="1148" left="415" width="8" height="15" font="6"><i>s</i></text>
+<text top="1146" left="422" width="6" height="11" font="13">2</text>
+<text top="1144" left="433" width="25" height="21" font="5">+ 2</text>
+<text top="1148" left="458" width="19" height="15" font="6"><i>ζω</i></text>
+<text top="1153" left="476" width="6" height="11" font="13">0</text>
+<text top="1148" left="483" width="8" height="15" font="6"><i>s</i></text>
+<text top="1144" left="495" width="13" height="21" font="5">+</text>
+<text top="1148" left="511" width="10" height="15" font="6"><i>ω</i></text>
+<text top="1145" left="522" width="6" height="11" font="13">2</text>
+<text top="1155" left="521" width="6" height="11" font="13">0</text>
+<text top="1136" left="531" width="5" height="15" font="6"><i>.</i></text>
+<text top="1132" left="780" width="21" height="21" font="5">(1)</text>
+<text top="1199" left="442" width="8" height="21" font="5">9</text>
+</page>
+<outline>
+<item page="3">Analoge Übertragungsglieder (ÜTG)</item>
+<outline>
+<item page="3">Begriffe und Eigenschaften</item>
+</outline>
+<item page="3">Typische Signale</item>
+<outline>
+<item page="3">Aperiodische Eingangssignale</item>
+<item page="4">Impulsfunktion (Dirac-Stoß)</item>
+<item page="4">Antwortfunktionen eines LZI-ÜTG</item>
+</outline>
+<item page="5">Mathematische Beschreibung im Zeitbereich</item>
+<outline>
+<item page="5">Lineare Differentialgleichung mit konstanten Koeffizienten</item>
+<item page="5">Beispiele: typische ÜTG</item>
+</outline>
+<item page="5">Laplace-Transformation und Übertragungsfunktion</item>
+<outline>
+<item page="5">Exponentialansatz und Laplace-Operator</item>
+<item page="6">Laplace-Transformation des Dirac-Impulses</item>
+<item page="6">Übertragungsfunktion (ÜTF)</item>
+<item page="7">Übersicht: DGL zu ÜTF</item>
+</outline>
+<item page="7">Beschreibung im Frequenzbereich</item>
+<outline>
+<item page="7">Frequenzgang</item>
+<item page="8">Ortskurve</item>
+</outline>
+<item page="8">Bode-Diagramme</item>
+<outline>
+<item page="8">Amplitude in Dezibel</item>
+<item page="8">Beispiel: PT1-Glied</item>
+</outline>
+<item page="9">Dämpfungsphänomene und schwingungsfähige lineare ÜTG</item>
+<outline>
+<item page="9">Worum geht es?</item>
+<item page="9">Dämpfungsphänomene am Beispiel des PT2-Glieds</item>
+<outline>
+<item page="10">Dämpfungsfälle</item>
+<item page="10">Überschwingen bei der Sprungantwort</item>
+<item page="11">Eigenfrequenz vs. Resonanzfrequenz</item>
+<item page="11">Gütefaktor</item>
+</outline>
+</outline>
+<item page="12">Blockdiagramme</item>
+<outline>
+<item page="12">Grundidee und Motivation</item>
+<item page="12">Blöcke und Übertragungsfunktionen</item>
+<item page="13">Offener vs. geschlossener Regelkreis</item>
+<item page="13">Regeln zur Umformung (mit Formeln und Bildern)</item>
+<outline>
+<item page="13">Regel 1: Reihenschaltung (Kaskade)</item>
+<item page="13">Regel 2: Parallelschaltung</item>
+<item page="14">Regel 3: Rückführung (Feedback)</item>
+<item page="14">Regel 4: Summierstelle über einen Block verschieben</item>
+<item page="14">Regel 5: Abzweigstelle (Messabgriff) über einen Block verschieben</item>
+<item page="15">Regel 6: Innere Schleifen zuerst reduzieren</item>
+</outline>
+</outline>
+<item page="15">Einschleifiger Regelkreis: Standardformen</item>
+<outline>
+<item page="15">Struktur und Grundgleichungen</item>
+<item page="15">Führungs- und Störübertragungsfunktion</item>
+<item page="16">Statisches Verhalten, Regelfaktor</item>
+<item page="16">P-, I- und PI-Regler (Grundideen)</item>
+</outline>
+<item page="16">Stabilität linearer Regelkreise</item>
+<outline>
+<item page="16">Charakteristische Gleichung</item>
+<item page="16">Nyquist-Idee (qualitativ)</item>
+<item page="17">Nyquist-Diagramm und Nyquist-Kriterium</item>
+<item page="19">Hurwitz-Kriterium (Polynomkriterium)</item>
+<item page="19">Beispiel: PT2-Strecke mit PI-Regler (Stabilitätsgebiet)</item>
+</outline>
+<item page="20">Reglerstrukturen (PD, PID) und Realisierungshinweise</item>
+<outline>
+<item page="20">PD- und PID-Formen</item>
+<item page="21">(Invertierender) OPV-Grundsatz</item>
+</outline>
+<item page="21">Mini-Formelsammlung (Laplace)</item>
+<item page="21">Ausführliche Aufgaben</item>
+</outline>
+</pdf2xml>

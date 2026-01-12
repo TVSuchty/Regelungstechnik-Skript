@@ -1,0 +1,233 @@
+% kapitel/07-blockdiagramm-umformung.tex
+\section{Blockdiagramme}
+\subsection{Grundidee und Motivation}
+Blockdiagramme beschreiben den Signalfluss in Regelkreisen: Bl\"ocke stehen f\"ur Teilsysteme (Strecke, Regler, Sensor), Pfeile f\"ur Signale. Sie sind damit mehr als ein Werkzeug zum Umformen --- sie sind der ``Schaltplan'' der Regelstrecke und zeigen sofort, wo Sollwerte, Stellgr\"o\ss en und St\"orungen einwirken und wie ein Regler darauf reagieren kann.
+
+\medskip
+Typische Aufgaben, f\"ur die Blockdiagramme genutzt werden:
+\begin{itemize}
+  \item Struktur und Signalrichtungen eines Regelkreises dokumentieren und diskutieren,
+  \item aus verkn\"upften Bl\"ocken eine Gesamt\"ubertragungsfunktion herleiten (Verst\"arkung, Stabilit\"at, Genauigkeit),
+  \item beurteilen, wie R\"uckf\"uhrung St\"orungen d\"ampft oder das Folgeverhalten verbessert.
+\end{itemize}
+Damit bilden Blockdiagramme die Br\"ucke zwischen physikalischem System, mathematischem Modell und Reglerentwurf.
+
+\subsection{Bl\"ocke und \"Ubertragungsfunktionen}
+Jeder Block steht f\"ur eine \"Ubertragungsfunktion \(G(\p) = \dfrac{Y(\p)}{U(\p)}\) zwischen Eingang \(u(t)\) und Ausgang \(y(t)\). Entlang eines Signalwegs werden die \"Ubertragungsfunktionen multipliziert, parallele Wege addieren sich --- genau so, wie es die algebraischen Gleichungen im Laplace-Bereich vorgeben.
+\begin{center}
+  \begin{tikzpicture}[node distance=12mm]
+    \node (u) {$U(\p)$};
+    \node[block, right=of u] (g) {$G(\p)$};
+    \node[right=of g] (y) {$Y(\p)$};
+    \draw[line] (u) -- (g) -- (y);
+  \end{tikzpicture}
+\end{center}
+\[
+  Y(\p) = G(\p)\, U(\p)
+\]
+Die grafische Darstellung codiert also direkt die Gleichungen: jeder Summierknoten entspricht einer Addition/Subtraktion, jeder Abzweig einer Signalweitergabe, jeder Block einer Multiplikation mit seiner \"Ubertragungsfunktion.
+
+\subsection{Offener vs.\ geschlossener Regelkreis}
+Ein \emph{offener} Kreis besitzt keine R\"uckf\"uhrung; die Regelgr\"o\ss e \(x\) beeinflusst den Eingang nicht. Ein \emph{geschlossener} Kreis f\"uhrt das Ausgangssignal (oft nach Messung \(H(\p)\)) zur\"uck, vergleicht es mit dem Sollwert \(w\) und erzeugt daraus die Stellgr\"o\ss e \(y\) f\"ur die Strecke.
+\begin{center}
+  \begin{tikzpicture}[node distance=12mm]
+    \node (w) {$w$};
+    \node[block, right=of w] (c) {$G_R$};
+    \node[block, right=of c] (p) {$G_S$};
+    \node[right=of p] (x) {$x$};
+    \draw[line] (w) -- (c) -- (p) -- (x);
+    \node at ($(c)!0.5!(p)+(0,7mm)$) {\small $y$};
+    \node at ($(p)!0.5!(x)+(0,7mm)$) {\small offener Kreis};
+  \end{tikzpicture}
+  \qquad
+  \begin{tikzpicture}[node distance=12mm]
+    \node (w) {$w$};
+    \node[sum, right=of w] (s) {};
+    \node[block, right=of s] (c) {$G_R$};
+    \node[block, right=of c] (p) {$G_S$};
+    \node[right=of p] (x) {$x$};
+    \node[block, below=10mm of p] (h) {$H$};
+    \draw[line] (w) -- (s) -- (c) -- (p) -- (x);
+    \draw[line] (x) |- (h);
+    \draw[line] (h) -| (s);
+    \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+    \node at ($(s)+(-3.5mm,-2.2mm)$) {$-$};
+    \node at ($(c)!0.5!(p)+(0,7mm)$) {\small $y$};
+    \node at ($(p)!0.5!(x)+(0,7mm)$) {\small geschlossener Kreis};
+  \end{tikzpicture}
+\end{center}
+Vom offenen zum geschlossenen Kreis gelangt man also durch Hinzuf\"ugen der Summierstelle (Sollwertvergleich), eines Messpfads \(H(\p)\) und der R\"uckf\"uhrleitung. Die geschlossene \"Ubertragungsfunktion wird damit zu
+\[
+  T(\p) = \frac{X(\p)}{W(\p)} = \frac{G_R(\p) G_S(\p)}{1 + G_R(\p) G_S(\p) H(\p)},
+\]
+w\"ahrend der offene Weg lediglich \(G_R(\p) G_S(\p)\) bildet. Gerade in der Regelungstechnik ist die Wahl und Umformung des Blockdiagramms zentral, um St\"orunterdr\"uckung, Dynamik und Stabilit\"at zu beurteilen und Reglerparameter gezielt anzupassen.
+
+\subsection{Regeln zur Umformung (mit Formeln und Bildern)}
+\textbf{Voraussetzungen:} Die Umformregeln gelten f\"ur \emph{lineare zeitinvariante} (LZI) Systeme. Im Folgenden sind alle Signale im Laplace-Bereich angegeben (z.\,B.\ \(X(\p)\)); f\"ur die Umformung selbst gen\"ugt die Darstellung mit \"Ubertragungsfunktionen.
+
+\medskip
+\textbf{Konvention:} In vielen Skripten ist die \emph{negative R\"uckf\"uhrung} der Standardfall (Minuszeichen am Summierglied). Bei positiver R\"uckf\"uhrung \"andert sich das Vorzeichen im Nenner (siehe Regel~3).
+
+\subsubsection{Regel 1: Reihenschaltung (Kaskade)}
+Zwei hintereinander geschaltete Bl\"ocke lassen sich zu einem Block zusammenfassen:
+\[
+  G_{\mathrm{ges}}(\p) = G_2(\p)\,G_1(\p).
+\]
+\begin{center}
+  \begin{tikzpicture}[node distance=12mm]
+    \node (in) {$u$};
+    \node[block, right=of in] (g1) {$G_1$};
+    \node[block, right=of g1] (g2) {$G_2$};
+    \node[right=of g2] (out) {$y$};
+    \draw[line] (in) -- (g1) -- (g2) -- (out);
+  \end{tikzpicture}
+  \qquad$\Longleftrightarrow$\qquad
+  \begin{tikzpicture}[node distance=12mm]
+    \node (in) {$u$};
+    \node[block, right=of in] (g) {$G_2 G_1$};
+    \node[right=of g] (out) {$y$};
+    \draw[line] (in) -- (g) -- (out);
+  \end{tikzpicture}
+\end{center}
+
+\paragraph{Hinweis:} In einer reinen SISO-Kaskade darf man die Reihenfolge vertauschen \((G_2 G_1 = G_1 G_2)\). \emph{Nicht} vertauschen, wenn zwischen den Bl\"ocken Abzweige oder Summierstellen liegen.
+
+\subsubsection{Regel 2: Parallelschaltung}
+Parallele Wege mit gleicher Ein- und Ausgangsgr\"o\ss e addieren (oder subtrahieren) sich:
+\[
+  G_{\mathrm{ges}}(\p) = G_1(\p) \pm G_2(\p).
+\]
+\begin{center}
+  \begin{tikzpicture}[node distance=12mm]
+    \node (in) {$u$};
+    \node[branch, right=of in] (b1) {};
+    \node[block, above right=10mm and 12mm of b1] (g1) {$G_1$};
+    \node[block, below right=10mm and 12mm of b1] (g2) {$G_2$};
+    \node[sum, right=26mm of b1] (s) {};
+    \node[right=of s] (out) {$y$};
+    \draw[line] (in) -- (b1);
+    \draw[line] (b1) |- (g1);
+    \draw[line] (b1) |- (g2);
+    \draw[line] (g1) -| (s);
+    \draw[line] (g2) -| (s);
+    \draw[line] (s) -- (out);
+    \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+    \node at ($(s)+(-3.5mm,-2.2mm)$) {$\pm$};
+  \end{tikzpicture}
+  \qquad$\Longleftrightarrow$\qquad
+  \begin{tikzpicture}[node distance=12mm]
+    \node (in) {$u$};
+    \node[block, right=of in] (g) {$G_1 \pm G_2$};
+    \node[right=of g] (out) {$y$};
+    \draw[line] (in) -- (g) -- (out);
+  \end{tikzpicture}
+\end{center}
+
+\subsubsection{Regel 3: R\"uckf\"uhrung (Feedback)}
+\paragraph{Negative R\"uckf\"uhrung (Standardfall):}
+\[
+  G_{\mathrm{cl}}(\p) = \frac{X(\p)}{W(\p)} = \frac{G(\p)}{1 + G(\p) H(\p)}.
+\]
+\begin{center}
+  \begin{tikzpicture}[node distance=12mm]
+    \node (w) {$w$};
+    \node[sum, right=of w] (s) {};
+    \node[block, right=of s] (g) {$G$};
+    \node[right=of g] (x) {$x$};
+    \node[block, below=10mm of g] (h) {$H$};
+    \draw[line] (w) -- (s);
+    \draw[line] (s) -- (g) -- (x);
+    \draw[line] (x) |- (h);
+    \draw[line] (h) -| (s);
+    \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+    \node at ($(s)+(-3.5mm,-2.2mm)$) {$-$};
+  \end{tikzpicture}
+\end{center}
+
+\paragraph{Positive R\"uckf\"uhrung:}
+\[
+  G_{\mathrm{cl}}(\p) = \frac{G(\p)}{1 - G(\p) H(\p)}.
+\]
+
+\paragraph{Kurzbeispiel (Ersatzblock).}
+Gegeben sei eine Kaskade $G_1(\p)G_2(\p)$ mit Einheitsr\"uckf\"uhrung $H(\p)=1$.
+Dann lautet die geschlossene \"Ubertragungsfunktion
+\[
+  G_{\mathrm{cl}}(\p)=\frac{G_1(\p)G_2(\p)}{1+G_1(\p)G_2(\p)}.
+\]
+
+\subsubsection{Regel 4: Summierstelle \"uber einen Block verschieben}
+Diese Regel ist eine h\"aufige Fehlerquelle: \textbf{Beim Verschieben muss das Signal an jedem Knoten identisch bleiben.}
+
+\paragraph{(a) Summierstelle \(\rightarrow\) nach \(\boldsymbol{G}\) verschieben:}
+Aus \(y = G(u \pm v)\) folgt \(y = G u \pm G v\). Wird die Summierung \emph{hinter} \(G\) platziert, muss der zweite Zweig ebenfalls mit \(G\) gewichtet werden.
+\begin{center}
+  \begin{tikzpicture}[node distance=12mm]
+    \node (u) {$u$};
+    \node[sum, right=of u] (s) {};
+    \node[block, right=of s] (g) {$G$};
+    \node[right=of g] (y) {$y$};
+    \node (v) [below=10mm of s] {$v$};
+    \draw[line] (u) -- (s) -- (g) -- (y);
+    \draw[line] (v) -- (s);
+    \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+    \node at ($(s)+(-3.5mm,-2.2mm)$) {$\pm$};
+  \end{tikzpicture}
+  \qquad$\Longleftrightarrow$\qquad
+  \begin{tikzpicture}[node distance=12mm]
+    \node (u) {$u$};
+    \node[block, right=of u] (g1) {$G$};
+    \node[sum, right=of g1] (s) {};
+    \node[right=of s] (y) {$y$};
+    \node (v) [below=10mm of s] {$v$};
+    \node[block, left=of v] (g2) {$G$};
+    \draw[line] (u) -- (g1) -- (s) -- (y);
+    \draw[line] (v) -- (g2) -- (s);
+    \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+    \node at ($(s)+(-3.5mm,-2.2mm)$) {$\pm$};
+  \end{tikzpicture}
+\end{center}
+
+\paragraph{(b) Summierstelle \(\leftarrow\) vor \(\boldsymbol{G}\) verschieben:}
+Umgekehrt gilt: Aus \(y = G u \pm v\) wird \(y = G \bigl(u \pm v / G\bigr)\). Beim Verschieben \emph{vor} \(G\) muss der Zweig, der \(G\) zuvor \emph{nicht} durchlief, mit \(1/G\) skaliert werden.
+
+\subsubsection{Regel 5: Abzweigstelle (Messabgriff) \"uber einen Block verschieben}
+Auch hier gilt: das abgezweigte Signal muss gleich bleiben.
+
+\paragraph{(a) Abzweig \(\rightarrow\) nach \(\boldsymbol{G}\) verschieben:}
+Wird hinter \(G\) abgegriffen, ist das Signal um \(G\) gr\"o\ss er; daher muss im Abzweig ein Faktor \(1/G\) eingef\"ugt werden, um das urspr\"ungliche Signal beizubehalten.
+\begin{center}
+  \begin{tikzpicture}[node distance=12mm]
+    \node (u) {$u$};
+    \node[branch, right=of u] (b) {};
+    \node[block, right=of b] (g) {$G$};
+    \node[right=of g] (y) {$y$};
+    \node[below=10mm of b] (tap) {$u$};
+    \draw[line] (u) -- (b) -- (g) -- (y);
+    \draw[line] (b) -- (tap);
+  \end{tikzpicture}
+  \qquad$\Longleftrightarrow$\qquad
+  \begin{tikzpicture}[node distance=12mm]
+    \node (u) {$u$};
+    \node[block, right=of u] (g) {$G$};
+    \node[branch, right=of g] (b) {};
+    \node[right=of b] (y) {$y$};
+    \node[below=10mm of b] (tap) {$u$};
+    \node[block, left=of tap] (inv) {$1/G$};
+    \draw[line] (u) -- (g) -- (b) -- (y);
+    \draw[line] (b) -- (inv) -- (tap);
+  \end{tikzpicture}
+\end{center}
+
+\paragraph{(b) Abzweig \(\leftarrow\) vor \(\boldsymbol{G}\) verschieben:}
+Analog: Beim Verschieben eines Abgriffs \emph{vor} \(G\) wird im Abzweig ein Faktor \(G\) ben\"otigt.
+
+\subsubsection{Regel 6: Innere Schleifen zuerst reduzieren}
+Bei verschachtelten R\"uckf\"uhrungen ist es oft am einfachsten,
+\begin{itemize}
+  \item zun\"achst \emph{innere} Feedback-Schleifen mit Regel~3 zu einem Ersatzblock zusammenzufassen,
+  \item danach Serien- und Parallelbl\"ocke (Regeln~1--2) zu reduzieren,
+  \item und zuletzt \"au\ss ere Schleifen zu schlie\ss en.
+\end{itemize}
+
+\paragraph{Praxis-Tipp:} Zeichne bei jeder Umformung kurz die \emph{Signalgleichungen} an den Knoten (z.\,B.\ \(y = G u\), \(e = w - x\)). Wenn die Gleichungen identisch bleiben, ist die Umformung korrekt.

@@ -1,0 +1,40 @@
+% kapitel/frequenzbereich.tex
+\section{Beschreibung im Frequenzbereich}
+\subsection{Frequenzgang}
+F\"ur sinusf\"ormige Signale setzt man $p=\jj\omega$ und erh\"alt den Frequenzgang:
+\[
+  G(\jj\omega)=G(p)\big|_{p=\jj\omega}.
+\]
+Schreibweisen:
+\[
+  G(\jj\omega)=\Ree(\omega)+\jj\,\Imm(\omega)
+  \quad\text{oder}\quad
+  G(\jj\omega)=\lvert G(\jj\omega)\rvert\,\mathrm{e}^{\jj\varphi(\omega)}.
+\]
+Betrag und Phase:
+\[
+  \lvert G(\jj\omega)\rvert=\sqrt{\Ree(\omega)^2+\Imm(\omega)^2},
+  \qquad
+  \varphi(\omega)=\argg\!\bigl(G(\jj\omega)\bigr).
+\]
+Bei der Winkelbestimmung ist auf den Quadranten zu achten (praktisch: \texttt{atan2}).
+
+\paragraph{Rechenregel (komplexe Br\"uche).}
+F\"ur $G(\jj\omega)=\frac{Z(\omega)}{N(\omega)}$ mit $N(\omega)\neq 0$:
+\[
+  \frac{Z}{N}=\frac{Z\,\overline{N}}{N\,\overline{N}},
+\]
+woraus sich $\Ree,\Imm$ bequem bestimmen lassen.
+
+\paragraph{Beispiel (PT1, $K=1$).}
+Mit $G(\jj\omega)=\frac{1}{1+\jj\omega T}$ folgt
+\[
+  G(\jj\omega)=\frac{1-\jj\omega T}{1+(\omega T)^2},
+  \quad
+  \Ree(\omega)=\frac{1}{1+(\omega T)^2},\ 
+  \Imm(\omega)=\frac{-\omega T}{1+(\omega T)^2}.
+\]
+
+\subsection{Ortskurve}
+Die Ortskurve ist der geometrische Ort aller Werte von $G(\jj\omega)$ in der komplexen Ebene,
+wenn $\omega$ von $0$ bis $\infty$ l\"auft.

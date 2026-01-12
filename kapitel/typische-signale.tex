@@ -1,0 +1,58 @@
+% kapitel/typische-signale.tex
+\section{Typische Signale}
+\subsection{Aperiodische Eingangssignale}
+\paragraph{Sprungfunktion (Einheitssprung).}
+\[
+  \sigma(t)=
+  \begin{cases}
+    0, & t<0,\\
+    1, & t\ge 0.
+  \end{cases}
+\]
+Ein allgemeiner Sprung der H\"ohe $x_{e0}$ lautet $x_e(t)=x_{e0}\,\sigma(t)$.
+
+\paragraph{Rechteckimpuls.}
+Ein Rechteckimpuls (H\"ohe $x_{e0}$, Dauer $t_0$) l\"asst sich als Differenz zweier Spr\"unge schreiben:
+\[
+  x_e(t)=x_{e0}\bigl(\sigma(t)-\sigma(t-t_0)\bigr).
+\]
+
+\paragraph{Beispiel (Rechteckimpuls).}
+F\"ur $x_{e0}=2$ und $t_0=0{,}5$ gilt
+$x_e(t)=2\bigl(\sigma(t)-\sigma(t-0{,}5)\bigr)$.
+
+\paragraph{Rampe.}
+Die (Einheits-)Rampe ist das Integral der Sprungfunktion:
+\[
+  r(t)=\int_{0}^{t}\sigma(\tau)\,\dd\tau = t\,\sigma(t).
+\]
+
+\input{figures/fig_signals.tex}
+
+\subsection{Impulsfunktion (Dirac-Sto\ss)}
+Die Dirac-Impulsfunktion $\delta(t)$ ist eine idealisierte Grenzfunktion; im strengen mathematischen Sinn ist $\delta(t)$ keine (klassische) Funktion, sondern eine Distribution (verallgemeinerte Funktion).
+Sie wird als Idealisierung eines sehr kurzen Impulses mit endlichem Fl\"acheninhalt verstanden und besitzt die Eigenschaften
+\[
+  \int_{-\infty}^{\infty}\delta(t)\,\dd t = 1,
+  \qquad
+  \delta(t)=0\ \text{f\"ur}\ t\neq 0.
+\]
+Wichtige Beziehung zur Sprungfunktion:
+\[
+  \frac{\dd}{\dd t}\sigma(t)=\delta(t).
+\]
+
+\subsection{Antwortfunktionen eines LZI-\"UTG}
+\begin{itemize}[itemsep=2pt]
+  \item \textbf{\"Ubergangsfunktion (Sprungantwort)} $h(t)$: Antwort auf den Einheitssprung
+  $x_e(t)=\sigma(t)$, also $x_a(t)=h(t)$.
+  \item \textbf{Gewichtsfunktion (Impulsantwort)} $g(t)$: Antwort auf den Dirac-Impuls
+  $x_e(t)=\delta(t)$, also $x_a(t)=g(t)$.
+\end{itemize}
+Wegen $\delta(t)=\frac{\dd}{\dd t}\sigma(t)$ gilt f\"ur LZI-Systeme der zentrale Zusammenhang:
+\[
+  g(t)=\frac{\dd}{\dd t}h(t)=\dot h(t).
+\]
+(Umgekehrt: $h(t)=\int_0^t g(\tau)\,\dd\tau$.)
+
+

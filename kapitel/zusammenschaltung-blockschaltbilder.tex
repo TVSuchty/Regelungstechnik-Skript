@@ -1,0 +1,16 @@
+% kapitel/zusammenschaltung-blockschaltbilder.tex
+\section{Zusammenschaltung von \"UTG und Blockschaltbilder}
+\subsection{Grundelemente}
+Im Laplace-Bereich gelten f\"ur Blockschaltbilder die drei Grundoperationen:
+\begin{enumerate}[itemsep=2pt]
+  \item \textbf{Reihenschaltung (Kette):}\quad $G_{\mathrm{ges}}(p)=\prod_{i=1}^{n}G_i(p)$.
+  \item \textbf{Parallelschaltung:}\quad $G_{\mathrm{ges}}(p)=\sum_{i=1}^{n}\pm G_i(p)$.
+  \item \textbf{R\"uckf\"uhrung} (negative R\"uckkopplung):\quad
+  $G_{\mathrm{ges}}(p)=\dfrac{G_{\mathrm{Vor}}(p)}{1+G_{\mathrm{Vor}}(p)\,G_{\mathrm{R\ddot{u}ck}}(p)}$.
+\end{enumerate}
+
+\paragraph{Beispiel (Reihenschaltung).}
+Mit $G_1(p)=\dfrac{K_1}{1+T_1p}$ und $G_2(p)=\dfrac{K_2}{1+T_2p}$ ergibt sich
+\[
+  G_{\mathrm{ges}}(p)=\frac{K_1K_2}{(1+T_1p)(1+T_2p)}.
+\]

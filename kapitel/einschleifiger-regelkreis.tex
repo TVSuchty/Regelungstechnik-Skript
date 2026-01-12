@@ -1,0 +1,79 @@
+% kapitel/einschleifiger-regelkreis.tex
+\section{Einschleifiger Regelkreis: Standardformen}
+\subsection{Struktur und Grundgleichungen}
+Wir betrachten die Standardstruktur mit F\"uhrungsgr\"o\ss e $w$, Regelabweichung $e$, Stellgr\"o\ss e $y$,
+St\"orgr\"o\ss e $z$ (am Streckeneingang) und Regelgr\"o\ss e $x$:
+\[
+  e=w-x,\qquad y=G_R(p)\,e,\qquad x=G_S(p)\,(y+z).
+\]
+Die Kreisverst\"arkung (aufgeschnittener Kreis) ist
+\[
+  G_0(p)=G_R(p)\,G_S(p).
+\]
+Die Grafik fasst diese Standardstruktur zusammen (Einheitsmessung, St\"orung $z$ vor der Strecke):
+\begin{center}
+  \begin{tikzpicture}[node distance=12mm]
+    \node (w) {$w$};
+    \node[sum, right=of w] (s1) {};
+    \node[block, right=of s1] (gr) {$G_R$};
+    \node[sum, right=of gr] (s2) {};
+    \node[block, right=of s2] (gs) {$G_S$};
+    \node[right=of gs] (x) {$x$};
+    \node[below=10mm of s2] (z) {$z$};
+    \node[branch, below=10mm of x] (bfb) {};
+    \draw[line] (w) -- (s1) -- node[above,pos=0.5] {$e$} (gr) -- node[above,pos=0.5] {$y$} (s2) -- (gs) -- (x);
+    \draw[line] (z) -- (s2);
+    \draw[line] (x) |- (bfb) -| (s1.south);
+    \node at ($(s1)+(-3.5mm,2.2mm)$) {$+$};
+    \node at ($(s1)+(-3.5mm,-2.2mm)$) {$-$};
+    \node at ($(s2)+(-3.5mm,2.2mm)$) {$+$};
+    \node at ($(s2)+(-3.5mm,-2.2mm)$) {$+$};
+  \end{tikzpicture}
+\end{center}
+Dabei erzeugt der Regler $G_R$ aus der Regelabweichung $e$ die Stellgr\"o\ss e $y$, die Strecke $G_S$ setzt $y$ (plus St\"orung $z$) in die Regelgr\"o\ss e $x$ um, und die R\"uckf\"uhrung sorgt daf\"ur, dass $e$ im Idealfall klein wird.
+
+\subsection{F\"uhrungs- und St\"or\"ubertragungsfunktion}
+\paragraph{F\"uhrungs\"ubertragung ($z=0$).}
+\[
+  G_w(p)=\frac{X(p)}{W(p)}=\frac{G_0(p)}{1+G_0(p)}.
+\]
+
+\paragraph{St\"or\"ubertragung ($w=0$).}
+\[
+  G_z(p)=\frac{X(p)}{Z(p)}=\frac{G_S(p)}{1+G_0(p)}.
+\]
+
+\subsection{Statisches Verhalten, Regelfaktor}
+Das statische Verhalten ergibt sich aus $p\to 0$ (sofern Grenzwerte existieren):
+\[
+  V_0:=G_0(0)\quad\text{(statische Kreisverst\"arkung)}.
+\]
+Der Regelfaktor (Unterdr\"uckung von St\"orungen bzw.\ Abweichungen im statischen Fall) lautet
+\[
+  R=\frac{1}{1+V_0}.
+\]
+Damit gilt: gro\ss e Kreisverst\"arkung $V_0\gg 1 \Rightarrow$ kleines $R$ (gute Unterdr\"uckung).
+
+\paragraph{Beispiel (Regelfaktor).}
+Sei $G_R(p)=K_{PR}$ und $G_S(p)=\dfrac{K_S}{1+Tp}$. Dann ist
+$V_0=K_{PR}K_S$ und damit
+\[
+  R=\frac{1}{1+K_{PR}K_S}.
+\]
+
+\subsection{P-, I- und PI-Regler (Grundideen)}
+\begin{center}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Regler & \"Ubertragungsfunktion $G_R(p)$ & typische Wirkung \\
+    \midrule
+    P  & $K_{PR}$ & schnell, aber i.\,A.\ bleibende Abweichung \\
+    I  & $\displaystyle \frac{K_{IR}}{p}$ & keine bleibende Abweichung, aber h\"ohere Ordnung/Schwingneigung \\
+    PI & $\displaystyle K_{PR}\!\left(1+\frac{1}{T_N p}\right)$ & kombiniert Vorteile von P und I \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+Parameterbezug beim PI-Regler:
+\[
+  K_{IR}=\frac{K_{PR}}{T_N}.
+\]

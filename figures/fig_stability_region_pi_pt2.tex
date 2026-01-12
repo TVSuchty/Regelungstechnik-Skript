@@ -1,0 +1,28 @@
+% Stability region for PT2 plant with PI controller (example parameters)
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.70\textwidth, height=0.45\textwidth,
+      grid=both, grid style={line width=.1pt, draw=gray!20},
+      major grid style={line width=.2pt, draw=gray!35},
+      xlabel={$K_{PR}$}, ylabel={$K_{IR}$},
+      xmin=-1.2, xmax=5.2,
+      ymin=-0.2, ymax=6.2,
+      axis lines=left,
+      tick label style={font=\small},
+      label style={font=\small},
+    ]
+      % Filled stability region polygon
+      \addplot[fill=gray!15, draw=none] table[x=KPR,y=KIR,col sep=comma] {data/stab_region_polygon_PI_PT2_KS1_D0p5_T1.csv} \closedcycle;
+      % Boundary lines
+      \addplot[thick] table[x=KPR,y=KIR_max,col sep=comma] {data/stab_region_PI_PT2_KS1_D0p5_T1.csv};
+      \addplot[thick] coordinates {(-1,0) (5,0)};
+      \addplot[dashed] coordinates {(-1,0) (-1,6)};
+      \node[font=\small, anchor=west] at (axis cs:-0.95,5.55) {$K_S=1,\;D=0{,}5,\;T=1$};
+      \node[font=\small, anchor=west] at (axis cs:-0.95,4.95) {$0<K_{IR}<1+K_{PR},\;\;K_{PR}>-1$};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Beispielhaftes Stabilit\"atsgebiet f\"ur eine PT2-Strecke mit PI-Regler (Parameterwahl $K_S=1$, $D=0{,}5$, $T=1$). Das schattierte Gebiet erf\"ullt die Hurwitz-Bedingungen $H_1,H_2,H_3$ aus Abschnitt~11.4.}
+  \label{fig:stability_region_pi_pt2}
+\end{figure}

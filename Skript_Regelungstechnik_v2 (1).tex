@@ -1,0 +1,294 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+% ---------- Notation ----------
+\newcommand{\Laplace}{\mathcal{L}}
+\newcommand{\p}{p} % Laplace-Variable (in den Notizen meist p statt s)
+
+% ---------- TikZ helpers ----------
+\tikzset{
+  block/.style={draw,rectangle,minimum height=9mm,minimum width=16mm,align=center},
+  sum/.style={draw,circle,inner sep=0pt,minimum size=4.5mm},
+  branch/.style={circle,fill,inner sep=0pt,minimum size=1.6mm},
+  line/.style={-Latex,thick},
+  thin/.style={-Latex,semithick}
+}
+
+\title{Skript Regelungstechnik (LaTeX-Version)}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Grundbegriffe}
+\subsection{Lineare zeitinvariante Systeme (LZI)}
+Ein System heißt \emph{linear}, wenn Superposition gilt, und \emph{zeitinvariant}, wenn eine Zeitverschiebung am Eingang dieselbe Zeitverschiebung am Ausgang bewirkt.
+
+\subsection{Übertragungsfunktion}
+Für LZI-Systeme mit Nullanfangsbedingungen definiert man die \emph{Übertragungsfunktion}
+\[
+G(\p)=\frac{X_a(\p)}{X_e(\p)}.
+\]
+
+\section{Laplace-Transformation (Kurzüberblick)}
+\subsection{Definition und wichtige Paare}
+\[
+\Laplace\{x(t)\}(\p)=\int_0^{\infty} x(t)\,e^{-\p t}\,\mathrm{d}t\qquad (\Re(\p)>\sigma_0).
+\]
+Wichtige Transformationsregeln (Nullanfangsbedingungen):
+\[
+\Laplace\{\dot x(t)\}=\p X(\p),\qquad \Laplace\{\ddot x(t)\}=\p^2 X(\p).
+\]
+Sprung- und Rampenfunktion (Heaviside \(\sigma(t)\)):
+\[
+\Laplace\{\sigma(t)\}=\frac{1}{\p},\qquad \Laplace\{t\,\sigma(t)\}=\frac{1}{\p^2}.
+\]
+
+\section{Typische Übertragungsglieder}
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Glied & Zeitbereich (typisch) & Übertragungsfunktion \\
+\midrule
+P-Glied & \(x_a=K\,x_e\) & \(G(\p)=K\) \\
+I-Glied & \(x_a=K\int x_e\,dt\) & \(G(\p)=\frac{K}{\p}\) \\
+D-Glied & \(x_a=K\,\dot x_e\) & \(G(\p)=K\p\) \\
+PT1 & \(T\dot x_a+x_a=Kx_e\) & \(G(\p)=\frac{K}{1+T\p}\) \\
+PT2 & \(T^2\ddot x_a+2DT\dot x_a+x_a=Kx_e\) & \(G(\p)=\frac{K}{1+2DT\p+T^2\p^2}\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{Frequenzgang und Bode-Größen}
+Frequenzgang erhält man durch Einsetzen \(\p=j\omega\): \(G(j\omega)\).
+\[
+|G(j\omega)|\quad \text{(Betrag)},\qquad \varphi(\omega)=\arg\,G(j\omega)\quad \text{(Phase)}.
+\]
+Bode-Betrag in Dezibel: \(L(\omega)=20\log_{10}|G(j\omega)|\,\text{dB}.\)
+
+\section{Stabilität (sehr kurz)}
+Ein LZI-System ist (asymptotisch) stabil, wenn alle Pole von \(G(\p)\) strikt in der linken Halbebene liegen (\(\Re(\p)<0\)).
+
+\section{Regelkreise: Standardformeln}
+\subsection{Grundstruktur}
+Für den Standard-Regelkreis mit Regler \(G_R(\p)\), Strecke \(G_S(\p)\) und Messglied \(G_M(\p)\) (negative Rückführung) gilt:
+\[
+E(\p)=W(\p)-X(\p),\quad Y(\p)=G_R(\p)E(\p),\quad X(\p)=G_S(\p)\bigl(Y(\p)+Z(\p)\bigr),\quad X(\p)=G_M(\p)\,X_a(\p)
+\]
+(je nach Konvention sind \(X\) und \(X_a\) Mess- bzw. Regelgröße).
+
+\subsection{Führungs- und Störübertragungsfunktion}
+Für den üblichen Fall \(G_M(\p)=1\) ergibt sich
+\[
+\frac{X(\p)}{W(\p)}=\frac{G_R(\p)G_S(\p)}{1+G_R(\p)G_S(\p)}\qquad\text{(Führungsübertragung)}
+\]
+und
+\[
+\frac{X(\p)}{Z(\p)}=\frac{G_S(\p)}{1+G_R(\p)G_S(\p)}\qquad\text{(Störübertragung; Störung additiv am Streckeneingang)}.
+\]
+
+\section{Blockdiagramm-Umformung}
+\subsection{8.1 Motivation}
+Blockdiagramme lassen sich schrittweise vereinfachen, um z.\,B. die Gesamtübertragungsfunktion zu bestimmen oder die Wirkung von Störungen/Reglerparametern transparent zu machen.
+
+
+\subsection{8.2 Regeln zur Umformung (mit Formeln und Bildern)}
+\textbf{Voraussetzungen:} Die Umformregeln gelten für \emph{lineare zeitinvariante} (LZI) Systeme. 
+Im Folgenden sind alle Signale im Laplace-Bereich angegeben (z.\,B.\ \(X(\p)\)); für die Umformung selbst genügt die Darstellung mit Übertragungsfunktionen.
+
+\medskip
+\textbf{Konvention:} In vielen Skripten ist die \emph{negative Rückführung} der Standardfall (Minuszeichen am Summierglied).
+Bei positiver Rückführung ändert sich das Vorzeichen im Nenner (siehe Regel~3).
+
+\subsubsection{Regel 1: Reihenschaltung (Kaskade)}
+Zwei hintereinander geschaltete Blöcke lassen sich zu einem Block zusammenfassen:
+\[
+G_{\mathrm{ges}}(\p)=G_2(\p)\,G_1(\p).
+\]
+\begin{center}
+\begin{tikzpicture}[node distance=12mm]
+  \node (in) {$u$};
+  \node[block,right=of in] (g1) {$G_1$};
+  \node[block,right=of g1] (g2) {$G_2$};
+  \node[right=of g2] (out) {$y$};
+  \draw[line] (in) -- (g1) -- (g2) -- (out);
+\end{tikzpicture}
+\qquad$\Longleftrightarrow$\qquad
+\begin{tikzpicture}[node distance=12mm]
+  \node (in) {$u$};
+  \node[block,right=of in] (g) {$G_2G_1$};
+  \node[right=of g] (out) {$y$};
+  \draw[line] (in) -- (g) -- (out);
+\end{tikzpicture}
+\end{center}
+
+\paragraph{Hinweis:} In einer reinen SISO-Kaskade darf man die Reihenfolge vertauschen (\(G_2G_1=G_1G_2\)). 
+\emph{Nicht} vertauschen, wenn zwischen den Blöcken Abzweige/Summierstellen liegen.
+
+\subsubsection{Regel 2: Parallelschaltung}
+Parallele Wege mit gleicher Ein- und Ausgangsgröße addieren (oder subtrahieren) sich:
+\[
+G_{\mathrm{ges}}(\p)=G_1(\p)\pm G_2(\p).
+\]
+\begin{center}
+\begin{tikzpicture}[node distance=12mm]
+  \node (in) {$u$};
+  \node[branch,right=of in] (b1) {};
+  \node[block,above right=10mm and 12mm of b1] (g1) {$G_1$};
+  \node[block,below right=10mm and 12mm of b1] (g2) {$G_2$};
+  \node[sum,right=26mm of b1] (s) {};
+  \node[right=of s] (out) {$y$};
+
+  \draw[line] (in) -- (b1);
+  \draw[line] (b1) |- (g1);
+  \draw[line] (b1) |- (g2);
+  \draw[line] (g1) -| (s);
+  \draw[line] (g2) -| (s);
+  \draw[line] (s) -- (out);
+
+  \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+  \node at ($(s)+(-3.5mm,-2.2mm)$) {$\pm$};
+\end{tikzpicture}
+\qquad$\Longleftrightarrow$\qquad
+\begin{tikzpicture}[node distance=12mm]
+  \node (in) {$u$};
+  \node[block,right=of in] (g) {$G_1\pm G_2$};
+  \node[right=of g] (out) {$y$};
+  \draw[line] (in) -- (g) -- (out);
+\end{tikzpicture}
+\end{center}
+
+\subsubsection{Regel 3: Rückführung (Feedback)}
+\paragraph{Negative Rückführung (Standardfall):}
+\[
+G_{\mathrm{cl}}(\p)=\frac{X(\p)}{W(\p)}=\frac{G(\p)}{1+G(\p)H(\p)}.
+\]
+\begin{center}
+\begin{tikzpicture}[node distance=12mm]
+  \node (w) {$w$};
+  \node[sum, right=of w] (s) {};
+  \node[block, right=of s] (g) {$G$};
+  \node[right=of g] (x) {$x$};
+  \node[block, below=10mm of g] (h) {$H$};
+
+  \draw[line] (w) -- (s);
+  \draw[line] (s) -- (g) -- (x);
+  \draw[line] (x) |- (h);
+  \draw[line] (h) -| (s);
+
+  \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+  \node at ($(s)+(-3.5mm,-2.2mm)$) {$-$};
+\end{tikzpicture}
+\end{center}
+
+\paragraph{Positive Rückführung:}
+\[
+G_{\mathrm{cl}}(\p)=\frac{G(\p)}{1-G(\p)H(\p)}.
+\]
+
+\subsubsection{Regel 4: Summierstelle über einen Block verschieben}
+Diese Regel ist eine häufige Fehlerquelle: \textbf{Beim Verschieben muss das Signal an jedem Knoten identisch bleiben.}
+
+\paragraph{(a) Summierstelle \(\rightarrow\) nach \(\boldsymbol{G}\) verschieben:}
+Aus \(y=G(u\pm v)\) folgt \(y=Gu\pm Gv\). 
+Wird die Summierung \emph{hinter} \(G\) platziert, muss der zweite Zweig ebenfalls mit \(G\) gewichtet werden.
+\begin{center}
+\begin{tikzpicture}[node distance=12mm]
+  \node (u) {$u$};
+  \node[sum, right=of u] (s) {};
+  \node[block, right=of s] (g) {$G$};
+  \node[right=of g] (y) {$y$};
+  \node (v) [below=10mm of s] {$v$};
+
+  \draw[line] (u) -- (s) -- (g) -- (y);
+  \draw[line] (v) -- (s);
+
+  \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+  \node at ($(s)+(-3.5mm,-2.2mm)$) {$\pm$};
+\end{tikzpicture}
+\qquad$\Longleftrightarrow$\qquad
+\begin{tikzpicture}[node distance=12mm]
+  \node (u) {$u$};
+  \node[block, right=of u] (g1) {$G$};
+  \node[sum, right=of g1] (s) {};
+  \node[right=of s] (y) {$y$};
+  \node (v) [below=10mm of s] {$v$};
+  \node[block, left=of v] (g2) {$G$};
+
+  \draw[line] (u) -- (g1) -- (s) -- (y);
+  \draw[line] (v) -- (g2) -- (s);
+
+  \node at ($(s)+(-3.5mm,2.2mm)$) {$+$};
+  \node at ($(s)+(-3.5mm,-2.2mm)$) {$\pm$};
+\end{tikzpicture}
+\end{center}
+
+\paragraph{(b) Summierstelle \(\leftarrow\) vor \(\boldsymbol{G}\) verschieben:}
+Umgekehrt gilt: Aus \(y=Gu\pm v\) wird \(y=G\bigl(u\pm v/G\bigr)\). 
+Beim Verschieben \emph{vor} \(G\) muss der Zweig, der \(G\) zuvor \emph{nicht} durchlief, mit \(1/G\) skaliert werden.
+
+\subsubsection{Regel 5: Abzweigstelle (Messabgriff) über einen Block verschieben}
+Auch hier gilt: das abgezweigte Signal muss gleich bleiben.
+
+\paragraph{(a) Abzweig \(\rightarrow\) nach \(\boldsymbol{G}\) verschieben:}
+Wird hinter \(G\) abgegriffen, ist das Signal um \(G\) größer; daher muss im Abzweig ein Faktor \(1/G\) eingefügt werden, um das ursprüngliche Signal beizubehalten.
+\begin{center}
+\begin{tikzpicture}[node distance=12mm]
+  \node (u) {$u$};
+  \node[branch, right=of u] (b) {};
+  \node[block, right=of b] (g) {$G$};
+  \node[right=of g] (y) {$y$};
+  \node[below=10mm of b] (tap) {$u$};
+
+  \draw[line] (u) -- (b) -- (g) -- (y);
+  \draw[line] (b) -- (tap);
+\end{tikzpicture}
+\qquad$\Longleftrightarrow$\qquad
+\begin{tikzpicture}[node distance=12mm]
+  \node (u) {$u$};
+  \node[block, right=of u] (g) {$G$};
+  \node[branch, right=of g] (b) {};
+  \node[right=of b] (y) {$y$};
+  \node[below=10mm of b] (tap) {$u$};
+  \node[block, left=of tap] (inv) {$1/G$};
+
+  \draw[line] (u) -- (g) -- (b) -- (y);
+  \draw[line] (b) -- (inv) -- (tap);
+\end{tikzpicture}
+\end{center}
+
+\paragraph{(b) Abzweig \(\leftarrow\) vor \(\boldsymbol{G}\) verschieben:}
+Analog: Beim Verschieben eines Abgriffs \emph{vor} \(G\) wird im Abzweig ein Faktor \(G\) benötigt.
+
+\subsubsection{Regel 6: Innere Schleifen zuerst reduzieren}
+Bei verschachtelten Rückführungen ist es oft am einfachsten,
+\begin{itemize}
+  \item zunächst \emph{innere} Feedback-Schleifen mit Regel~3 zu einem Ersatzblock zusammenzufassen,
+  \item danach Serien- und Parallelblöcke (Regeln~1--2) zu reduzieren,
+  \item und zuletzt äußere Schleifen zu schließen.
+\end{itemize}
+
+\paragraph{Praxis-Tipp:} Zeichne bei jeder Umformung kurz die \emph{Signalgleichungen} an den Knoten (z.\,B.\ \(y=Gu\), \(e=w-x\)). 
+Wenn die Gleichungen identisch bleiben, ist die Umformung korrekt.
+
+
+\end{document}

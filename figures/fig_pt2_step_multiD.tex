@@ -1,0 +1,32 @@
+% Step response of PT2 for different damping ratios D
+\begin{figure}[tb]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.78\textwidth, height=0.45\textwidth,
+      grid=both, grid style={line width=.1pt, draw=gray!20},
+      major grid style={line width=.2pt, draw=gray!35},
+      xlabel={$t/T$}, ylabel={$x_a(t)/K$},
+      xmin=0, xmax=20,
+      ymin=-0.05, ymax=1.8,
+      axis lines=left,
+      legend style={font=\small, at={(0.98,0.02)}, anchor=south east},
+      tick label style={font=\small},
+      label style={font=\small},
+    ]
+      \addplot[thick] table[x=t,y=D0.2,col sep=comma] {data/pt2_step_T1_K1_multiD.csv};
+      \addlegendentry{$D=0{,}2$}
+      \addplot[thick, densely dashed] table[x=t,y=D0.5,col sep=comma] {data/pt2_step_T1_K1_multiD.csv};
+      \addlegendentry{$D=0{,}5$}
+      \addplot[thick, dashdotted] table[x=t,y=D0.8,col sep=comma] {data/pt2_step_T1_K1_multiD.csv};
+      \addlegendentry{$D=0{,}8$}
+      \addplot[thick, dotted] table[x=t,y=D1.0,col sep=comma] {data/pt2_step_T1_K1_multiD.csv};
+      \addlegendentry{$D=1{,}0$}
+      \addplot[thick] table[x=t,y=D1.2,col sep=comma] {data/pt2_step_T1_K1_multiD.csv};
+      \addlegendentry{$D=1{,}2$}
+      \addplot[dashed] coordinates {(0,1) (20,1)};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Sprungantwort eines normierten PT2-Glieds ($T=1$, $K=1$) f\"ur unterschiedliche D\"ampfungsma\ss e $D$. Unterd\"ampfung ($D<1$) f\"uhrt zu \"Uberschwingen und Schwingungen; bei $D\ge1$ verschwindet das \"Uberschwingen.}
+  \label{fig:pt2_step_multiD}
+\end{figure}

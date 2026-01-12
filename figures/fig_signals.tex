@@ -1,0 +1,40 @@
+
+% Typical input signals (step, ramp, rectangular pulse)
+\begin{figure}[tb]
+  \centering
+  \begin{tikzpicture}
+    \begin{groupplot}[
+      group style={group size=2 by 2, horizontal sep=1.4cm, vertical sep=1.0cm},
+      width=0.46\textwidth, height=0.28\textwidth,
+      grid=both, grid style={line width=.1pt, draw=gray!20},
+      major grid style={line width=.2pt, draw=gray!35},
+      xlabel={$t$}, xmin=-0.5, xmax=2,
+      ymin=-0.1, ymax=2.1,
+      axis lines=left,
+      tick label style={font=\small},
+      label style={font=\small},
+      title style={font=\small},
+    ]
+      \nextgroupplot[title={Sprung $\sigma(t)$}, ylabel={$x_e(t)$}]
+        \addplot[thick] table[x=t,y=step,col sep=comma] {data/signals_step_ramp_pulse.csv};
+        \addplot[only marks, mark=*, mark size=1.2pt] coordinates {(0,0)}; % discontinuity marker
+      \nextgroupplot[title={Rampe $r(t)=t\,\sigma(t)$}]
+        \addplot[thick] table[x=t,y=ramp,col sep=comma] {data/signals_step_ramp_pulse.csv};
+      \nextgroupplot[title={Rechteckimpuls $\sigma(t)-\sigma(t-t_0)$}]
+        \addplot[thick] table[x=t,y=pulse,col sep=comma] {data/signals_step_ramp_pulse.csv};
+        \addplot[dashed] coordinates {(1,0) (1,1)};
+      \nextgroupplot[title={Diracimpuls $\delta(t)$}]
+        \addplot[thick, ->] coordinates {(0,0) (0,1.6)};
+        \addplot[only marks, mark=*, mark size=1.2pt] coordinates {(0,0)};
+        \node[anchor=west, font=\small] at (axis cs:0.05,1.55) {$\delta(t)$};
+    \end{groupplot}
+  \end{tikzpicture}
+  \caption{Typische Eingangssignale im Zeitbereich (normiert, $t_0=1$) inklusive Diracimpuls.}
+  \label{fig:signals_typical}
+\end{figure}
+
+
+
+
+
+

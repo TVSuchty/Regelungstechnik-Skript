@@ -1,0 +1,49 @@
+% kapitel/reglerstrukturen-realisierung.tex
+\section{Reglerstrukturen (PD, PID) und Realisierungshinweise}
+\subsection{PD- und PID-Formen}
+\paragraph{PD-Regler.}
+\[
+  G_R(p)=K_{PR}+K_{DR}p
+  =K_{PR}\left(1+T_V p\right),
+  \qquad
+  T_V=\frac{K_{DR}}{K_{PR}}.
+\]
+
+\paragraph{Realisierbarer PD (mit Realisierungspol).}
+Ein idealer Differenzierer verst\"arkt hohe Frequenzen unbegrenzt; daher wird h\"aufig ein Pol eingef\"uhrt, z.\,B.
+\[
+  G_R(p)=K_{PR}\left(1+\frac{T_V p}{1+T_N p}\right),
+\]
+wobei $T_N$ die Zeitkonstante des Realisierungspols ist.
+
+\paragraph{PID-Regler (ideal).}
+\[
+  G_R(p)=K_{PR}+\frac{K_{IR}}{p}+K_{DR}p
+  =K_{PR}\left(1+\frac{1}{T_N p}+T_V p\right),
+  \qquad
+  T_N=\frac{K_{PR}}{K_{IR}}.
+\]
+
+\subsection{(Invertierender) OPV-Grundsatz}
+F\"ur einen idealen invertierenden Operationsverst\"arker gilt im Laplace-Bereich:
+\[
+  \frac{U_a(p)}{U_e(p)}=-\frac{Z_2(p)}{Z_1(p)}.
+\]
+Durch geeignete Wahl von $Z_1,Z_2$ (Widerst\"ande/Kondensatoren) lassen sich P-, I-, D- und DT1-Verhalten realisieren.
+
+\begin{center}
+  \begin{tabular}{@{}llll@{}}
+    \toprule
+    Funktion & $Z_1(p)$ & $Z_2(p)$ & $G(p)=-Z_2/Z_1$ \\
+    \midrule
+    P   & $R_1$ & $R_0$ & $-\dfrac{R_0}{R_1}$ \\
+    I   & $R_1$ & $\dfrac{1}{C_0p}$ & $-\dfrac{1}{R_1C_0p}$ \\
+    D   & $\dfrac{1}{C_1p}$ & $R_0$ & $-R_0C_1p$ \\
+    DT1 & $R_1+\dfrac{1}{C_1p}$ & $R_0$ & $-\dfrac{R_0C_1p}{1+R_1C_1p}$ \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+\paragraph{Beispiel (I-Glied).}
+Mit $R_1=10\,\text{k}\Omega$ und $C_0=1\,\mu\text{F}$ ergibt sich
+$G(p)=-\dfrac{1}{R_1C_0p}=-\dfrac{1}{0{,}01\,p}$.

@@ -1,0 +1,224 @@
+% kapitel/stabilitaet-linearer-regelkreise.tex
+\section{Stabilit\"at linearer Regelkreise}
+\subsection{Charakteristische Gleichung}
+Ein LZI-System ist (asymptotisch) stabil, wenn alle Pole strikt in der linken Halbebene liegen
+($\Ree(p_i)<0$). F\"ur den einschleifigen Regelkreis folgt die charakteristische Gleichung aus dem Nenner:
+\[
+  1+G_0(p)=0.
+\]
+
+\subsection{Nyquist-Idee (qualitativ)}
+F\"ur sinusf\"ormige Anregung sind im eingeschwungenen Zustand alle Signale sinusf\"ormig
+(mit anderer Amplitude und Phasenlage). Mit $\omega_k$ bezeichnen wir eine beliebige abgetastete
+Frequenz. Wird bei einer Frequenz $\omega_k$ eine Phasendrehung
+von $\varphi(\omega_k)=-180^\circ$ erreicht, wirkt die R\"uckkopplung wie positive R\"uckkopplung.
+Dann entscheidet der Betrag:
+\[
+  \lvert G_0(\jj\omega_k)\rvert
+  \begin{cases}
+    <1 & \Rightarrow \text{Schwingungen klingen ab (stabil)},\\
+    =1 & \Rightarrow \text{Grenzstabilit\"at (Dauerschwingung)},\\
+    >1 & \Rightarrow \text{Schwingungen wachsen an (instabil)}.
+  \end{cases}
+\]
+F\"ur Systeme ohne Pole in der rechten Halbebene kann man in vielen Anwendungen die vereinfachte
+Schnittbedingung nutzen: An Frequenzen mit $\Imm(G_0(\jj\omega))=0$ muss
+$\Ree(G_0(\jj\omega))>-1$ gelten.
+
+\paragraph{Warum die Bedingung $\Ree(G_0(\jj\omega))>-1$?}
+Auf der reellen Achse ($\Imm=0$) hat $G_0(\jj\omega)$ die Phasenlage $\varphi=0^\circ$ oder
+$-180^\circ$. Erreicht die Kurve dort $\Ree\le -1$, dann liegt der kritische Punkt $-1+\jj0$ auf
+oder links des aktuellen Kurvenpunktes. Das entspricht Betrag $\lvert G_0\rvert\ge 1$ bei
+$\varphi=-180^\circ$ und damit genau der Grenze (bzw.\ dem \"Ubertritt) von stabil zu instabil:
+$1+G_0(\jj\omega)=0$ ist erf\"ullt (der Punkt $-1+\jj0$ wird getroffen), oder $-1$ wird umschlungen.
+Liegt der Realteil dagegen gr\"o\ss er als $-1$, befindet sich die Ortskurve auf der ``stabilen''
+Seite des kritischen Punkts, d.\,h.\ bei $-180^\circ$ ist der Betrag kleiner als 1 und der
+Nyquist-Test bleibt erf\"ullt.
+
+\begin{center}
+  \begin{tikzpicture}[scale=1.0]
+    % axes
+    \draw[->,thin] (-2.5,0) -- (1.5,0) node[right] {$\Ree$};
+    \draw[->,thin] (0,-1.4) -- (0,1.4) node[above] {$\Imm$};
+    % critical point -1
+    \filldraw (-1,0) circle (1.2pt);
+    \node[below left] at (-1,0) {$-1$};
+    % stable crossing (Re>-1)
+    \draw[line width=0.9pt,blue] plot[smooth] coordinates {(-0.6,-1.0) (-0.7,-0.4) (-0.8,0) (-0.7,0.5) (-0.4,1.0)};
+    \node[blue,align=left] at (-0.15,1.05) {\footnotesize stabiler Schnitt:\\[-1pt] $|G_0|<1$ bei $-180^\circ$};
+    % unstable crossing (Re<=-1)
+    \draw[line width=0.9pt,red,dashed] plot[smooth] coordinates {(-1.4,-1.0) (-1.2,-0.4) (-1.1,0) (-1.2,0.5) (-1.5,1.0)};
+    \node[red,align=left] at (-1.95,1.05) {\footnotesize instabiler Schnitt:\\[-1pt] $|G_0|\ge 1$ bei $-180^\circ$};
+    % arrows showing direction (increasing omega)
+    \draw[blue,-Latex] (-0.74,-0.1) -- (-0.78,0.15);
+    \draw[red,-Latex] (-1.16,-0.1) -- (-1.20,0.15);
+  \end{tikzpicture}
+\end{center}
+Die blaue Kurve schneidet die reelle Achse rechts von $-1$ ($|G_0|<1$ bei $-180^\circ$) und umschlingt
+$-1$ nicht: der geschlossene Kreis bleibt stabil. Die rote, gestrichelte Kurve kreuzt links von $-1$
+($|G_0|\ge 1$ bei $-180^\circ$); damit wird $-1$ getroffen oder umschlungen und mindestens ein
+geschlossener Pol wandert in die rechte Halbebene (Instabilit\"at).
+
+\subsection{Nyquist-Diagramm und Nyquist-Kriterium}
+\paragraph{Nyquist-Diagramm (Nyquist-Ortskurve).}
+F\"ur die Kreisverst\"arkung (aufgeschnittener Regelkreis)
+\[
+  G_0(p)=G_R(p)\,G_S(p)
+\]
+hei\ss t \emph{Nyquist-Diagramm} die Ortskurve der komplexen Werte $G_0(\jj\omega)$
+in der $\Ree$--$\Imm$-Ebene, wenn $\omega$ von $0$ bis $\infty$ l\"auft.
+F\"ur Systeme mit reellen Koeffizienten ergibt sich die vollst\"andige Nyquist-Kurve
+durch Spiegelung an der reellen Achse.
+
+\paragraph{Stabilit\"atsfrage \"uber $1+G_0(p)=0$.}
+F\"ur den einschleifigen Regelkreis mit Einheitsr\"uckf\"uhrung ist die charakteristische Gleichung
+\[
+  1+G_0(p)=0.
+\]
+Die Nullstellen von $1+G_0(p)$ sind die Pole des geschlossenen Kreises
+(Stabilit\"at $\Leftrightarrow$ alle Pole in der linken Halbebene).
+
+\paragraph{Nyquist-Kriterium (Vorzeichenkonvention).}
+Sei $P$ die Anzahl der Pole von $G_0(p)$ in der rechten Halbebene und $Z$ die Anzahl der
+Nullstellen von $1+G_0(p)$ in der rechten Halbebene (instabile geschlossene Pole).
+Weiter sei $N$ die Anzahl der \emph{Uhrzeigersinn}-Umschlingungen des Punktes $-1+\jj0$
+durch die vollst\"andige Nyquist-Kurve von $G_0(\jj\omega)$. Dann gilt
+\[
+  N=Z-P
+  \qquad\Leftrightarrow\qquad
+  Z=N+P.
+\]
+Damit folgt unmittelbar:
+\[
+  \text{geschlossener Kreis stabil} \;\;\Leftrightarrow\;\; Z=0 \;\;\Leftrightarrow\;\; N=-P.
+\]
+Insbesondere: Ist der aufgeschnittene Kreis bereits stabil ($P=0$), dann ist der
+geschlossene Kreis genau dann stabil, wenn die Nyquist-Kurve $-1$ \emph{nicht}
+im Uhrzeigersinn umschlingt ($N=0$).
+Ein formaler Beweis des Nyquist-Kriteriums (über die Argument Principle) wird hier nicht geführt;
+wir nutzen das Ergebnis als praktisches Stabilitätswerkzeug.
+
+\paragraph{Beispiel.}
+Abbildung~\ref{fig:nyquist_example} zeigt
+$G_0(p)=\dfrac{K}{(1+p)(1+0{,}2p)(1+0{,}05p)}$.
+Bei $K\approx31{,}5$ verl\"auft die Ortskurve durch $-1$ (Grenzstabilit\"at);
+f\"ur gr\"o\ss eres $K$ entstehen instabile Pole im geschlossenen Kreis.
+\begin{itemize}[itemsep=2pt]
+  \item $K=20$ (durchgezogene Linie): Ortskurve bleibt rechts von $-1$ und umschlingt $-1$ nicht
+    ($N=0$, $P=0 \Rightarrow Z=0$) \(\Rightarrow\) stabil.
+  \item $K\approx31{,}5$ (gestrichelt): Ortskurve l\"auft durch $-1$ \(\Rightarrow\) Grenzfall, der
+    geschlossene Kreis besitzt Pole auf der imagin\"aren Achse (Dauerschwingung).
+  \item $K=40$ (punktiert): Ortskurve umschlingt $-1$ im Uhrzeigersinn einmal
+    ($N=1$, $P=0 \Rightarrow Z=1$) \(\Rightarrow\) ein instabiler Pol im geschlossenen Kreis.
+\end{itemize}
+
+\input{figures/fig_nyquist_3lag.tex}
+
+\paragraph{Praktische Gr\"o\ss en: Verst\"arkungs- und Phasenreserve.}
+Aus dem Nyquist- bzw.\ Bode-Diagramm lassen sich Stabilit\"atsreserven ablesen:
+\begin{itemize}[itemsep=2pt]
+  \item \textbf{Durchtrittsfrequenz} $\omega_c$: $|G_0(\jj\omega_c)|=1$.
+    \textbf{Phasenreserve} $\varphi_m = 180^\circ + \arg(G_0(\jj\omega_c))$.
+  \item \textbf{Phasendurchtritt} $\omega_\pi$: $\arg(G_0(\jj\omega_\pi))=-180^\circ$ (falls vorhanden).
+    \textbf{Verst\"arkungsreserve} $G_m = 1/|G_0(\jj\omega_\pi)|$
+    (in dB: $20\log_{10}G_m$).
+\end{itemize}
+Gro\ss e Reserven bedeuten typischerweise: Die Nyquist-Kurve bleibt deutlich vom kritischen
+Punkt $-1$ entfernt.
+
+\subsection{Hurwitz-Kriterium (Polynomkriterium)}
+Bringt man die charakteristische Gleichung in die Polynomform
+\[
+  a_0+a_1p+a_2p^2+\cdots+a_np^n=0,
+\]
+dann ist eine notwendige Bedingung f\"ur Stabilit\"at $a_i>0$ f\"ur alle $i$.
+Das Hurwitz-Kriterium liefert eine notwendige und hinreichende Bedingung:
+Alle Hurwitz-Determinanten m\"ussen positiv sein.
+
+\paragraph{Hurwitz-Matrix (Schema).}
+\[
+  H=
+  \begin{pmatrix}
+    a_1 & a_3 & a_5 & a_7 & \cdots\\
+    a_0 & a_2 & a_4 & a_6 & \cdots\\
+    0   & a_1 & a_3 & a_5 & \cdots\\
+    0   & a_0 & a_2 & a_4 & \cdots\\
+    \vdots & \vdots & \vdots & \vdots & \ddots
+  \end{pmatrix}
+\]
+Die Hurwitz-Determinanten $H_k$ sind die Determinanten der linken oberen $k\times k$-Untermatrix, z.\,B.:
+\[
+  H_1 = \begin{vmatrix} a_1 \end{vmatrix} = a_1,\qquad
+  H_2 = \begin{vmatrix} a_1 & a_3 \\[4pt] a_0 & a_2 \end{vmatrix} = a_1 a_2 - a_0 a_3,
+  \qquad
+  H_3 = \begin{vmatrix}
+    a_1 & a_3 & a_5 \\
+    a_0 & a_2 & a_4 \\
+    0   & a_1 & a_3
+  \end{vmatrix}.
+\]
+Im Allgemeinen gilt: $H_k$ ist die Determinante der $k\times k$-Untermatrix in der linken oberen Ecke von $H$.
+Stabilit\"at $\Leftrightarrow H_k>0$ f\"ur alle $k=1,\ldots,n$.
+
+\paragraph{Praktische Kurzform ($n=3$).}
+\[
+  a_0>0,\ a_1>0,\ a_2>0,\ a_3>0
+  \quad\text{und}\quad
+  a_1a_2>a_0a_3.
+\]
+Diese Kurzform ist genau die Auswertung von $H_1>0$, $H_2>0$ und $H_3>0$ f\"ur ein Polynom 3.\ Ordnung:
+Positive Koeffizienten stellen $H_1$ sicher, $a_1a_2>a_0a_3$ entspricht $H_2>0$, und bei drei Polynomen
+gen\"ugen damit alle Bedingungen des Hurwitz-Kriteriums.
+
+\paragraph{Beispiel ($n=2$).}
+F\"ur $p^2+2p+5=0$ gilt $a_2=1$, $a_1=2$, $a_0=5$.
+Alle Koeffizienten sind positiv, daher ist das System stabil.
+
+\subsection{Beispiel: PT2-Strecke mit PI-Regler (Stabilit\"atsgebiet)}
+Sei
+\[
+  G_S(p)=\frac{K_S}{1+2DTp+T^2p^2},
+  \qquad
+  G_R(p)=K_{PR}+\frac{K_{IR}}{p}.
+\]
+Dann ist
+\[
+  G_0(p)=G_R(p)G_S(p)=\left(K_{PR}+\frac{K_{IR}}{p}\right)\frac{K_S}{1+2DTp+T^2p^2}.
+\]
+Charakteristische Gleichung:
+\[
+  1+G_0(p)=0
+  \ \Leftrightarrow\
+  p(1+2DTp+T^2p^2)+K_S K_{PR}\,p + K_S K_{IR}=0.
+\]
+Damit ergibt sich das Stabilit\"atspolynom 3.\ Ordnung:
+\[
+  a_3p^3+a_2p^2+a_1p+a_0=0
+\]
+mit
+\[
+  a_3=T^2,\quad a_2=2DT,\quad a_1=1+K_S K_{PR},\quad a_0=K_S K_{IR}.
+\]
+Hurwitz ($n=3$) liefert:
+\[
+  K_{IR}>0,\qquad
+  1+K_S K_{PR}>0\ \Leftrightarrow\ K_{PR}>-\frac{1}{K_S},
+\]
+\[
+  (1+K_S K_{PR})\,2DT > (K_S K_{IR})\,T^2
+  \ \Leftrightarrow\
+  K_{IR}<\frac{2D}{K_S T}\,(1+K_S K_{PR}).
+\]
+Diese Ungleichungen sind exakt die Bedingungen $H_1>0$, $H_2>0$, $H_3>0$ des Hurwitz-Kriteriums
+f\"ur das Polynom 3.\ Ordnung: $H_1>0$ fordert $a_1>0$ ($\Rightarrow K_{PR}>-1/K_S$), $a_0>0$ liefert
+$K_{IR}>0$, und $H_2>0$ ergibt die Schranke $K_{IR}<\tfrac{2D}{K_S T}(1+K_S K_{PR})$.
+Damit l\"asst sich das Stabilit\"atsgebiet im $(K_{PR},K_{IR})$-Diagramm grafisch darstellen.
+
+\paragraph{Beispielhafte Parameterwahl.}
+F\"ur $K_S=1$, $D=0{,}5$, $T=1$ wird daraus:
+\[
+  K_{IR}>0,\qquad K_{PR}>-1,\qquad K_{IR}<1+K_{PR}.
+\]
+Damit ist das Stabilit\"atsgebiet ein einfaches Dreieck (Abbildung~\ref{fig:stability_region_pi_pt2}).
+
+\input{figures/fig_stability_region_pi_pt2.tex}

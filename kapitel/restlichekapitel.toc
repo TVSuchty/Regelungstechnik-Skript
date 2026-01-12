@@ -1,0 +1,58 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{\numberline {1}Analoge Übertragungsglieder (ÜTG)}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Begriffe und Eigenschaften}{2}{subsection.1.1}%
+\contentsline {paragraph}{\nonumberline Linearität (Superpositionsprinzip).}{2}{paragraph*.1}%
+\contentsline {paragraph}{\nonumberline Zeitinvarianz.}{3}{paragraph*.2}%
+\contentsline {section}{\numberline {2}Typische Signale}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Aperiodische Eingangssignale}{3}{subsection.2.1}%
+\contentsline {paragraph}{\nonumberline Sprungfunktion (Einheitssprung).}{3}{paragraph*.3}%
+\contentsline {paragraph}{\nonumberline Rechteckimpuls.}{3}{paragraph*.4}%
+\contentsline {paragraph}{\nonumberline Rampe.}{3}{paragraph*.5}%
+\contentsline {subsection}{\numberline {2.2}Impulsfunktion (Dirac-Stoß)}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Antwortfunktionen eines LZI-ÜTG}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Periodische Eingangssignale}{4}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Mathematische Beschreibung im Zeitbereich}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Lineare Differentialgleichung mit konstanten Koeffizienten}{4}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Beispiele: typische ÜTG}{4}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Laplace-Transformation und Übertragungsfunktion}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Exponentialansatz und Laplace-Operator}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Definition der Laplace-Transformation}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Übertragungsfunktion (ÜTF)}{5}{subsection.4.3}%
+\contentsline {paragraph}{\nonumberline Beispiel (PT1).}{5}{paragraph*.6}%
+\contentsline {subsection}{\numberline {4.4}Übersicht: DGL zu ÜTF}{5}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Beschreibung im Frequenzbereich}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Frequenzgang}{5}{subsection.5.1}%
+\contentsline {paragraph}{\nonumberline Rechenregel (komplexe Brüche).}{6}{paragraph*.7}%
+\contentsline {subsection}{\numberline {5.2}Ortskurve}{6}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Bode-Diagramme}{6}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Amplitude in Dezibel}{6}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Beispiel: PT1-Glied}{6}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Typische lineare ÜTG (Auswahl)}{7}{section.7}%
+\contentsline {subsection}{\numberline {7.1}PT2-Glied (2.\ Ordnung)}{7}{subsection.7.1}%
+\contentsline {paragraph}{\nonumberline Eigenfrequenzen.}{7}{paragraph*.8}%
+\contentsline {paragraph}{\nonumberline Überschwingen (Sprungantwort, unterdämpft $0<D<1$).}{7}{paragraph*.9}%
+\contentsline {subsection}{\numberline {7.2}DT1-Glied (realisierbares D-Glied)}{7}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Zusammenschaltung von ÜTG und Blockschaltbilder}{7}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Grundelemente}{7}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Einschleifiger Regelkreis: Standardformen}{8}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Struktur und Grundgleichungen}{8}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Führungs- und Störübertragungsfunktion}{8}{subsection.9.2}%
+\contentsline {paragraph}{\nonumberline Führungsübertragung ($z=0$).}{8}{paragraph*.10}%
+\contentsline {paragraph}{\nonumberline Störübertragung ($w=0$).}{8}{paragraph*.11}%
+\contentsline {subsection}{\numberline {9.3}Statisches Verhalten, Regelfaktor}{8}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}P-, I- und PI-Regler (Grundideen)}{8}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Stabilität linearer Regelkreise}{9}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Charakteristische Gleichung}{9}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Nyquist-Idee (qualitativ)}{9}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Hurwitz-Kriterium (Polynomkriterium)}{9}{subsection.10.3}%
+\contentsline {paragraph}{\nonumberline Hurwitz-Matrix (Schema).}{9}{paragraph*.12}%
+\contentsline {paragraph}{\nonumberline Praktische Kurzform ($n=3$).}{10}{paragraph*.13}%
+\contentsline {subsection}{\numberline {10.4}Beispiel: PT2-Strecke mit PI-Regler (Stabilitätsgebiet)}{10}{subsection.10.4}%
+\contentsline {section}{\numberline {11}Reglerstrukturen (PD, PID) und Realisierungshinweise}{10}{section.11}%
+\contentsline {subsection}{\numberline {11.1}PD- und PID-Formen}{10}{subsection.11.1}%
+\contentsline {paragraph}{\nonumberline PD-Regler.}{10}{paragraph*.14}%
+\contentsline {paragraph}{\nonumberline Realisierbarer PD (mit Realisierungspol).}{10}{paragraph*.15}%
+\contentsline {paragraph}{\nonumberline PID-Regler (ideal).}{11}{paragraph*.16}%
+\contentsline {subsection}{\numberline {11.2}(Invertierender) OPV-Grundsatz}{11}{subsection.11.2}%
+\contentsline {section}{\numberline {A}Mini-Formelsammlung (Laplace)}{11}{appendix.A}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pdf2xml SYSTEM "pdf2xml.dtd">
+
+<pdf2xml producer="poppler" version="24.04.0">
+<page number="20" position="absolute" top="0" left="0" height="1262" width="892">
+	<fontspec id="0" size="16" family="GOJMDG+LMRoman10" color="#000000"/>
+	<fontspec id="1" size="16" family="GZORGJ+LMMathItalic10" color="#000000"/>
+	<fontspec id="2" size="12" family="RPALPW+LMMathItalic8" color="#000000"/>
+	<fontspec id="3" size="16" family="EIKKXP+LMMathSymbols10" color="#000000"/>
+	<fontspec id="4" size="12" family="MCVKOF+LMRoman8" color="#000000"/>
+	<fontspec id="5" size="9" family="TTSZHH+LMMathItalic6" color="#000000"/>
+	<fontspec id="6" size="16" family="TBCAEV+LMRoman10" color="#000000"/>
+	<fontspec id="7" size="16" family="GOJMDG+LMRoman10" color="#0000ff"/>
+	<fontspec id="8" size="15" family="EIKKXP+LMMathSymbols10" color="#000000"/>
+	<fontspec id="9" size="15" family="GOJMDG+LMRoman10" color="#000000"/>
+	<fontspec id="10" size="15" family="GZORGJ+LMMathItalic10" color="#000000"/>
+	<fontspec id="11" size="10" family="HUVCNM+LMMathItalic7" color="#000000"/>
+	<fontspec id="12" size="22" family="EBSTYJ+LMRoman12" color="#000000"/>
+	<fontspec id="13" size="18" family="EBSTYJ+LMRoman12" color="#000000"/>
+	<fontspec id="14" size="15" family="TTPWHL+LMMathExtension10" color="#000000"/>
+<text top="94" left="94" width="70" height="21" font="0">Hurwitz (</text>
+<text top="99" left="163" width="10" height="15" font="1"><i>n</i></text>
+<text top="94" left="177" width="83" height="21" font="0">= 3) liefert:</text>
+<text top="142" left="270" width="14" height="15" font="1"><i>K</i></text>
+<text top="148" left="284" width="16" height="11" font="2"><i>IR</i></text>
+<text top="142" left="306" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="138" left="323" width="8" height="21" font="0">0</text>
+<text top="142" left="331" width="5" height="15" font="1"><i>,</i></text>
+<text top="138" left="371" width="25" height="21" font="0">1 +</text>
+<text top="142" left="399" width="14" height="15" font="1"><i>K</i></text>
+<text top="148" left="413" width="8" height="11" font="2"><i>S</i></text>
+<text top="142" left="422" width="14" height="15" font="1"><i>K</i></text>
+<text top="148" left="436" width="19" height="11" font="2"><i>P R</i></text>
+<text top="142" left="461" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="138" left="478" width="8" height="21" font="0">0</text>
+<text top="141" left="496" width="16" height="15" font="3">⇔</text>
+<text top="142" left="523" width="14" height="15" font="1"><i>K</i></text>
+<text top="148" left="537" width="19" height="11" font="2"><i>P R</i></text>
+<text top="142" left="561" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="141" left="579" width="13" height="15" font="3">−</text>
+<text top="127" left="601" width="8" height="21" font="0">1</text>
+<text top="153" left="593" width="14" height="15" font="1"><i>K</i></text>
+<text top="159" left="607" width="8" height="11" font="2"><i>S</i></text>
+<text top="142" left="618" width="5" height="15" font="1"><i>,</i></text>
+<text top="192" left="208" width="31" height="21" font="0">(1 +</text>
+<text top="196" left="242" width="14" height="15" font="1"><i>K</i></text>
+<text top="202" left="256" width="8" height="11" font="2"><i>S</i></text>
+<text top="196" left="265" width="14" height="15" font="1"><i>K</i></text>
+<text top="202" left="279" width="19" height="11" font="2"><i>P R</i></text>
+<text top="192" left="299" width="17" height="21" font="0">) 2</text>
+<text top="196" left="317" width="43" height="15" font="1"><i>DT &gt;</i></text>
+<text top="192" left="364" width="6" height="21" font="0">(</text>
+<text top="196" left="371" width="14" height="15" font="1"><i>K</i></text>
+<text top="202" left="385" width="8" height="11" font="2"><i>S</i></text>
+<text top="196" left="394" width="14" height="15" font="1"><i>K</i></text>
+<text top="202" left="408" width="16" height="11" font="2"><i>IR</i></text>
+<text top="192" left="424" width="6" height="21" font="0">)</text>
+<text top="196" left="434" width="10" height="15" font="1"><i>T</i></text>
+<text top="192" left="445" width="6" height="11" font="4">2</text>
+<text top="195" left="462" width="16" height="15" font="3">⇔</text>
+<text top="196" left="489" width="14" height="15" font="1"><i>K</i></text>
+<text top="202" left="503" width="16" height="11" font="2"><i>IR</i></text>
+<text top="196" left="524" width="13" height="15" font="1"><i>&lt;</i></text>
+<text top="181" left="550" width="8" height="21" font="0">2</text>
+<text top="185" left="558" width="14" height="15" font="1"><i>D</i></text>
+<text top="207" left="543" width="14" height="15" font="1"><i>K</i></text>
+<text top="213" left="557" width="8" height="11" font="2"><i>S</i></text>
+<text top="207" left="566" width="10" height="15" font="1"><i>T</i></text>
+<text top="192" left="583" width="31" height="21" font="0">(1 +</text>
+<text top="196" left="617" width="14" height="15" font="1"><i>K</i></text>
+<text top="202" left="631" width="8" height="11" font="2"><i>S</i></text>
+<text top="196" left="640" width="14" height="15" font="1"><i>K</i></text>
+<text top="202" left="654" width="19" height="11" font="2"><i>P R</i></text>
+<text top="192" left="674" width="6" height="21" font="0">)</text>
+<text top="196" left="681" width="5" height="15" font="1"><i>.</i></text>
+<text top="228" left="94" width="353" height="21" font="0">Diese Ungleichungen sind exakt die Bedingungen</text>
+<text top="232" left="452" width="14" height="15" font="1"><i>H</i></text>
+<text top="238" left="465" width="6" height="11" font="4">1</text>
+<text top="232" left="477" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="228" left="494" width="13" height="21" font="0">0,</text>
+<text top="232" left="513" width="14" height="15" font="1"><i>H</i></text>
+<text top="238" left="526" width="6" height="11" font="4">2</text>
+<text top="232" left="538" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="228" left="555" width="13" height="21" font="0">0,</text>
+<text top="232" left="573" width="14" height="15" font="1"><i>H</i></text>
+<text top="238" left="587" width="6" height="11" font="4">3</text>
+<text top="232" left="599" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="228" left="616" width="183" height="21" font="0">0 des Hurwitz-Kriteriums</text>
+<text top="248" left="94" width="215" height="21" font="0">für das Polynom 3. Ordnung:</text>
+<text top="253" left="314" width="14" height="15" font="1"><i>H</i></text>
+<text top="258" left="328" width="6" height="11" font="4">1</text>
+<text top="253" left="340" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="248" left="358" width="64" height="21" font="0">0 fordert</text>
+<text top="253" left="427" width="9" height="15" font="1"><i>a</i></text>
+<text top="258" left="436" width="6" height="11" font="4">1</text>
+<text top="253" left="448" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="248" left="466" width="21" height="21" font="0">0 (</text>
+<text top="252" left="486" width="16" height="15" font="3">⇒</text>
+<text top="253" left="508" width="14" height="15" font="1"><i>K</i></text>
+<text top="258" left="522" width="19" height="11" font="2"><i>P R</i></text>
+<text top="253" left="547" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="252" left="565" width="13" height="15" font="3">−</text>
+<text top="248" left="578" width="8" height="21" font="0">1</text>
+<text top="253" left="586" width="22" height="15" font="1"><i>/K</i></text>
+<text top="258" left="608" width="8" height="11" font="2"><i>S</i></text>
+<text top="248" left="617" width="11" height="21" font="0">),</text>
+<text top="253" left="634" width="9" height="15" font="1"><i>a</i></text>
+<text top="258" left="643" width="6" height="11" font="4">0</text>
+<text top="253" left="655" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="248" left="673" width="56" height="21" font="0">0 liefert</text>
+<text top="253" left="735" width="14" height="15" font="1"><i>K</i></text>
+<text top="258" left="749" width="16" height="11" font="2"><i>IR</i></text>
+<text top="253" left="771" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="248" left="789" width="13" height="21" font="0">0,</text>
+<text top="269" left="94" width="27" height="21" font="0">und</text>
+<text top="273" left="126" width="14" height="15" font="1"><i>H</i></text>
+<text top="278" left="139" width="6" height="11" font="4">2</text>
+<text top="273" left="151" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="269" left="168" width="149" height="21" font="0">0 ergibt die Schranke</text>
+<text top="273" left="323" width="14" height="15" font="1"><i>K</i></text>
+<text top="278" left="337" width="16" height="11" font="2"><i>IR</i></text>
+<text top="273" left="358" width="13" height="15" font="1"><i>&lt;</i></text>
+<text top="270" left="383" width="6" height="11" font="4">2</text>
+<text top="269" left="389" width="10" height="11" font="2"><i>D</i></text>
+<text top="282" left="377" width="11" height="11" font="2"><i>K</i></text>
+<text top="286" left="388" width="7" height="8" font="5"><i>S</i></text>
+<text top="282" left="396" width="7" height="11" font="2"><i>T</i></text>
+<text top="269" left="407" width="30" height="21" font="0">(1 +</text>
+<text top="273" left="441" width="14" height="15" font="1"><i>K</i></text>
+<text top="278" left="455" width="8" height="11" font="2"><i>S</i></text>
+<text top="273" left="464" width="14" height="15" font="1"><i>K</i></text>
+<text top="278" left="478" width="19" height="11" font="2"><i>P R</i></text>
+<text top="269" left="498" width="301" height="21" font="0">). Damit lässt sich das Stabilitätsgebiet im</text>
+<text top="289" left="92" width="6" height="21" font="0">(</text>
+<text top="293" left="98" width="14" height="15" font="1"><i>K</i></text>
+<text top="299" left="112" width="19" height="11" font="2"><i>P R</i></text>
+<text top="293" left="132" width="21" height="15" font="1"><i>, K</i></text>
+<text top="299" left="153" width="16" height="11" font="2"><i>IR</i></text>
+<text top="289" left="170" width="226" height="21" font="0">)-Diagramm grafisch darstellen.</text>
+<text top="337" left="94" width="241" height="14" font="6"><b>Beispielhafte Parameterwahl.</b></text>
+<text top="332" left="351" width="26" height="21" font="0">Für</text>
+<text top="336" left="382" width="14" height="15" font="1"><i>K</i></text>
+<text top="342" left="396" width="8" height="11" font="2"><i>S</i></text>
+<text top="332" left="410" width="30" height="21" font="0">= 1,</text>
+<text top="336" left="446" width="14" height="15" font="1"><i>D</i></text>
+<text top="332" left="464" width="25" height="21" font="0">= 0</text>
+<text top="336" left="490" width="5" height="15" font="1"><i>,</i></text>
+<text top="332" left="494" width="13" height="21" font="0">5,</text>
+<text top="336" left="512" width="10" height="15" font="1"><i>T</i></text>
+<text top="332" left="529" width="120" height="21" font="0">= 1 wird daraus:</text>
+<text top="373" left="278" width="14" height="15" font="1"><i>K</i></text>
+<text top="379" left="292" width="16" height="11" font="2"><i>IR</i></text>
+<text top="373" left="313" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="369" left="331" width="8" height="21" font="0">0</text>
+<text top="373" left="339" width="5" height="15" font="1"><i>,</i></text>
+<text top="373" left="379" width="14" height="15" font="1"><i>K</i></text>
+<text top="379" left="393" width="19" height="11" font="2"><i>P R</i></text>
+<text top="373" left="417" width="13" height="15" font="1"><i>&gt;</i></text>
+<text top="372" left="435" width="13" height="15" font="3">−</text>
+<text top="369" left="447" width="8" height="21" font="0">1</text>
+<text top="373" left="456" width="5" height="15" font="1"><i>,</i></text>
+<text top="373" left="496" width="14" height="15" font="1"><i>K</i></text>
+<text top="379" left="509" width="16" height="11" font="2"><i>IR</i></text>
+<text top="373" left="531" width="13" height="15" font="1"><i>&lt;</i></text>
+<text top="369" left="548" width="25" height="21" font="0">1 +</text>
+<text top="373" left="576" width="14" height="15" font="1"><i>K</i></text>
+<text top="379" left="590" width="19" height="11" font="2"><i>P R</i></text>
+<text top="373" left="610" width="5" height="15" font="1"><i>.</i></text>
+<text top="406" left="94" width="460" height="21" font="0">Damit ist das Stabilitätsgebiet ein einfaches Dreieck (Abbildung</text>
+<text top="406" left="559" width="8" height="21" font="7"><a href="page_20.html#20">8</a></text>
+<text top="406" left="568" width="11" height="21" font="0"><a href="page_20.html#20">).</a></text>
+<text top="703" left="259" width="12" height="14" font="8">−</text>
+<text top="700" left="271" width="7" height="19" font="9">1</text>
+<text top="700" left="332" width="7" height="19" font="9">0</text>
+<text top="700" left="399" width="7" height="19" font="9">1</text>
+<text top="700" left="465" width="7" height="19" font="9">2</text>
+<text top="700" left="532" width="7" height="19" font="9">3</text>
+<text top="700" left="599" width="7" height="19" font="9">4</text>
+<text top="700" left="665" width="7" height="19" font="9">5</text>
+<text top="679" left="239" width="7" height="19" font="9">0</text>
+<text top="600" left="239" width="7" height="19" font="9">2</text>
+<text top="522" left="239" width="7" height="19" font="9">4</text>
+<text top="444" left="239" width="7" height="19" font="9">6</text>
+<text top="464" left="278" width="13" height="13" font="10"><i>K</i></text>
+<text top="470" left="291" width="7" height="9" font="11"><i>S</i></text>
+<text top="461" left="304" width="23" height="19" font="9">= 1</text>
+<text top="464" left="327" width="23" height="13" font="10"><i>, D</i></text>
+<text top="461" left="355" width="23" height="19" font="9">= 0</text>
+<text top="464" left="378" width="4" height="13" font="10"><i>,</i></text>
+<text top="461" left="382" width="7" height="19" font="9">5</text>
+<text top="464" left="389" width="20" height="13" font="10"><i>, T</i></text>
+<text top="461" left="415" width="23" height="19" font="9">= 1</text>
+<text top="484" left="278" width="7" height="19" font="9">0</text>
+<text top="488" left="290" width="28" height="13" font="10"><i>&lt; K</i></text>
+<text top="493" left="318" width="15" height="9" font="11"><i>IR</i></text>
+<text top="488" left="338" width="12" height="13" font="10"><i>&lt;</i></text>
+<text top="484" left="354" width="22" height="19" font="9">1 +</text>
+<text top="488" left="380" width="13" height="13" font="10"><i>K</i></text>
+<text top="493" left="392" width="18" height="9" font="11"><i>P R</i></text>
+<text top="488" left="411" width="28" height="13" font="10"><i>, K</i></text>
+<text top="493" left="439" width="18" height="9" font="11"><i>P R</i></text>
+<text top="488" left="462" width="12" height="13" font="10"><i>&gt;</i></text>
+<text top="487" left="478" width="12" height="14" font="8">−</text>
+<text top="484" left="490" width="7" height="19" font="9">1</text>
+<text top="727" left="453" width="13" height="13" font="10"><i>K</i></text>
+<text top="732" left="466" width="18" height="9" font="11"><i>P R</i></text>
+<text top="575" left="226" width="0" height="13" font="10"><i>K</i></text>
+<text top="565" left="228" width="0" height="9" font="11"><i>I</i></text>
+<text top="559" left="228" width="0" height="9" font="11"><i>R</i></text>
+<text top="764" left="93" width="706" height="21" font="0">Abbildung 8: Beispielhaftes Stabilitätsgebiet für eine PT2-Strecke mit PI-Regler (Parameterwahl</text>
+<text top="789" left="94" width="14" height="15" font="1"><i>K</i></text>
+<text top="795" left="107" width="8" height="11" font="2"><i>S</i></text>
+<text top="785" left="121" width="31" height="21" font="0">= 1,</text>
+<text top="789" left="157" width="14" height="15" font="1"><i>D</i></text>
+<text top="785" left="176" width="26" height="21" font="0">= 0</text>
+<text top="789" left="202" width="5" height="15" font="1"><i>,</i></text>
+<text top="785" left="206" width="13" height="21" font="0">5,</text>
+<text top="789" left="225" width="10" height="15" font="1"><i>T</i></text>
+<text top="785" left="241" width="447" height="21" font="0">= 1). Das schattierte Gebiet erfüllt die Hurwitz-Bedingungen</text>
+<text top="789" left="693" width="14" height="15" font="1"><i>H</i></text>
+<text top="795" left="707" width="6" height="11" font="4">1</text>
+<text top="789" left="714" width="21" height="15" font="1"><i>, H</i></text>
+<text top="795" left="735" width="6" height="11" font="4">2</text>
+<text top="789" left="742" width="21" height="15" font="1"><i>, H</i></text>
+<text top="795" left="763" width="6" height="11" font="4">3</text>
+<text top="785" left="775" width="24" height="21" font="0">aus</text>
+<text top="805" left="93" width="109" height="21" font="0">Abschnitt 11.4.</text>
+<text top="871" left="94" width="24" height="19" font="12"><b>11</b></text>
+<text top="871" left="142" width="587" height="19" font="12"><b>Reglerstrukturen (PD, PID) und Realisierungshinweise</b></text>
+<text top="911" left="94" width="36" height="16" font="13"><b>11.1</b></text>
+<text top="911" left="150" width="193" height="16" font="13"><b>PD- und PID-Formen</b></text>
+<text top="943" left="94" width="93" height="14" font="6"><b>PD-Regler.</b></text>
+<text top="970" left="236" width="13" height="15" font="1"><i>G</i></text>
+<text top="975" left="249" width="10" height="11" font="2"><i>R</i></text>
+<text top="965" left="260" width="6" height="21" font="0">(</text>
+<text top="970" left="266" width="8" height="15" font="1"><i>p</i></text>
+<text top="965" left="274" width="24" height="21" font="0">) =</text>
+<text top="970" left="302" width="14" height="15" font="1"><i>K</i></text>
+<text top="975" left="316" width="19" height="11" font="2"><i>P R</i></text>
+<text top="965" left="340" width="13" height="21" font="0">+</text>
+<text top="970" left="357" width="14" height="15" font="1"><i>K</i></text>
+<text top="975" left="370" width="20" height="11" font="2"><i>DR</i></text>
+<text top="970" left="392" width="8" height="15" font="1"><i>p</i></text>
+<text top="965" left="404" width="13" height="21" font="0">=</text>
+<text top="970" left="422" width="14" height="15" font="1"><i>K</i></text>
+<text top="975" left="436" width="19" height="11" font="2"><i>P R</i></text>
+<text top="965" left="459" width="31" height="21" font="0">(1 +</text>
+<text top="970" left="493" width="10" height="15" font="1"><i>T</i></text>
+<text top="975" left="503" width="7" height="11" font="2"><i>V</i></text>
+<text top="970" left="514" width="8" height="15" font="1"><i>p</i></text>
+<text top="965" left="522" width="6" height="21" font="0">)</text>
+<text top="970" left="531" width="5" height="15" font="1"><i>,</i></text>
+<text top="970" left="571" width="10" height="15" font="1"><i>T</i></text>
+<text top="975" left="580" width="7" height="11" font="2"><i>V</i></text>
+<text top="965" left="596" width="13" height="21" font="0">=</text>
+<text top="959" left="615" width="14" height="15" font="1"><i>K</i></text>
+<text top="964" left="629" width="20" height="11" font="2"><i>DR</i></text>
+<text top="981" left="616" width="14" height="15" font="1"><i>K</i></text>
+<text top="986" left="629" width="19" height="11" font="2"><i>P R</i></text>
+<text top="970" left="652" width="5" height="15" font="1"><i>.</i></text>
+<text top="1020" left="94" width="331" height="14" font="6"><b>Realisierbarer PD (mit Realisierungspol).</b></text>
+<text top="1016" left="441" width="358" height="21" font="0">Ein idealer Differenzierer verstärkt hohe Frequenzen</text>
+<text top="1036" left="94" width="389" height="21" font="0">unbegrenzt; daher wird häufig ein Pol eingeführt, z. B.</text>
+<text top="1084" left="335" width="13" height="15" font="1"><i>G</i></text>
+<text top="1089" left="348" width="10" height="11" font="2"><i>R</i></text>
+<text top="1080" left="359" width="6" height="21" font="0">(</text>
+<text top="1084" left="365" width="8" height="15" font="1"><i>p</i></text>
+<text top="1080" left="373" width="24" height="21" font="0">) =</text>
+<text top="1084" left="402" width="14" height="15" font="1"><i>K</i></text>
+<text top="1089" left="415" width="19" height="11" font="2"><i>P R</i></text>
+<text top="1073" left="438" width="11" height="7" font="14"></text>
+<text top="1080" left="449" width="25" height="21" font="0">1 +</text>
+<text top="1073" left="494" width="10" height="15" font="1"><i>T</i></text>
+<text top="1078" left="504" width="7" height="11" font="2"><i>V</i></text>
+<text top="1073" left="514" width="8" height="15" font="1"><i>p</i></text>
+<text top="1091" left="479" width="25" height="21" font="0">1 +</text>
+<text top="1095" left="507" width="10" height="15" font="1"><i>T</i></text>
+<text top="1101" left="517" width="10" height="11" font="2"><i>N</i></text>
+<text top="1095" left="529" width="8" height="15" font="1"><i>p</i></text>
+<text top="1073" left="539" width="11" height="7" font="14"></text>
+<text top="1084" left="553" width="5" height="15" font="1"><i>,</i></text>
+<text top="1123" left="93" width="41" height="21" font="0">wobei</text>
+<text top="1127" left="139" width="10" height="15" font="1"><i>T</i></text>
+<text top="1133" left="149" width="10" height="11" font="2"><i>N</i></text>
+<text top="1123" left="166" width="307" height="21" font="0">die Zeitkonstante des Realisierungspols ist.</text>
+<text top="1199" left="438" width="16" height="21" font="0">20</text>
+</page>
+<outline>
+<item page="3">Analoge Übertragungsglieder (ÜTG)</item>
+<outline>
+<item page="3">Begriffe und Eigenschaften</item>
+</outline>
+<item page="3">Typische Signale</item>
+<outline>
+<item page="3">Aperiodische Eingangssignale</item>
+<item page="4">Impulsfunktion (Dirac-Stoß)</item>
+<item page="4">Antwortfunktionen eines LZI-ÜTG</item>
+</outline>
+<item page="5">Mathematische Beschreibung im Zeitbereich</item>
+<outline>
+<item page="5">Lineare Differentialgleichung mit konstanten Koeffizienten</item>
+<item page="5">Beispiele: typische ÜTG</item>
+</outline>
+<item page="5">Laplace-Transformation und Übertragungsfunktion</item>
+<outline>
+<item page="5">Exponentialansatz und Laplace-Operator</item>
+<item page="6">Laplace-Transformation des Dirac-Impulses</item>
+<item page="6">Übertragungsfunktion (ÜTF)</item>
+<item page="7">Übersicht: DGL zu ÜTF</item>
+</outline>
+<item page="7">Beschreibung im Frequenzbereich</item>
+<outline>
+<item page="7">Frequenzgang</item>
+<item page="8">Ortskurve</item>
+</outline>
+<item page="8">Bode-Diagramme</item>
+<outline>
+<item page="8">Amplitude in Dezibel</item>
+<item page="8">Beispiel: PT1-Glied</item>
+</outline>
+<item page="9">Dämpfungsphänomene und schwingungsfähige lineare ÜTG</item>
+<outline>
+<item page="9">Worum geht es?</item>
+<item page="9">Dämpfungsphänomene am Beispiel des PT2-Glieds</item>
+<outline>
+<item page="10">Dämpfungsfälle</item>
+<item page="10">Überschwingen bei der Sprungantwort</item>
+<item page="11">Eigenfrequenz vs. Resonanzfrequenz</item>
+<item page="11">Gütefaktor</item>
+</outline>
+</outline>
+<item page="12">Blockdiagramme</item>
+<outline>
+<item page="12">Grundidee und Motivation</item>
+<item page="12">Blöcke und Übertragungsfunktionen</item>
+<item page="13">Offener vs. geschlossener Regelkreis</item>
+<item page="13">Regeln zur Umformung (mit Formeln und Bildern)</item>
+<outline>
+<item page="13">Regel 1: Reihenschaltung (Kaskade)</item>
+<item page="13">Regel 2: Parallelschaltung</item>
+<item page="14">Regel 3: Rückführung (Feedback)</item>
+<item page="14">Regel 4: Summierstelle über einen Block verschieben</item>
+<item page="14">Regel 5: Abzweigstelle (Messabgriff) über einen Block verschieben</item>
+<item page="15">Regel 6: Innere Schleifen zuerst reduzieren</item>
+</outline>
+</outline>
+<item page="15">Einschleifiger Regelkreis: Standardformen</item>
+<outline>
+<item page="15">Struktur und Grundgleichungen</item>
+<item page="15">Führungs- und Störübertragungsfunktion</item>
+<item page="16">Statisches Verhalten, Regelfaktor</item>
+<item page="16">P-, I- und PI-Regler (Grundideen)</item>
+</outline>
+<item page="16">Stabilität linearer Regelkreise</item>
+<outline>
+<item page="16">Charakteristische Gleichung</item>
+<item page="16">Nyquist-Idee (qualitativ)</item>
+<item page="17">Nyquist-Diagramm und Nyquist-Kriterium</item>
+<item page="19">Hurwitz-Kriterium (Polynomkriterium)</item>
+<item page="19">Beispiel: PT2-Strecke mit PI-Regler (Stabilitätsgebiet)</item>
+</outline>
+<item page="20">Reglerstrukturen (PD, PID) und Realisierungshinweise</item>
+<outline>
+<item page="20">PD- und PID-Formen</item>
+<item page="21">(Invertierender) OPV-Grundsatz</item>
+</outline>
+<item page="21">Mini-Formelsammlung (Laplace)</item>
+<item page="21">Ausführliche Aufgaben</item>
+</outline>
+</pdf2xml>

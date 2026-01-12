@@ -1,0 +1,64 @@
+% kapitel/typische-lineare-uebertragungsglieder.tex
+\section{Typische lineare \"UTG (Auswahl)}
+\subsection{PT2-Glied (2.\ Ordnung)}
+\[
+  G(p)=\frac{K}{1+2DTp+T^2p^2}.
+\]
+\begin{itemize}[itemsep=2pt]
+  \item $D$ \dots\ D\"ampfungsma\ss.
+  \item $T$ \dots\ Zeitkonstante (in dieser Normierung entspricht $\omega_0=\frac{1}{T}$ der unged\"ampften Eigenkreisfrequenz).
+\end{itemize}
+
+\paragraph{D\"ampfungsf\"alle.}
+\begin{itemize}[itemsep=2pt]
+  \item $0<D<1$ (\emph{unterd\"ampft}): komplex konjugierte Pole, schwingende Sprungantwort mit \"Uberschwingen.
+  \item $D=1$ (\emph{kritisch ged\"ampft}): Doppelpol, schnell ohne \"Uberschwingen (Grenzfall).
+  \item $D>1$ (\emph{\"uberd\"ampft}): zwei reelle Pole, monotone Sprungantwort ohne \"Uberschwingen.
+\end{itemize}
+
+\input{figures/fig_pt2_step_multiD.tex}
+
+\paragraph{Eigenfrequenzen.}
+\[
+  \omega_0=\frac{1}{T},
+  \qquad
+  \omega_d=\omega_0\sqrt{1-D^2}\quad(0<D<1).
+\]
+Die Schwingungsdauer der ged\"ampften Schwingung:
+\[
+  T_p=\frac{2\pi}{\omega_d}=\frac{2\pi T}{\sqrt{1-D^2}}.
+\]
+Damit ist das Schwingungsintervall direkt durch $D$ und $T$ bestimmt: kleine D\"ampfung
+(\,$D$ klein\,) f\"uhrt zu kurzer Periodendauer, gro\ss e D\"ampfung zu langsamerem Einschwingen.
+
+\paragraph{\"Uberschwingen (Sprungantwort, unterd\"ampft $0<D<1$).}
+F\"ur das relative \"Uberschwingen $M_p$ (Peak Overshoot) gilt:
+\[
+  M_p=\exp\!\left(-\frac{D\pi}{\sqrt{1-D^2}}\right).
+\]
+Umgekehrt:
+\[
+  D=\frac{-\ln(M_p)}{\sqrt{\pi^2+\ln^2(M_p)}}.
+\]
+
+\paragraph{Beispiel (\"Uberschwingen).}
+F\"ur $D=0{,}5$ ergibt sich
+$M_p=\exp\!\left(-\frac{0{,}5\pi}{\sqrt{1-0{,}25}}\right)\approx 0{,}16$,
+also etwa $16\,\%$ \"Uberschwingen.
+
+\input{figures/fig_pt2_overshoot_vs_damping.tex}
+
+\paragraph{Einschwingzeit (Faustregel).}
+Die Schwingungsamplitude folgt der H\"ulle $\mathrm{e}^{-D\omega_0 t}$.
+Als 2\,\%-Einschwingzeit wird h\"aufig die Faustregel verwendet:
+\[
+  t_s \approx \frac{4}{D\,\omega_0}=\frac{4T}{D}.
+\]
+(Die N\"aherung ist am besten im mittleren D\"ampfungsbereich und dient der schnellen Absch\"atzung.)
+
+\paragraph{Br\"ucke zum Frequenzbereich: Resonanz\"uberh\"ohung.}
+Kleine D\"ampfung erzeugt eine Resonanzspitze im Betragsfrequenzgang in der N\"ahe von
+$\omega\approx\omega_0$. Diese Resonanz\"uberh\"ohung korreliert h\"aufig mit starkem
+\"Uberschwingen im Zeitbereich.
+
+\input{figures/fig_pt2_mag_multiD.tex}

@@ -1,0 +1,70 @@
+% main.tex -- Komplettes Skript in einer Datei
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern} % scalable Latin Modern fonts for microtype/expansion
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{siunitx}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{placeins}
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{arrows.meta,positioning,calc,shapes.geometric}
+\tikzset{
+  block/.style={draw, rectangle, minimum height=9mm, minimum width=16mm, align=center},
+  sum/.style={draw, circle, inner sep=0pt, minimum size=4.5mm},
+  branch/.style={circle, fill, inner sep=0pt, minimum size=1.6mm},
+  line/.style={-Latex, thick},
+  thin/.style={-Latex, semithick}
+}
+
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+
+% Optionale Zwischendateien gefahrlos einbinden (nur falls vorhanden)
+\newcommand{\einbinden}[1]{\IfFileExists{#1}{\input{#1}}{\typeout{Zwischendatei nicht gefunden: #1}}}
+\newcommand{\Laplace}{\mathcal{L}}
+\newcommand{\p}{p} % Laplace-Variable
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\jj}{\mathrm{j}}
+\newcommand{\Ree}{\operatorname{Re}}
+\newcommand{\Imm}{\operatorname{Im}}
+\newcommand{\argg}{\operatorname{arg}}
+
+\title{Skript Regelungstechnik (LaTeX-Version)}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+\input{kapitel/00-vorbemerkung.tex}
+\tableofcontents
+\newpage
+
+\input{kapitel/analoge-uebertragungsglieder.tex}
+\input{kapitel/typische-signale.tex}
+\input{kapitel/zeitbereich-beschreibung.tex}
+\input{kapitel/laplace-uebertragungsfunktion.tex}
+\input{kapitel/frequenzbereich.tex}
+\input{kapitel/bode-diagramme.tex}
+\input{kapitel/typische-lineare-uebertragungsglieder.tex}
+\input{kapitel/07-blockdiagramm-umformung.tex}
+\input{kapitel/einschleifiger-regelkreis.tex}
+\input{kapitel/stabilitaet-linearer-regelkreise.tex}
+\input{kapitel/reglerstrukturen-realisierung.tex}
+
+\appendix
+\input{kapitel/anhang-formelsammlung.tex}
+
+\end{document}
+

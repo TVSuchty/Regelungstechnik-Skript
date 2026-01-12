@@ -1,0 +1,32 @@
+% kapitel/anhang-formelsammlung.tex
+\section{Mini-Formelsammlung (Laplace)}
+\begin{center}
+  \begin{tabular}{@{}ll@{}}
+    \toprule
+    Zeitfunktion $x(t)$ (f\"ur $t\ge 0$) & $X(p)=\mathcal{L}\{x(t)\}$ \\
+    \midrule
+    $\sigma(t)$ & $\dfrac{1}{p}$ \\
+    $\delta(t)$ & $1$ \\
+    $t\,\sigma(t)$ & $\dfrac{1}{p^2}$ \\
+    $\mathrm{e}^{-at}$ $(a>0)$ & $\dfrac{1}{p+a}$ \\
+    $\sin(\omega t)$ & $\dfrac{\omega}{p^2+\omega^2}$ \\
+    $\cos(\omega t)$ & $\dfrac{p}{p^2+\omega^2}$ \\
+    \bottomrule
+  \end{tabular}
+\end{center}
+
+\section{Ausf\"uhrliche Aufgaben}
+\label{app:aufgaben}
+\begin{enumerate}[itemsep=4pt]
+  \item \textbf{\"Ubertragungsfunktion.}
+  Gegeben ist
+  $T\dot x_a + x_a = K\,x_e + K_D\,\dot x_e$ mit Null-Anfangsbedingungen.
+  Bestimmen Sie $G(p)$ und die Sprungantwort f\"ur $x_e(t)=\sigma(t)$.
+  \item \textbf{Bode-Absch\"atzung.}
+  F\"ur $G(p)=\dfrac{10}{(1+0{,}5p)(1+2p)}$ skizzieren Sie die asymptotischen
+  Betragsgeraden und geben Sie die Eckfrequenzen an.
+  \item \textbf{Regelkreis.}
+  F\"ur $G_R(p)=K_{PR}\left(1+\dfrac{1}{T_N p}\right)$ und
+  $G_S(p)=\dfrac{K_S}{1+Tp}$ bestimmen Sie $G_0(p)$, $G_w(p)$ und den
+  statischen Regelfaktor $R$.
+\end{enumerate}

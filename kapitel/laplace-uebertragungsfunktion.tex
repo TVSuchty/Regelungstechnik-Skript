@@ -1,0 +1,139 @@
+% kapitel/laplace-uebertragungsfunktion.tex
+\section{Laplace-Transformation und \"Ubertragungsfunktion}
+\subsection{Exponentialansatz und Laplace-Operator}
+Viele f\"ur die Regelungstechnik relevante Signale lassen sich als (komplexe) Exponentialform schreiben:
+\[
+  x(t)=\hat X\,\mathrm{e}^{p t},
+  \qquad
+  p=\sigma+\jj\omega.
+\]
+F\"ur diesen Ansatz gilt:
+\[
+  \frac{\dd}{\dd t}x(t)=p\,x(t),\qquad
+  \frac{\dd^2}{\dd t^2}x(t)=p^2\,x(t),\ \ldots
+\]
+Die Variable $p$ wirkt im Bildbereich als Differentialoperator.
+Mit dem Laplace-Operator ist die Abbildung $\Laplace\{\cdot\}$ gemeint, die ein
+Zeitbereichssignal $x(t)$ in seine Laplace-Transformierte $X(p)$ im $p$-Bereich
+ueberfuehrt.
+F\"ur ein kausales Signal $x(t)$:
+\[
+  X(p)=\mathcal{L}\{x(t)\}=\int_{0^-}^{\infty} x(t)\,\mathrm{e}^{-pt}\,\dd t.
+\]
+In der Regelungstechnik wird h\"aufig mit Null-Anfangsbedingungen gearbeitet, so dass Ableitungen
+einfach in Multiplikationen \"ubergehen. Das sieht man aus der partiellen Integration:
+\[
+  \Laplace\{\dot x(t)\}=\int_{0^-}^{\infty}\dot x(t)\,\mathrm{e}^{-pt}\,\dd t
+  =\bigl[x(t)\,\mathrm{e}^{-pt}\bigr]_{0^-}^{\infty}
+  +p\int_{0^-}^{\infty}x(t)\,\mathrm{e}^{-pt}\,\dd t
+  =-x(0^-)+pX(p),
+\]
+wobei der Randterm $\bigl[x(t)\,\mathrm{e}^{-pt}\bigr]_{0^-}^{\infty}$ der aus der partiellen
+Integration stammende Bewertungsanteil an den Integrationsgrenzen ist. Fuer kausale, abklingende
+Signale verschwindet der Anteil bei $t\to\infty$, weil $x(t)$ nicht schneller waechst als
+$\mathrm{e}^{\sigma t}$ mit $\sigma<\Ree\{p\}$, und es bleibt der Anfangswertanteil $-x(0^-)$.
+Analog gilt
+\[
+  \Laplace\{\ddot x(t)\}=p^2X(p)-p\,x(0^-)-\dot x(0^-).
+\]
+Bei Null-Anfangsbedingungen folgt damit $\Laplace\{\dot x(t)\}=pX(p)$ und
+$\Laplace\{\ddot x(t)\}=p^2X(p)$.
+
+\subsection{Laplace-Transformation des Dirac-Impulses}
+Die Dirac-Impulsfunktion wirkt in Integralen als Abtaster (Sieb-Eigenschaft):
+\[
+  \int_{0^-}^{\infty}\delta(t)\,f(t)\,\dd t = f(0^-).
+\]
+Damit folgt direkt
+\[
+  \Laplace\{\delta(t)\}=\int_{0^-}^{\infty}\delta(t)\,\mathrm{e}^{-pt}\,\dd t=1.
+\]
+Fuer einen verschobenen Impuls gilt entsprechend
+\[
+  \Laplace\{\delta(t-t_0)\}=\int_{0^-}^{\infty}\delta(t-t_0)\,\mathrm{e}^{-pt}\,\dd t
+  =\mathrm{e}^{-p t_0}\quad (t_0>0).
+\]
+
+\subsection{\"Ubertragungsfunktion (\"UTF)}
+F\"ur ein LZI-\"UTG mit Null-Anfangsbedingungen gilt im Laplace-Bereich:
+\[
+  G(p)=\frac{X_a(p)}{X_e(p)}.
+\]
+Dabei sind $X_a(p)=\Laplace\{x_a(t)\}$ und $X_e(p)=\Laplace\{x_e(t)\}$ die Laplace-Transformationen
+der Zeitfunktionen.
+Die \"Ubertragungsfunktion $G(p)$ beschreibt damit die dynamische Beziehung zwischen Eingang und
+Ausgang im $p$-Bereich und ist bei Null-Anfangsbedingungen allein durch das System bestimmt.
+Sobald $G(p)$ bekannt ist, folgt f\"ur jede Anregung $X_a(p)=G(p)\,X_e(p)$.
+
+Die zugeh\"orige Differentialgleichung stammt aus dem physikalischen Modell.
+
+\paragraph{Beispiel (PT1, RC-Tiefpass).}
+Ein einfacher RC-Tiefpass (Passfilter 1.\ Ordnung) mit Eingangsspannung $U_e(t)$ und
+Ausgangsspannung $U_A(t)$ liefert mit dem Knotenstromsatz
+\begin{center}
+\begin{circuitikz}[european resistors]
+  \draw
+    (0,0) node[left]{$U_e(t)$}
+    to[R, l=$R$] (3,0) node[circ]{}
+    to[short] (4.5,0) node[right]{$U_A(t)$}
+    (3,0) to[C, l=$C$] (3,-2)
+    node[ground]{};
+\end{circuitikz}
+\end{center}
+\[
+  i_R=\frac{U_e(t)-U_A(t)}{R},\qquad i_C=C\,\dot U_A(t),\qquad i_R=i_C
+\]
+und damit
+\[
+  RC\,\dot U_A(t)+U_A(t)=U_e(t).
+\]
+Identifiziert man $x_a=U_A$, $x_e=U_e$, $T=RC$ und $K=1$, ergibt sich die PT1-DGL
+\[
+  T\,\dot x_a + x_a = K\,x_e.
+\]
+Im Laplace-Bereich folgt
+\[
+  (Tp+1)X_a(p)=K\,X_e(p)
+  \quad\Longrightarrow\quad
+  G(p)=\frac{K}{1+Tp}.
+\]
+
+\paragraph{Beispiel (Schrittanregung am PT1).}
+F\"ur $x_e(t)=\sigma(t)$ gilt $X_e(p)=\frac{1}{p}$ und damit
+\[
+  X_a(p)=G(p)\,X_e(p)=\frac{K}{p(1+Tp)}.
+\]
+R\"ucktransformation liefert die Sprungantwort
+\[
+  x_a(t)=K\left(1-\mathrm{e}^{-t/T}\right)\sigma(t).
+\]
+
+\input{figures/fig_pt1_step.tex}
+
+\paragraph{Beispiel (PT2 aus DGL).}
+\[
+  T^2\,\ddot x_a + 2DT\,\dot x_a + x_a = K\,x_e
+  \quad\Longrightarrow\quad
+  (T^2p^2+2DTp+1)X_a(p)=K\,X_e(p),
+\]
+\[
+  G(p)=\frac{K}{1+2DTp+T^2p^2}.
+\]
+
+Weitere, umfangreichere \"Ubungsaufgaben finden sich im Anhang, siehe Abschnitt~\ref{app:aufgaben}.
+
+\subsection{\"Ubersicht: DGL zu \"UTF}
+\begin{center}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Name & DGL & \"Ubertragungsfunktion $G(p)$ \\
+    \midrule
+    P-Glied   & $x_a = K_P\,x_e$ & $K_P$ \\
+    D-Glied   & $x_a = K_D\,\dot x_e$ & $K_D\,p$ \\
+    I-Glied   & $\dot x_a = K_I\,x_e$ & $\displaystyle\frac{K_I}{p}$ \\
+    DT1-Glied & $T\,\dot x_a + x_a = K_D\,\dot x_e$ & $\displaystyle \frac{K_D\,p}{1+Tp}$ \\
+    PT1-Glied & $T\,\dot x_a + x_a = K\,x_e$ & $\displaystyle \frac{K}{1+Tp}$ \\
+    PT2-Glied & $T^2\,\ddot x_a + 2DT\,\dot x_a + x_a = K\,x_e$ & $\displaystyle \frac{K}{1+2DTp+T^2p^2}$ \\
+    \bottomrule
+  \end{tabular}
+\end{center}

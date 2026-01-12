@@ -1,0 +1,33 @@
+% kapitel/zeitbereich-beschreibung.tex
+\section{Mathematische Beschreibung im Zeitbereich}
+\subsection{Lineare Differentialgleichung mit konstanten Koeffizienten}
+Ein LZI-\"UTG kann im Zeitbereich h\"aufig durch eine lineare Differentialgleichung (DGL)
+beschrieben werden:
+\[
+  \sum_{m=0}^{n} a_m\,\frac{\dd^{m}x_a(t)}{\dd t^{m}}
+  =
+  \sum_{k=0}^{\ell} b_k\,\frac{\dd^{k}x_e(t)}{\dd t^{k}},
+  \qquad a_n\neq 0.
+\]
+
+\paragraph{Beispiel (PT1).}
+Ein Verz\"ogerungsglied erster Ordnung erf\"ullt
+$T\,\dot x_a + x_a = K\,x_e$.
+F\"ur einen Einheitssprung $x_e(t)=\sigma(t)$ ergibt sich eine exponentielle Ann\"aherung
+an den Endwert $K$.
+
+\subsection{Beispiele: typische \"UTG}
+\begin{center}
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Name & Zeitbereich (DGL) & Bemerkung \\
+    \midrule
+    P-Glied   & $x_a = K_P\,x_e$ & proportional \\
+    I-Glied   & $\dot x_a = K_I\,x_e$ & integratorisch \\
+    D-Glied   & $x_a = K_D\,\dot x_e$ & ideal differenzierend \\
+    PT1-Glied & $T\,\dot x_a + x_a = K\,x_e$ & Verz\"ogerung 1.\ Ordnung \\
+    PT2-Glied & $T^2\,\ddot x_a + 2D T\,\dot x_a + x_a = K\,x_e$ & Verz\"ogerung 2.\ Ordnung \\
+    DT1-Glied & $T\,\dot x_a + x_a = K_D\,\dot x_e$ & realisierbares D-Glied \\
+    \bottomrule
+  \end{tabular}
+\end{center}

@@ -1,0 +1,41 @@
+% kapitel/bode-diagramme.tex
+\section{Bode-Diagramme}
+\subsection{Amplitude in Dezibel}
+\[
+  L(\omega)=20\log_{10}\!\bigl(\lvert G(\jj\omega)\rvert\bigr)\ \si{dB}.
+\]
+Wichtiger Vorteil:
+\[
+  G(\jj\omega)=G_1(\jj\omega)\,G_2(\jj\omega)
+  \quad\Rightarrow\quad
+  L(\omega)=L_1(\omega)+L_2(\omega).
+\]
+Analog addieren sich Phasen:
+\[
+  \varphi(\omega)=\varphi_1(\omega)+\varphi_2(\omega).
+\]
+
+\subsection{Beispiel: PT1-Glied}
+\[
+  G(\jj\omega)=\frac{K}{1+\jj\omega T}.
+\]
+Damit:
+\[
+  \lvert G(\jj\omega)\rvert=\frac{K}{\sqrt{1+(\omega T)^2}},
+  \qquad
+  \varphi(\omega)=-\arctan(\omega T).
+\]
+Asymptotisch:
+\begin{itemize}[itemsep=2pt]
+  \item $\omega\ll 1/T$: $\lvert G\rvert\approx K$ (0\,dB-Steigung), $\varphi\approx 0^\circ$.
+  \item $\omega\gg 1/T$: $\lvert G\rvert\approx \frac{K}{\omega T}$ (Steigung \SI{-20}{dB/dec}), $\varphi\approx -90^\circ$.
+\end{itemize}
+
+\input{figures/fig_pt1_bode.tex}
+
+\paragraph{Beispiel (Verst\"arkung).}
+Wird $K$ von $1$ auf $10$ erh\"oht, verschiebt sich der Amplitudengang um $20\,\mathrm{dB}$
+nach oben; die Phasenlage bleibt unver\"andert.
+
+\FloatBarrier
+

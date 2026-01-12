@@ -1,0 +1,33 @@
+Aufgabenliste aus den Kommentaren (Version1.0 mit Kommentaren.pdf)
+
+Achte stets auf Strukutur des Skriptes und lösche nie Inhalt, wenn es dir nicht ausdrücklich gesagt wird. Sei mathematisch direkt, aber stelle sicher, dass es Drittsemester ohne weiter Vorkenntisse verstehen.
+
+1) S. 9, Abschnitt 'Daempfungsphaenomene am Beispiel des PT2-Glieds':
+   - Eine kurze Herleitung ergaenzen, wie die verwendete Aequivalenz entsteht (welche Gleichungen gleichgesetzt werden und warum).
+   - Den Rechenweg ergaenzen, wie die Werte fuer Schwingkreise bestimmt werden (Parameterdefinitionen und eingesetzte Formeln).
+   - Eine Schaltskizze eines generischen Schwingkreises als PT2 Glied. 
+
+2) S. 6, Beispiel 'Schrittanregung am PT1':
+   - Den Bezug zum Sprung explizit markieren (z.B. im Titel/Fliesstext 'Sprung' oder 'Sprungantwort' nennen).
+
+3) S. 6, Herleitung zur Sprungantwort:
+   - Hinweis ergaenzen: Bei Einheitssprung gilt sigma(t)=1 fuer t>=0.
+
+4) S. 6, Layout der Sprungantwort-Formel:
+   - Die komplette Formel zur Ruecktransformation direkt neben den Satz 'Ruecktransformation liefert die Sprungantwort.' setzen (Zeilenumbruch/Float anpassen).
+
+5) S. 7, Uebergang p=jw (Frequenzgang):
+   - Klaren Hinweis ergaenzen, dass die Rueckrichtung nicht ohne Weiteres gilt (kein einfaches 'jw -> p' fuer Zeitbereich/Laplace ohne zusaetzliche Bedingungen).
+
+6) S. 8, Abschnitt 'Ortskurve':
+   - Kurz ergaenzen, was eine Ortskurve ist, wie man sie konstruiert (Parameterlauf, Re/Im), und welche Kernaussage sie liefert (Pruefungsstoff).
+   - Nyquist-Ortskurven fuer die wichtigsten Glieder ergaenzen: P-, I-, D-Glied sowie PT1 bis PT4 (moeglichst in einem gemeinsamen Diagramm, ggf. mit Parameterangaben); weitere relevante Standardglieder ergaenzen falls sinnvoll.
+
+7) S. 10, Logarithmisches Daempfungsdekrement (Formelbereich):
+   - Im Bild eine zusaetzliche Daempfungskurve zwischen zwei Sinus-Maxima einzeichnen/annotieren, um das Dekrement visuell zu machen.
+
+8) S. 20, Realisierungspol beim PD-Regler:
+   - Bezeichnung T_N fuer den Realisierungspol durch T_R ersetzen (T_N ist bereits als Nachstellzeit belegt); konsistent in Formeln und Text.
+
+9) S. 21, PID-Regler:
+   - Einen realisierbaren PID-Regler mit Realisierungspol ergaenzen (z.B. D-Anteil mit Pol), inkl. Formel und kurzer Erlaeuterung der Parameter.

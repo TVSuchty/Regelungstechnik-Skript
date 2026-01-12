@@ -1,0 +1,158 @@
+% kapitel/ueberschwingen-eigenfrequenzen.tex
+\section{\"Uberschwingen und Eigenfrequenzen in linearen Systemen}
+\label{sec:ueberschwingen-eigenfrequenz}
+
+\subsection{Worum geht es?}
+In vielen technischen Systemen (Regelkreise, Filter, mechanische Strukturen, elektrische Netzwerke)
+tritt nach einer pl\"otzlichen \"Anderung des Eingangssignals (z.\,B.\ Sprung) eine dynamische
+Antwort auf. Dabei beobachtet man h\"aufig:
+
+\begin{itemize}
+  \item \textbf{Schwingen/Oszillationen:} Das Ausgangssignal zeigt periodische Anteile.
+  \item \textbf{\"Uberschwingen (Overshoot):} Der Ausgang \"uberschreitet kurzzeitig den sp\"ateren Endwert.
+  \item \textbf{Eigenfrequenzen:} Frequenzen, bei denen das System ohne \"au\ss ere Anregung (frei) schwingt
+        bzw.\ besonders stark auf Anregungen reagiert.
+\end{itemize}
+
+Wichtig: Ein \emph{PT1-System} (z.\,B.\ einfacher RC-Tiefpass) besitzt nur einen Pol und zeigt
+typischerweise \emph{kein} \"Uberschwingen. \"Uberschwingen ist ein Kennzeichen von Systemen
+\emph{mindestens zweiter Ordnung} (z.\,B.\ RLC-Netzwerke, PT2, viele Regelkreise).
+
+\subsection{Eigenwerte, Pole und Eigenfrequenzen}
+Viele lineare zeitinvariante (LTI-)Systeme lassen sich in Zustandsraumform schreiben als
+\begin{align}
+  \dot{\mathbf{x}}(t) &= \mathbf{A}\,\mathbf{x}(t) + \mathbf{B}\,u(t),\\
+  y(t) &= \mathbf{C}\,\mathbf{x}(t) + \mathbf{D}\,u(t).
+\end{align}
+Die \textbf{Eigenwerte} $\lambda_i$ der Matrix $\mathbf{A}$ bestimmen das freie Verhalten (ohne Eingang).
+F\"ur einen Eigenwert
+\[
+\lambda = \sigma \pm j\omega
+\]
+gilt:
+\begin{itemize}
+  \item $\sigma < 0$: Abklingen (stabiler Anteil, D\"ampfung),
+  \item $\omega$: Kreisfrequenz der Schwingung (Oszillation),
+  \item $f = \omega/(2\pi)$: Frequenz in \si{Hz}.
+\end{itemize}
+In der \"Ubertragungsfunktion $G(s)$ entsprechen diese Eigenwerte den \textbf{Polstellen} (Roots des Nenners).
+Komplex konjugierte Pole f\"uhren zu schwingf\"ahigem Verhalten und sind die Grundlage von \"Uberschwingen.
+
+\subsection{Das Standardmodell: System 2.\ Ordnung (PT2)}
+Ein sehr verbreitetes Modell ist die normierte \"Ubertragungsfunktion eines (stabilen) Systems 2.\ Ordnung:
+\begin{equation}
+  G(s) = \frac{\omega_0^2}{s^2 + 2\zeta\omega_0 s + \omega_0^2}.
+  \label{eq:pt2}
+\end{equation}
+Dabei sind
+\begin{itemize}
+  \item $\omega_0$ \textbf{Eigenkreisfrequenz} (auch \emph{unged\"ampfte} Eigenkreisfrequenz),
+  \item $\zeta$ \textbf{D\"ampfungsgrad} (damping ratio).
+\end{itemize}
+Hinweis: In anderen Abschnitten wird das D\"ampfungsma\ss\ oft mit $D$ bezeichnet; hier gilt $D=\zeta$.
+
+Die Polstellen von \eqref{eq:pt2} sind
+\begin{equation}
+  s_{1,2} = -\zeta\omega_0 \pm j\,\omega_0\sqrt{1-\zeta^2}.
+\end{equation}
+Damit ist die \textbf{ged\"ampfte Eigenkreisfrequenz}
+\begin{equation}
+  \omega_d = \omega_0\sqrt{1-\zeta^2}.
+  \label{eq:omegad}
+\end{equation}
+
+\subsubsection{D\"ampfungsf\"alle}
+\begin{itemize}
+  \item \textbf{Unterd\"ampfung} ($0<\zeta<1$): komplexe Pole $\Rightarrow$ schwingend, \"Uberschwingen m\"oglich.
+  \item \textbf{Kritische D\"ampfung} ($\zeta=1$): schnellster \emph{nicht} schwingender Verlauf, kein \"Uberschwingen.
+  \item \textbf{\"Uberd\"ampfung} ($\zeta>1$): zwei reelle Pole, tr\"age, kein \"Uberschwingen.
+\end{itemize}
+
+\subsection{\"Uberschwingen bei der Sprungantwort}
+Betrachte einen Einheitssprung $u(t)=1\cdot \mathbf{1}(t)$ am Eingang eines stabilen Systems der Form
+\eqref{eq:pt2}. F\"ur $0<\zeta<1$ zeigt die Sprungantwort typischerweise ein Maximum oberhalb des Endwerts.
+
+\subsubsection{Definitionen}
+\textbf{\"Uberschwingma\ss} (relative peak overshoot) $M_p$:
+\begin{equation}
+  M_p = \frac{y_\text{max}-y(\infty)}{y(\infty)}.
+\end{equation}
+Oft wird es in Prozent angegeben: $M_p[\%] = 100\cdot M_p$.
+
+F\"ur das Standard-PT2 gilt (bei Einheitssprung, $0<\zeta<1$):
+\begin{equation}
+  M_p = \exp\!\left(\frac{-\zeta\pi}{\sqrt{1-\zeta^2}}\right).
+  \label{eq:overshoot}
+\end{equation}
+
+\subsubsection{Zeitpunkt des ersten Maximums}
+Die Zeit bis zum ersten Peak (peak time) ist
+\begin{equation}
+  t_p = \frac{\pi}{\omega_d} = \frac{\pi}{\omega_0\sqrt{1-\zeta^2}}.
+  \label{eq:tp}
+\end{equation}
+
+\subsubsection{Einschwingzeit (Faustregel)}
+Eine g\"angige Faustregel f\"ur die \textbf{Einschwingzeit} (z.\,B.\ 2\%-Band) lautet
+\begin{equation}
+  t_s \approx \frac{4}{\zeta\omega_0}.
+  \label{eq:ts}
+\end{equation}
+Je gr\"o\ss er $\zeta$ und/oder $\omega_0$, desto schneller klingt die Schwingung ab.
+
+\subsection{Eigenfrequenz vs.\ Resonanzfrequenz}
+Die \textbf{Eigenfrequenz} beschreibt das freie Schwingverhalten (durch die Pole bestimmt).
+Die \textbf{Resonanzfrequenz} beschreibt dagegen die Frequenz, bei der die \emph{erzwungene} Antwort
+(z.\,B.\ Sinusanregung) maximal wird.
+
+F\"ur das System \eqref{eq:pt2} zeigt die Betragsfrequenzgangkurve $|G(j\omega)|$ nur dann eine ausgepr\"agte
+Resonanzspitze, wenn die D\"ampfung klein genug ist (typisch $\zeta < 1/\sqrt{2}$).
+Dann gilt n\"aherungsweise:
+\begin{equation}
+  \omega_r = \omega_0\sqrt{1-2\zeta^2}
+  \qquad (\zeta < 1/\sqrt{2}).
+  \label{eq:omega_r}
+\end{equation}
+Man sieht: $\omega_r$ liegt dann \emph{unter} $\omega_0$.
+
+\subsubsection{G\"utefaktor}
+H\"aufig wird die D\"ampfung \"uber den \textbf{G\"utefaktor} $Q$ beschrieben:
+\begin{equation}
+  Q = \frac{1}{2\zeta}.
+\end{equation}
+Gro\ss es $Q$ bedeutet geringe D\"ampfung $\Rightarrow$ starke Resonanz und tendenziell mehr \"Uberschwingen.
+
+\subsection{Physikalische Intuition an Beispielen}
+\subsubsection{Mechanik: Feder--Masse--D\"ampfer}
+F\"ur
+\begin{equation}
+  m\ddot{x} + d\dot{x} + kx = F(t)
+\end{equation}
+ergeben sich
+\begin{equation}
+  \omega_0 = \sqrt{\frac{k}{m}},
+  \qquad
+  \zeta = \frac{d}{2\sqrt{km}}.
+\end{equation}
+Kleine D\"ampfung $d$ f\"uhrt zu unterd\"ampfter Antwort: Schwingen und \"Uberschwingen.
+
+\subsubsection{Elektrik: RLC-Schwingkreis}
+In RLC-Netzwerken entstehen Energiespeicher (L und C), die Energie zwischen elektrischem und magnetischem Feld
+austauschen k\"onnen. Ohne Widerst\"ande (idealisierte D\"ampfung) schwingt das System mit
+\begin{equation}
+  \omega_0 = \frac{1}{\sqrt{LC}}.
+\end{equation}
+Widerst\"ande $R$ f\"uhren zu Energieverlusten $\Rightarrow$ D\"ampfung $\zeta>0$.
+Je nach Topologie (Reihen-/Parallelschwingkreis) unterscheiden sich die genauen Formeln f\"ur $\zeta$,
+die qualitative Aussage bleibt jedoch gleich: \emph{kleine D\"ampfung} $\Rightarrow$ \emph{mehr Schwingen/\"Uberschwingen}.
+
+\subsection{Merks\"atze}
+\begin{itemize}
+  \item \"Uberschwingen ist ein Hinweis auf \textbf{komplexe Pole} (unterd\"ampftes Verhalten, $\zeta<1$).
+  \item Die \textbf{Eigenfrequenz} (Pole) beschreibt das freie Schwingen; die \textbf{Resonanz} beschreibt
+        die maximale erzwungene Antwort.
+  \item Kleine D\"ampfung (gro\ss es $Q$) f\"uhrt zu \textbf{Resonanzspitze} und oft zu \textbf{gro\ss em \"Uberschwingen}.
+  \item Ein \textbf{PT1} (z.\,B.\ RC-Tiefpass) hat keine Eigenfrequenz im Sinne eines Schwingens und zeigt typischerweise
+        \textbf{kein} \"Uberschwingen.
+\end{itemize}
+
