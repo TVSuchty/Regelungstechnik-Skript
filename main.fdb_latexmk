@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768261301.50121 "main.tex" "main.pdf" "main" 1768261312.98603 0
+["pdflatex"] 1768262035.58142 "c:/Users/Niclas Schwalbe/OneDrive - Computerservice Schwalbe/Desktop/regelungstechnik_latex_addon/Regelungstechnik Skript/main.tex" "main.pdf" "main" 1768262046.63507 0
   "Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf" 1768084180 39154 6c6e297568a8c552da1d177af20bbef4 ""
   "C:/Users/Niclas" 1698765652 13028 ec23560955bbc9abb58593a9542445b8 ""
   "C:/Users/Niclas Schwalbe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768149921 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
@@ -292,6 +292,8 @@
   "C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
+  "c:/Users/Niclas" 1698765652 13028 ec23560955bbc9abb58593a9542445b8 ""
+  "c:/Users/Niclas Schwalbe/OneDrive - Computerservice Schwalbe/Desktop/regelungstechnik_latex_addon/Regelungstechnik Skript/main.tex" 1768079672 2281 ef9af91d6c64809449670670e435065c ""
   "data/pt1_bode_K1_T1.csv" 1768070302 35191 75245caef877b7d17b136bc41de94c09 ""
   "data/pt1_step_K1_T1.csv" 1768070302 22554 43d036a69a87da50949e5545530865df ""
   "data/pt2_mag_bode_T1_K1_multiD.csv" 1768070302 118523 74d547407c8e36ac93cbeafd80c4e8cc ""
@@ -305,7 +307,7 @@
   "figures/fig_pt1_step.tex" 1768070302 763 f1a3b1205b2f3823ccbe02f2391b7319 ""
   "figures/fig_pt2_mag_multiD.tex" 1768070302 1475 bb5093ef578a0f59794c289b32caebca ""
   "figures/fig_pt2_overshoot_vs_damping.tex" 1768070302 984 7ffeb543e5516ee71ab76340e2e6496b ""
-  "figures/fig_pt2_rlc_schwingkreis.tex" 1768261288 540 e8b724ea62a4a4612bf5ea4a0d499c95 ""
+  "figures/fig_pt2_rlc_schwingkreis.tex" 1768261485 613 3c4ca8cef0005ec36bed32d9cee4eb5f ""
   "figures/fig_pt2_step_multiD.tex" 1768260642 1562 2d1c26f5b6d2bbb47cba794dfb47d3dd ""
   "figures/fig_signals.tex" 1768072900 1658 2d708aa6c69c931887161405f1c0ce03 ""
   "figures/fig_stability_region_pi_pt2.tex" 1768085038 1407 319ca293c12f3c8189ce0d674b77da4d ""
@@ -319,13 +321,13 @@
   "kapitel/laplace-uebertragungsfunktion.tex" 1768075788 4885 1baeea97ac607a4ee82659f0317e40db ""
   "kapitel/reglerstrukturen-realisierung.tex" 1768062695 1575 f530e37cb48a3f8ddd79a9cd26ef4635 ""
   "kapitel/stabilitaet-linearer-regelkreise.tex" 1768084994 9737 9705238601103b61d91d821ef50e368c ""
-  "kapitel/typische-lineare-uebertragungsglieder.tex" 1768261297 6480 ebab34a8a94186ffa736b0429c23b954 ""
+  "kapitel/typische-lineare-uebertragungsglieder.tex" 1768262026 6332 26e7f495e45402d06106b15bea80892b ""
   "kapitel/typische-signale.tex" 1768073415 1905 3a81dcf6c858299a1fc74b6ceb394185 ""
   "kapitel/zeitbereich-beschreibung.tex" 1768062602 1258 8d6fe0566dd2697157e4779ac1b9313d ""
-  "main.aux" 1768261312 18461 965728ee741fa5ed1bee12df8b782225 "pdflatex"
-  "main.out" 1768261312 11995 5e40a4bb3d2b8018a63af36c231d414e "pdflatex"
+  "main.aux" 1768262046 18028 61928a48a347c2dda3bbbb298f63876e "pdflatex"
+  "main.out" 1768262046 11995 5e40a4bb3d2b8018a63af36c231d414e "pdflatex"
   "main.tex" 1768079672 2281 ef9af91d6c64809449670670e435065c ""
-  "main.toc" 1768261312 8797 17795513c460b769aa888b6a2855b364 "pdflatex"
+  "main.toc" 1768262046 8794 17c94b195f4feaa02dbfbfd4f0f2e593 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

@@ -1,7 +1,7 @@
-% Generic RLC series circuit as PT2 low-pass
-\begin{figure}[!ht]
-  \centering
-  \begin{circuitikz}[american voltages]
+% Generic RLC series circuit as PT2 low-pass (non-floating)
+\refstepcounter{figure}%
+\begin{center}
+  \begin{circuitikz}[american voltages, scale=1]
     \draw
       (0,0) to[sV, l=$u_\mathrm{e}$] (0,3)
       (0,3) to[R, l=$R$] (2.5,3)
@@ -9,6 +9,7 @@
       to[C, l=$C$, v^<=$u_C$] (5,0)
       (5,0) -- (0,0);
   \end{circuitikz}
-  \caption{Reihenschwingkreis als PT2-Tiefpass ($u_C$ als Ausgang). Die Parameter $R$, $L$, $C$ werden mit $T=\sqrt{LC}$ und $D=\tfrac{R}{2}\sqrt{\tfrac{C}{L}}$ in die Normform eingesetzt.}
-  \label{fig:pt2_schwingkreis}
-\end{figure}
+\end{center}
+\vspace{-0.4em}
+\noindent\textbf{Abbildung \thefigure:} Reihenschwingkreis als PT2-Tiefpass ($u_C$ als Ausgang). Die Parameter $R$, $L$, $C$ werden mit $T=\sqrt{LC}$ und $D=\tfrac{R}{2}\sqrt{\tfrac{C}{L}}$ in die Normform eingesetzt.
+\label{fig:pt2_schwingkreis}

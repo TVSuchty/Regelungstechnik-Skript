@@ -1,6 +1,6 @@
-PWD C:\Users\Niclas Schwalbe\OneDrive - Computerservice Schwalbe\Desktop\regelungstechnik_latex_addon\Regelungstechnik Skript
+PWD c:\Users\Niclas Schwalbe\OneDrive - Computerservice Schwalbe\Desktop\regelungstechnik_latex_addon\Regelungstechnik Skript
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\Users\Niclas Schwalbe\OneDrive - Computerservice Schwalbe\Desktop\regelungstechnik_latex_addon\Regelungstechnik Skript\main.tex
 OUTPUT main.log
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls

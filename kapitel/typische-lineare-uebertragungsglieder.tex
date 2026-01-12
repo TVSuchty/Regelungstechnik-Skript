@@ -51,6 +51,8 @@ Durch Gleichsetzen der Nennerkoeffizienten mit der Standardform $s^2+2\zeta\omeg
 Setzt man $K=1$ (normierte statische Verst\"arkung), ergibt sich direkt \eqref{eq:pt2}.
 
 \paragraph{Rechenweg f\"ur einen elektrischen Schwingkreis.}
+\input{figures/fig_pt2_rlc_schwingkreis.tex}
+
 Betrachte einen Reihenschwingkreis aus $R$, $L$, $C$ (Ausgangsspannung am Kondensator, Tiefpass-PT2). Mit $Z_R=R$, $Z_L=sL$, $Z_C=\tfrac{1}{sC}$ liefert die Spannungsteilung
 \[
   G(s)=\frac{U_C(s)}{U_E(s)}=\frac{Z_C}{Z_R+Z_L+Z_C}
@@ -65,12 +67,7 @@ Damit
 \[
   \omega_0=\frac{1}{T}=\frac{1}{\sqrt{LC}},\qquad Q=\frac{1}{2D}=\sqrt{\frac{L}{C}}\frac{1}{R}.
 \]
-Hier ist $Q$ der \textbf{G\"utefaktor} (Gegengr\"o\ss e zur D\"ampfung: gro\ss es $Q$ $\Rightarrow$ kleine D\"ampfung).
 Analog verf\"ahrt man bei mechanischen Schwingkreisen (Masse--Feder--D\"ampfer), indem die Koeffizienten der Bewegungsgleichung mit der PT2-Normform abgeglichen werden.
-
-\FloatBarrier
-\input{figures/fig_pt2_rlc_schwingkreis.tex}
-\FloatBarrier
 
 Die Polstellen von \eqref{eq:pt2} sind
 \[
