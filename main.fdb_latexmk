@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768261046.68962 "main.tex" "main.pdf" "main" 1768261058.16637 0
+["pdflatex"] 1768261301.50121 "main.tex" "main.pdf" "main" 1768261312.98603 0
   "Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf" 1768084180 39154 6c6e297568a8c552da1d177af20bbef4 ""
   "C:/Users/Niclas" 1698765652 13028 ec23560955bbc9abb58593a9542445b8 ""
   "C:/Users/Niclas Schwalbe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768149921 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
@@ -305,7 +305,7 @@
   "figures/fig_pt1_step.tex" 1768070302 763 f1a3b1205b2f3823ccbe02f2391b7319 ""
   "figures/fig_pt2_mag_multiD.tex" 1768070302 1475 bb5093ef578a0f59794c289b32caebca ""
   "figures/fig_pt2_overshoot_vs_damping.tex" 1768070302 984 7ffeb543e5516ee71ab76340e2e6496b ""
-  "figures/fig_pt2_rlc_schwingkreis.tex" 1768259196 539 af4f5772d8e403ba4cfe5f4def865422 ""
+  "figures/fig_pt2_rlc_schwingkreis.tex" 1768261288 540 e8b724ea62a4a4612bf5ea4a0d499c95 ""
   "figures/fig_pt2_step_multiD.tex" 1768260642 1562 2d1c26f5b6d2bbb47cba794dfb47d3dd ""
   "figures/fig_signals.tex" 1768072900 1658 2d708aa6c69c931887161405f1c0ce03 ""
   "figures/fig_stability_region_pi_pt2.tex" 1768085038 1407 319ca293c12f3c8189ce0d674b77da4d ""
@@ -319,13 +319,13 @@
   "kapitel/laplace-uebertragungsfunktion.tex" 1768075788 4885 1baeea97ac607a4ee82659f0317e40db ""
   "kapitel/reglerstrukturen-realisierung.tex" 1768062695 1575 f530e37cb48a3f8ddd79a9cd26ef4635 ""
   "kapitel/stabilitaet-linearer-regelkreise.tex" 1768084994 9737 9705238601103b61d91d821ef50e368c ""
-  "kapitel/typische-lineare-uebertragungsglieder.tex" 1768261032 6466 58f55a0aafbb4885e45993ac29e8be38 ""
+  "kapitel/typische-lineare-uebertragungsglieder.tex" 1768261297 6480 ebab34a8a94186ffa736b0429c23b954 ""
   "kapitel/typische-signale.tex" 1768073415 1905 3a81dcf6c858299a1fc74b6ceb394185 ""
   "kapitel/zeitbereich-beschreibung.tex" 1768062602 1258 8d6fe0566dd2697157e4779ac1b9313d ""
-  "main.aux" 1768261057 18461 965728ee741fa5ed1bee12df8b782225 "pdflatex"
-  "main.out" 1768261057 11995 5e40a4bb3d2b8018a63af36c231d414e "pdflatex"
+  "main.aux" 1768261312 18461 965728ee741fa5ed1bee12df8b782225 "pdflatex"
+  "main.out" 1768261312 11995 5e40a4bb3d2b8018a63af36c231d414e "pdflatex"
   "main.tex" 1768079672 2281 ef9af91d6c64809449670670e435065c ""
-  "main.toc" 1768261057 8797 17795513c460b769aa888b6a2855b364 "pdflatex"
+  "main.toc" 1768261312 8797 17795513c460b769aa888b6a2855b364 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
