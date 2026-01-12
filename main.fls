@@ -1,6 +1,6 @@
-PWD c:\Users\Niclas Schwalbe\OneDrive - Computerservice Schwalbe\Desktop\regelungstechnik_latex_addon\Regelungstechnik Skript
+PWD C:\Users\Niclas Schwalbe\OneDrive - Computerservice Schwalbe\Desktop\regelungstechnik_latex_addon\Regelungstechnik Skript
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Niclas Schwalbe\OneDrive - Computerservice Schwalbe\Desktop\regelungstechnik_latex_addon\Regelungstechnik Skript\main.tex
+INPUT main.tex
 OUTPUT main.log
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -346,6 +346,9 @@ INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\main.aux
+INPUT .\main.aux
+INPUT main.aux
 OUTPUT main.aux
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\microtype\mt-cmr.cfg
@@ -361,8 +364,14 @@ INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-OUTPUT main.out
+INPUT .\main.out
+INPUT .\main.out
+INPUT main.out
+INPUT main.out
 OUTPUT main.pdf
+INPUT .\main.out
+INPUT .\main.out
+OUTPUT main.out
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
@@ -410,21 +419,24 @@ INPUT .\kapitel\00-vorbemerkung.tex
 INPUT kapitel\00-vorbemerkung.tex
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
-OUTPUT main.toc
-INPUT C:\Users\Niclas Schwalbe\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
-INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
-INPUT .\kapitel\analoge-uebertragungsglieder.tex
-INPUT .\kapitel\analoge-uebertragungsglieder.tex
-INPUT kapitel\analoge-uebertragungsglieder.tex
-INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT .\main.toc
+INPUT .\main.toc
+INPUT main.toc
+INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmi10.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmsy10.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\Niclas Schwalbe\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
+OUTPUT main.toc
+INPUT .\kapitel\analoge-uebertragungsglieder.tex
+INPUT .\kapitel\analoge-uebertragungsglieder.tex
+INPUT kapitel\analoge-uebertragungsglieder.tex
+INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr8.tfm
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
-INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT .\kapitel\typische-signale.tex
 INPUT .\kapitel\typische-signale.tex
 INPUT kapitel\typische-signale.tex

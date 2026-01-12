@@ -31,6 +31,12 @@ Eine h\"aufige, normierte Schreibweise ist
   \item $D$ \dots\ D\"ampfungsma\ss\ (entspricht $\zeta$).
   \item $T$ \dots\ Zeitkonstante (in dieser Normierung entspricht $\omega_0=\frac{1}{T}$ der unged\"ampften Eigenkreisfrequenz).
 \end{itemize}
+\paragraph{G\"utefaktor.}
+H\"aufig wird die D\"ampfung \"uber den \textbf{G\"utefaktor} beschrieben:
+\[
+  Q = \frac{1}{2D}=\frac{1}{2\zeta}.
+\]
+Gro\ss es $Q$ bedeutet geringe D\"ampfung $\Rightarrow$ ausgepr\"agtere Resonanzspitze und tendenziell mehr \"Uberschwingen; kleines $Q$ steht f\"ur starke D\"ampfung und rasches Abklingen.
 
 \paragraph{Kurze Herleitung der Normform.}
 Ausgehend von $G(p)=\dfrac{K}{1+2DTp+T^2p^2}$ wird der Nenner durch $T^2$ normiert:
@@ -59,10 +65,11 @@ Damit
 \[
   \omega_0=\frac{1}{T}=\frac{1}{\sqrt{LC}},\qquad Q=\frac{1}{2D}=\sqrt{\frac{L}{C}}\frac{1}{R}.
 \]
+Hier ist $Q$ der \textbf{G\"utefaktor} (Gegengr\"o\ss e zur D\"ampfung: gro\ss es $Q$ $\Rightarrow$ kleine D\"ampfung).
 Analog verf\"ahrt man bei mechanischen Schwingkreisen (Masse--Feder--D\"ampfer), indem die Koeffizienten der Bewegungsgleichung mit der PT2-Normform abgeglichen werden.
 
-\\[-0.6em]
 \input{figures/fig_pt2_rlc_schwingkreis.tex}
+\FloatBarrier
 
 Die Polstellen von \eqref{eq:pt2} sind
 \[
@@ -77,6 +84,7 @@ Die Polstellen von \eqref{eq:pt2} sind
   \item $D>1$ (\emph{\"uberd\"ampft}): zwei reelle Pole, monotone Sprungantwort ohne \"Uberschwingen.
 \end{itemize}
 
+\FloatBarrier
 \input{figures/fig_pt2_step_multiD.tex}
 
 \subsubsection{\"Uberschwingen bei der Sprungantwort}
@@ -141,10 +149,3 @@ $\omega\approx\omega_0$. Diese Resonanz\"uberh\"ohung korreliert h\"aufig mit st
 \"Uberschwingen im Zeitbereich.
 
 \input{figures/fig_pt2_mag_multiD.tex}
-
-\subsubsection{G\"utefaktor}
-H\"aufig wird die D\"ampfung \"uber den \textbf{G\"utefaktor} $Q$ beschrieben:
-\[
-  Q = \frac{1}{2D}.
-\]
-Gro\ss es $Q$ bedeutet geringe D\"ampfung $\Rightarrow$ starke Resonanz und tendenziell mehr \"Uberschwingen.
