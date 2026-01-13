@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1768262035.58142 "c:/Users/Niclas Schwalbe/OneDrive - Computerservice Schwalbe/Desktop/regelungstechnik_latex_addon/Regelungstechnik Skript/main.tex" "main.pdf" "main" 1768262046.63507 0
+["pdflatex"] 1768262713.91517 "c:/Users/Niclas Schwalbe/OneDrive - Computerservice Schwalbe/Desktop/regelungstechnik_latex_addon/Regelungstechnik Skript/main.tex" "main.pdf" "main" 1768262724.99373 0
   "Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf" 1768084180 39154 6c6e297568a8c552da1d177af20bbef4 ""
   "C:/Users/Niclas" 1698765652 13028 ec23560955bbc9abb58593a9542445b8 ""
   "C:/Users/Niclas Schwalbe/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1768149921 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
@@ -317,17 +317,17 @@
   "kapitel/anhang-formelsammlung.tex" 1768062706 1186 8f57abbc35384da29da44d3b72acc4b8 ""
   "kapitel/bode-diagramme.tex" 1768077799 1099 6401e591d58f612a179c17b6c07b9810 ""
   "kapitel/einschleifiger-regelkreis.tex" 1768081033 2946 44ef77605b4a130feb2ded2fb25c2189 ""
-  "kapitel/frequenzbereich.tex" 1768062625 1265 77453f0e2a0a4171b37559f323b4fa9a ""
-  "kapitel/laplace-uebertragungsfunktion.tex" 1768075788 4885 1baeea97ac607a4ee82659f0317e40db ""
+  "kapitel/frequenzbereich.tex" 1768262713 1428 7e45ca4ab60ac5fd0e92e0fc37c9a050 ""
+  "kapitel/laplace-uebertragungsfunktion.tex" 1768262658 4941 1197783eb2e31c6e32586b96ece2bfad ""
   "kapitel/reglerstrukturen-realisierung.tex" 1768062695 1575 f530e37cb48a3f8ddd79a9cd26ef4635 ""
   "kapitel/stabilitaet-linearer-regelkreise.tex" 1768084994 9737 9705238601103b61d91d821ef50e368c ""
   "kapitel/typische-lineare-uebertragungsglieder.tex" 1768262026 6332 26e7f495e45402d06106b15bea80892b ""
   "kapitel/typische-signale.tex" 1768073415 1905 3a81dcf6c858299a1fc74b6ceb394185 ""
   "kapitel/zeitbereich-beschreibung.tex" 1768062602 1258 8d6fe0566dd2697157e4779ac1b9313d ""
-  "main.aux" 1768262046 18028 61928a48a347c2dda3bbbb298f63876e "pdflatex"
-  "main.out" 1768262046 11995 5e40a4bb3d2b8018a63af36c231d414e "pdflatex"
+  "main.aux" 1768262724 18027 0791e8fab653c9ea6fe045ad67230303 "pdflatex"
+  "main.out" 1768262724 11995 5e40a4bb3d2b8018a63af36c231d414e "pdflatex"
   "main.tex" 1768079672 2281 ef9af91d6c64809449670670e435065c ""
-  "main.toc" 1768262046 8794 17c94b195f4feaa02dbfbfd4f0f2e593 "pdflatex"
+  "main.toc" 1768262724 8793 9449af6f847cfb47a487ab797c1a663a "pdflatex"
   (generated)
   "main.aux"
   "main.log"

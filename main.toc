@@ -21,7 +21,7 @@
 \contentsline {subsection}{\numberline {4.2}Laplace-Transformation des Dirac-Impulses}{6}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}\"Ubertragungsfunktion (\"UTF)}{6}{subsection.4.3}%
 \contentsline {paragraph}{Beispiel (PT1, RC-Tiefpass).}{6}{section*.10}%
-\contentsline {paragraph}{Beispiel (Schrittanregung am PT1).}{6}{section*.11}%
+\contentsline {paragraph}{Beispiel (Sprunganregung am PT1).}{6}{section*.11}%
 \contentsline {paragraph}{Beispiel (PT2 aus DGL).}{7}{section*.12}%
 \contentsline {subsection}{\numberline {4.4}\"Ubersicht: DGL zu \"UTF}{7}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Beschreibung im Frequenzbereich}{7}{section.5}%

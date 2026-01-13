@@ -98,15 +98,14 @@ Im Laplace-Bereich folgt
   G(p)=\frac{K}{1+Tp}.
 \]
 
-\paragraph{Beispiel (Schrittanregung am PT1).}
+\paragraph{Beispiel (Sprunganregung am PT1).}
 F\"ur $x_e(t)=\sigma(t)$ gilt $X_e(p)=\frac{1}{p}$ und damit
 \[
   X_a(p)=G(p)\,X_e(p)=\frac{K}{p(1+Tp)}.
 \]
 R\"ucktransformation liefert die Sprungantwort
-\[
-  x_a(t)=K\left(1-\mathrm{e}^{-t/T}\right)\sigma(t).
-\]
+\(x_a(t)=K\left(1-\mathrm{e}^{-t/T}\right)\sigma(t)\).
+Dabei gilt beim Einheitssprung $\sigma(t)=1$ f\"ur $t\ge 0$.
 
 \input{figures/fig_pt1_step.tex}
 
