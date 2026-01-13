@@ -29,72 +29,72 @@
 \contentsline {paragraph}{Rechenregel (komplexe Br\"uche).}{8}{section*.13}%
 \contentsline {paragraph}{Beispiel (PT1, $K=1$).}{8}{section*.14}%
 \contentsline {subsection}{\numberline {5.2}Ortskurve}{8}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Bode-Diagramme}{8}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Amplitude in Dezibel}{8}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Beispiel: PT1-Glied}{8}{subsection.6.2}%
-\contentsline {paragraph}{Beispiel (Verst\"arkung).}{8}{section*.15}%
-\contentsline {section}{\numberline {7}D\"ampfungsph\"anomene und schwingungsf\"ahige lineare \"UTG}{9}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Worum geht es?}{9}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}D\"ampfungsph\"anomene am Beispiel des PT2-Glieds}{9}{subsection.7.2}%
-\contentsline {paragraph}{G\"utefaktor.}{10}{section*.16}%
-\contentsline {paragraph}{Kurze Herleitung der Normform.}{10}{section*.17}%
-\contentsline {paragraph}{Rechenweg f\"ur einen elektrischen Schwingkreis.}{10}{figure.4}%
-\contentsline {subsubsection}{\numberline {7.2.1}D\"ampfungsf\"alle}{11}{subsubsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.2}\"Uberschwingen bei der Sprungantwort}{11}{subsubsection.7.2.2}%
-\contentsline {paragraph}{Beispiel (\"Uberschwingen).}{11}{section*.19}%
-\contentsline {paragraph}{Zeitpunkt des ersten Maximums.}{11}{section*.20}%
-\contentsline {paragraph}{Einschwingzeit (Faustregel).}{12}{section*.21}%
-\contentsline {subsubsection}{\numberline {7.2.3}Eigenfrequenz vs.\ Resonanzfrequenz}{12}{subsubsection.7.2.3}%
-\contentsline {section}{\numberline {8}Blockdiagramme}{12}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Grundidee und Motivation}{12}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Bl\"ocke und \"Ubertragungsfunktionen}{13}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Offener vs.\ geschlossener Regelkreis}{13}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Regeln zur Umformung (mit Formeln und Bildern)}{14}{subsection.8.4}%
-\contentsline {subsubsection}{\numberline {8.4.1}Regel 1: Reihenschaltung (Kaskade)}{14}{subsubsection.8.4.1}%
-\contentsline {paragraph}{Hinweis:}{14}{section*.22}%
-\contentsline {subsubsection}{\numberline {8.4.2}Regel 2: Parallelschaltung}{14}{subsubsection.8.4.2}%
-\contentsline {subsubsection}{\numberline {8.4.3}Regel 3: R\"uckf\"uhrung (Feedback)}{15}{subsubsection.8.4.3}%
-\contentsline {paragraph}{Negative R\"uckf\"uhrung (Standardfall):}{15}{section*.23}%
-\contentsline {paragraph}{Positive R\"uckf\"uhrung:}{15}{section*.24}%
-\contentsline {paragraph}{Kurzbeispiel (Ersatzblock).}{15}{section*.25}%
-\contentsline {subsubsection}{\numberline {8.4.4}Regel 4: Summierstelle \"uber einen Block verschieben}{15}{subsubsection.8.4.4}%
-\contentsline {paragraph}{(a) Summierstelle \(\rightarrow \) nach \(\boldsymbol {G}\) verschieben:}{15}{section*.26}%
-\contentsline {paragraph}{(b) Summierstelle \(\leftarrow \) vor \(\boldsymbol {G}\) verschieben:}{15}{section*.27}%
-\contentsline {subsubsection}{\numberline {8.4.5}Regel 5: Abzweigstelle (Messabgriff) \"uber einen Block verschieben}{15}{subsubsection.8.4.5}%
-\contentsline {paragraph}{(a) Abzweig \(\rightarrow \) nach \(\boldsymbol {G}\) verschieben:}{15}{section*.28}%
-\contentsline {paragraph}{(b) Abzweig \(\leftarrow \) vor \(\boldsymbol {G}\) verschieben:}{16}{section*.29}%
-\contentsline {subsubsection}{\numberline {8.4.6}Regel 6: Innere Schleifen zuerst reduzieren}{16}{subsubsection.8.4.6}%
-\contentsline {paragraph}{Praxis-Tipp:}{16}{section*.30}%
-\contentsline {section}{\numberline {9}Einschleifiger Regelkreis: Standardformen}{16}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Struktur und Grundgleichungen}{16}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}F\"uhrungs- und St\"or\"ubertragungsfunktion}{16}{subsection.9.2}%
-\contentsline {paragraph}{F\"uhrungs\"ubertragung ($z=0$).}{16}{section*.31}%
-\contentsline {paragraph}{St\"or\"ubertragung ($w=0$).}{16}{section*.32}%
-\contentsline {subsection}{\numberline {9.3}Statisches Verhalten, Regelfaktor}{16}{subsection.9.3}%
-\contentsline {paragraph}{Beispiel (Regelfaktor).}{17}{section*.33}%
-\contentsline {subsection}{\numberline {9.4}P-, I- und PI-Regler (Grundideen)}{17}{subsection.9.4}%
-\contentsline {section}{\numberline {10}Stabilit\"at linearer Regelkreise}{17}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Charakteristische Gleichung}{17}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Nyquist-Idee (qualitativ)}{17}{subsection.10.2}%
-\contentsline {paragraph}{Warum die Bedingung $\operatorname {Re}(G_0(\mathrm {j}\omega ))>-1$?}{17}{section*.34}%
-\contentsline {subsection}{\numberline {10.3}Nyquist-Diagramm und Nyquist-Kriterium}{18}{subsection.10.3}%
-\contentsline {paragraph}{Nyquist-Diagramm (Nyquist-Ortskurve).}{18}{section*.35}%
-\contentsline {paragraph}{Stabilit\"atsfrage \"uber $1+G_0(p)=0$.}{18}{section*.36}%
-\contentsline {paragraph}{Nyquist-Kriterium (Vorzeichenkonvention).}{18}{section*.37}%
-\contentsline {paragraph}{Beispiel.}{18}{section*.38}%
-\contentsline {paragraph}{Praktische Gr\"o\ss en: Verst\"arkungs- und Phasenreserve.}{19}{section*.39}%
-\contentsline {subsection}{\numberline {10.4}Hurwitz-Kriterium (Polynomkriterium)}{19}{subsection.10.4}%
-\contentsline {paragraph}{Hurwitz-Matrix (Schema).}{19}{section*.40}%
-\contentsline {paragraph}{Praktische Kurzform ($n=3$).}{20}{section*.41}%
-\contentsline {paragraph}{Beispiel ($n=2$).}{20}{section*.42}%
-\contentsline {subsection}{\numberline {10.5}Beispiel: PT2-Strecke mit PI-Regler (Stabilit\"atsgebiet)}{20}{subsection.10.5}%
-\contentsline {paragraph}{Beispielhafte Parameterwahl.}{20}{section*.43}%
-\contentsline {section}{\numberline {11}Reglerstrukturen (PD, PID) und Realisierungshinweise}{21}{section.11}%
-\contentsline {subsection}{\numberline {11.1}PD- und PID-Formen}{21}{subsection.11.1}%
-\contentsline {paragraph}{PD-Regler.}{21}{section*.44}%
-\contentsline {paragraph}{Realisierbarer PD (mit Realisierungspol).}{21}{section*.45}%
-\contentsline {paragraph}{PID-Regler (ideal).}{21}{section*.46}%
-\contentsline {subsection}{\numberline {11.2}(Invertierender) OPV-Grundsatz}{21}{subsection.11.2}%
-\contentsline {paragraph}{Beispiel (I-Glied).}{22}{section*.47}%
-\contentsline {section}{\numberline {A}Mini-Formelsammlung (Laplace)}{22}{appendix.A}%
-\contentsline {section}{\numberline {B}Ausf\"uhrliche Aufgaben}{22}{appendix.B}%
+\contentsline {section}{\numberline {6}Bode-Diagramme}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Amplitude in Dezibel}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Beispiel: PT1-Glied}{10}{subsection.6.2}%
+\contentsline {paragraph}{Beispiel (Verst\"arkung).}{10}{section*.15}%
+\contentsline {section}{\numberline {7}D\"ampfungsph\"anomene und schwingungsf\"ahige lineare \"UTG}{11}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Worum geht es?}{11}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}D\"ampfungsph\"anomene am Beispiel des PT2-Glieds}{11}{subsection.7.2}%
+\contentsline {paragraph}{G\"utefaktor.}{11}{section*.16}%
+\contentsline {paragraph}{Kurze Herleitung der Normform.}{11}{section*.17}%
+\contentsline {paragraph}{Rechenweg f\"ur einen elektrischen Schwingkreis.}{12}{figure.6}%
+\contentsline {subsubsection}{\numberline {7.2.1}D\"ampfungsf\"alle}{12}{subsubsection.7.2.1}%
+\contentsline {subsubsection}{\numberline {7.2.2}\"Uberschwingen bei der Sprungantwort}{12}{subsubsection.7.2.2}%
+\contentsline {paragraph}{Beispiel (\"Uberschwingen).}{13}{section*.19}%
+\contentsline {paragraph}{Zeitpunkt des ersten Maximums.}{13}{section*.20}%
+\contentsline {paragraph}{Einschwingzeit (Faustregel).}{14}{section*.21}%
+\contentsline {subsubsection}{\numberline {7.2.3}Eigenfrequenz vs.\ Resonanzfrequenz}{14}{subsubsection.7.2.3}%
+\contentsline {section}{\numberline {8}Blockdiagramme}{14}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Grundidee und Motivation}{14}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Bl\"ocke und \"Ubertragungsfunktionen}{15}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Offener vs.\ geschlossener Regelkreis}{15}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Regeln zur Umformung (mit Formeln und Bildern)}{15}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Regel 1: Reihenschaltung (Kaskade)}{16}{subsubsection.8.4.1}%
+\contentsline {paragraph}{Hinweis:}{16}{section*.22}%
+\contentsline {subsubsection}{\numberline {8.4.2}Regel 2: Parallelschaltung}{16}{subsubsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.3}Regel 3: R\"uckf\"uhrung (Feedback)}{16}{subsubsection.8.4.3}%
+\contentsline {paragraph}{Negative R\"uckf\"uhrung (Standardfall):}{16}{section*.23}%
+\contentsline {paragraph}{Positive R\"uckf\"uhrung:}{16}{section*.24}%
+\contentsline {paragraph}{Kurzbeispiel (Ersatzblock).}{16}{section*.25}%
+\contentsline {subsubsection}{\numberline {8.4.4}Regel 4: Summierstelle \"uber einen Block verschieben}{16}{subsubsection.8.4.4}%
+\contentsline {paragraph}{(a) Summierstelle \(\rightarrow \) nach \(\boldsymbol {G}\) verschieben:}{17}{section*.26}%
+\contentsline {paragraph}{(b) Summierstelle \(\leftarrow \) vor \(\boldsymbol {G}\) verschieben:}{17}{section*.27}%
+\contentsline {subsubsection}{\numberline {8.4.5}Regel 5: Abzweigstelle (Messabgriff) \"uber einen Block verschieben}{17}{subsubsection.8.4.5}%
+\contentsline {paragraph}{(a) Abzweig \(\rightarrow \) nach \(\boldsymbol {G}\) verschieben:}{17}{section*.28}%
+\contentsline {paragraph}{(b) Abzweig \(\leftarrow \) vor \(\boldsymbol {G}\) verschieben:}{17}{section*.29}%
+\contentsline {subsubsection}{\numberline {8.4.6}Regel 6: Innere Schleifen zuerst reduzieren}{17}{subsubsection.8.4.6}%
+\contentsline {paragraph}{Praxis-Tipp:}{17}{section*.30}%
+\contentsline {section}{\numberline {9}Einschleifiger Regelkreis: Standardformen}{17}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Struktur und Grundgleichungen}{17}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}F\"uhrungs- und St\"or\"ubertragungsfunktion}{18}{subsection.9.2}%
+\contentsline {paragraph}{F\"uhrungs\"ubertragung ($z=0$).}{18}{section*.31}%
+\contentsline {paragraph}{St\"or\"ubertragung ($w=0$).}{18}{section*.32}%
+\contentsline {subsection}{\numberline {9.3}Statisches Verhalten, Regelfaktor}{18}{subsection.9.3}%
+\contentsline {paragraph}{Beispiel (Regelfaktor).}{18}{section*.33}%
+\contentsline {subsection}{\numberline {9.4}P-, I- und PI-Regler (Grundideen)}{18}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Stabilit\"at linearer Regelkreise}{19}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Charakteristische Gleichung}{19}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Nyquist-Idee (qualitativ)}{19}{subsection.10.2}%
+\contentsline {paragraph}{Warum die Bedingung $\operatorname {Re}(G_0(\mathrm {j}\omega ))>-1$?}{19}{section*.34}%
+\contentsline {subsection}{\numberline {10.3}Nyquist-Diagramm und Nyquist-Kriterium}{19}{subsection.10.3}%
+\contentsline {paragraph}{Nyquist-Diagramm (Nyquist-Ortskurve).}{19}{section*.35}%
+\contentsline {paragraph}{Stabilit\"atsfrage \"uber $1+G_0(p)=0$.}{20}{section*.36}%
+\contentsline {paragraph}{Nyquist-Kriterium (Vorzeichenkonvention).}{20}{section*.37}%
+\contentsline {paragraph}{Beispiel.}{20}{section*.38}%
+\contentsline {paragraph}{Praktische Gr\"o\ss en: Verst\"arkungs- und Phasenreserve.}{20}{section*.39}%
+\contentsline {subsection}{\numberline {10.4}Hurwitz-Kriterium (Polynomkriterium)}{20}{subsection.10.4}%
+\contentsline {paragraph}{Hurwitz-Matrix (Schema).}{21}{section*.40}%
+\contentsline {paragraph}{Praktische Kurzform ($n=3$).}{21}{section*.41}%
+\contentsline {paragraph}{Beispiel ($n=2$).}{22}{section*.42}%
+\contentsline {subsection}{\numberline {10.5}Beispiel: PT2-Strecke mit PI-Regler (Stabilit\"atsgebiet)}{22}{subsection.10.5}%
+\contentsline {paragraph}{Beispielhafte Parameterwahl.}{22}{section*.43}%
+\contentsline {section}{\numberline {11}Reglerstrukturen (PD, PID) und Realisierungshinweise}{22}{section.11}%
+\contentsline {subsection}{\numberline {11.1}PD- und PID-Formen}{22}{subsection.11.1}%
+\contentsline {paragraph}{PD-Regler.}{22}{section*.44}%
+\contentsline {paragraph}{Realisierbarer PD (mit Realisierungspol).}{22}{section*.45}%
+\contentsline {paragraph}{PID-Regler (ideal).}{23}{section*.46}%
+\contentsline {subsection}{\numberline {11.2}(Invertierender) OPV-Grundsatz}{23}{subsection.11.2}%
+\contentsline {paragraph}{Beispiel (I-Glied).}{23}{section*.47}%
+\contentsline {section}{\numberline {A}Mini-Formelsammlung (Laplace)}{24}{appendix.A}%
+\contentsline {section}{\numberline {B}Ausf\"uhrliche Aufgaben}{24}{appendix.B}%

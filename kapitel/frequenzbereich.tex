@@ -40,3 +40,40 @@ Mit $G(\jj\omega)=\frac{1}{1+\jj\omega T}$ folgt
 \subsection{Ortskurve}
 Die Ortskurve ist der geometrische Ort aller Werte von $G(\jj\omega)$ in der komplexen Ebene,
 wenn $\omega$ von $0$ bis $\infty$ l\"auft.
+Man konstruiert sie, indem $\omega$ als Parameter durchlaufen wird und die Punkte
+$(\Ree(\omega),\Imm(\omega))$ eingezeichnet werden; f\"ur Systeme mit reellen Koeffizienten
+ergibt sich die vollst\"andige Kurve durch Spiegelung an der reellen Achse.
+Kernaussage (Pr\"ufungsstoff): Der Verlauf macht Betrag und Phase im Frequenzbereich sichtbar
+und bildet die Grundlage f\"ur Nyquist-Betrachtungen (Stabilit\"at, Reserven).
+Die zugeh\"origen Nyquist-Ortskurven der gezeichneten Standardglieder (Normierung $K=1$, $T=1$)
+sind in Tabelle~\ref{tab:nyquist_standardglieder_formeln} zusammengefasst; daneben steht die
+allgemeine Form. Die gezeichneten PT$n$ entsprechen kaskadierten PT1 mit gleichen Zeitkonstanten.
+\begin{table}[H]
+  \centering
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    Glied & Gezeichnet ($K=1$, $T=1$) & Allgemein \\
+    \midrule
+    P   & $G(\jj\omega)=1$ & $G(\jj\omega)=K$ \\
+    I   & $G(\jj\omega)=\dfrac{1}{\jj\omega}$ & $G(\jj\omega)=\dfrac{K_I}{\jj\omega}$ \\
+    D   & $G(\jj\omega)=\jj\omega$ & $G(\jj\omega)=K_D\,\jj\omega$ \\
+    PI  & $G(\jj\omega)=1+\dfrac{1}{\jj\omega}$ & $G(\jj\omega)=K_P\!\left(1+\dfrac{1}{T_I\,\jj\omega}\right)$ \\
+    PD  & $G(\jj\omega)=1+\jj\omega$ & $G(\jj\omega)=K_P\!\left(1+T_D\,\jj\omega\right)$ \\
+    PT1 & $G(\jj\omega)=\dfrac{1}{1+\jj\omega}$ & $G(\jj\omega)=\dfrac{K}{1+T\,\jj\omega}$ \\
+    PT2 & $G(\jj\omega)=\dfrac{1}{(1+\jj\omega)^2}$ & $G(\jj\omega)=\dfrac{K}{1+2D\,T\,\jj\omega+(T\,\jj\omega)^2}$ \\
+    PT3 & $G(\jj\omega)=\dfrac{1}{(1+\jj\omega)^3}$ & -- \\
+    PT4 & $G(\jj\omega)=\dfrac{1}{(1+\jj\omega)^4}$ & -- \\
+    PT7 & $G(\jj\omega)=\dfrac{1}{(1+\jj\omega)^7}$ & -- \\
+    \bottomrule
+  \end{tabular}
+  \caption{Nyquist-Ortskurven der gezeichneten Standardglieder und allgemeine Formen.}
+  \label{tab:nyquist_standardglieder_formeln}
+\end{table}
+F\"ur kaskadierte PT$N$-Glieder mit unterschiedlichen Zeitkonstanten gilt allgemein
+\[
+  G(\jj\omega)=\frac{K}{\prod_{i=1}^n \bigl(1+T_i\,\jj\omega\bigr)}.
+\]
+Die gezeichnete PT2-Kurve entspricht dem Sonderfall $D=1$ (kritische D\"ampfung) bei $T=1$.
+
+\input{figures/fig_nyquist_standardglieder.tex}
+\input{figures/fig_nyquist_standardglieder_zoom0.tex}

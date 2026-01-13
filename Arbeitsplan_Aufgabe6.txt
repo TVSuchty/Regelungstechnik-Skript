@@ -1,0 +1,38 @@
+Arbeitsplan Aufgabe 6 (Ortskurve/Nyquist)
+
+1) Kontext erfassen
+- Abschnitt "Ortskurve" in `kapitel/frequenzbereich.tex` lesen und bestimmen, wie viel Platz/Textstil erwartet wird.
+- Nyquist-bezogene Stellen in `kapitel/stabilitaet-linearer-regelkreise.tex` prüfen, damit Begriffe/Notation konsistent bleiben.
+
+2) Kurztext zur Ortskurve ergaenzen
+- Direkt unter der aktuellen Definition 2-4 Saetze einfuegen:
+  * Definition: Ortskurve = Menge der komplexen Werte von G(jw) fuer w in [0,8).
+  * Konstruktion: w als Parameter laufen lassen, Punkte (Re, Im) in der komplexen Ebene eintragen; fuer reelle Systeme Spiegelung an der reellen Achse.
+  * Kernaussage/Pruefungsstoff: Verlauf zeigt Dynamik/Phasenlage; Grundlage fuer Nyquist-Betrachtungen (Stabilitaet, Reserve).
+
+3) Konventionen fuer Nyquist-Kurven festlegen
+- Normierung fuer Vergleich: K=1, T=1, sowie fuer PTn die Normform G(p)=1/(1+Tp)^n.
+- Frequenzbereich festlegen (z. B. w in [1e-3, 1e3]) und Hinweis, dass Kurven bei w->0 bzw. w->8 asymptotisch laufen.
+- Fuer P/I/D Grenzen definieren: P ist Punkt auf reeller Achse; I und D als Kurven mit w-Range und ggf. Pfeilen fuer Laufrichtung.
+
+4) Abbildung entwerfen und integrieren
+- Neue Figure-Datei anlegen, z. B. `figures/fig_nyquist_standardglieder.tex`.
+- Plot-Stil an `figures/fig_pt1_bode.tex` anlehnen (pgfplots/tikz, Achsen, Gitter, Legende).
+- Alle Glieder in einem Diagramm zeichnen:
+  * P: konstanter Punkt bei (K,0).
+  * I: G(jw)=1/(jw) -> negative Im-Achse; darstellen als Kurve fuer w>0.
+  * D: G(jw)=jw -> positive Im-Achse; darstellen mit begrenzter Skala.
+  * PT1..PT4: G(jw)=1/(1+jw)^n als param. Kurven.
+- Optional: Legende und farbliche Unterscheidung, Pfeile fuer w-Richtung.
+
+5) Datenerzeugung (falls noetig)
+- Entscheiden, ob pgfplots-Parameterdarstellung reicht oder CSV-Daten sauberer sind.
+- Falls CSV: kleines Skript (Python/PowerShell) erstellen, Daten in `data/nyquist_*.csv` generieren.
+
+6) Einbindung im Text
+- In `kapitel/frequenzbereich.tex` die neue Abbildung im Ortskurve-Abschnitt einbinden.
+- Bildunterschrift: nennt enthaltene Glieder, Normierung (K=1, T=1) und Hinweis auf w>0 (vollstaendige Kurve per Spiegelung).
+
+7) Kurzcheck
+- LaTeX-Kompilation pruefen (Bilddatei gefunden, keine tikz/pgfplots-Fehler).
+- Abbildung visuell kontrollieren: Achsenbeschriftung, Kurvenueberschneidungen, Lesbarkeit der Legende.

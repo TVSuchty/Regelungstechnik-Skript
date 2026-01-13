@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.10)  13 JAN 2026 01:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.1.10)  13 JAN 2026 01:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -443,12 +443,19 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip62
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
+) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count338
+\float@exts=\toks30
+\float@box=\box68
+\@float@everytoks=\toks31
+\@floatcapt=\box69
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
-\pgfutil@everybye=\toks30
+\pgfutil@everybye=\toks32
 \pgfutil@tempdima=\dimen261
 \pgfutil@tempdimb=\dimen262
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
-\pgfutil@abb=\box68
+\pgfutil@abb=\box70
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
@@ -456,10 +463,10 @@ Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks31
-\pgfkeys@temptoks=\toks32
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks33
+\pgfkeys@tmptoks=\toks35
 ))
 \pgf@x=\dimen263
 \pgf@y=\dimen264
@@ -473,14 +480,14 @@ Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@yd=\dimen272
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count338
-\c@pgf@countb=\count339
-\c@pgf@countc=\count340
-\c@pgf@countd=\count341
-\t@pgf@toka=\toks34
-\t@pgf@tokb=\toks35
-\t@pgf@tokc=\toks36
-\pgf@sys@id@count=\count342
+\c@pgf@counta=\count339
+\c@pgf@countb=\count340
+\c@pgf@countc=\count341
+\c@pgf@countd=\count342
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count343
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
@@ -491,21 +498,21 @@ File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
 ))) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count343
-\pgfsyssoftpath@bigbuffer@items=\count344
+\pgfsyssoftpath@smallbuffer@items=\count344
+\pgfsyssoftpath@bigbuffer@items=\count345
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
 \pgfmath@dimen=\dimen273
-\pgfmath@count=\count345
-\pgfmath@box=\box69
-\pgfmath@toks=\toks37
-\pgfmath@stack@operand=\toks38
-\pgfmath@stack@operation=\toks39
+\pgfmath@count=\count346
+\pgfmath@box=\box71
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count346
+\c@pgfmathroundto@lastzeros=\count347
 )) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@picminx=\dimen274
@@ -532,10 +539,10 @@ File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@shorten@start@additional=\dimen291
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfpic=\box70
-\pgf@hbox=\box71
-\pgf@layerbox@main=\box72
-\pgf@picture@serial@count=\count347
+\pgfpic=\box72
+\pgf@hbox=\box73
+\pgf@layerbox@main=\box74
+\pgf@picture@serial@count=\count348
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgflinewidth=\dimen292
@@ -556,13 +563,13 @@ File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@max=\dimen297
-\pgf@sys@shading@range@num=\count348
-\pgf@shadingcount=\count349
+\pgf@sys@shading@range@num=\count349
+\pgf@shadingcount=\count350
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfexternal@startupbox=\box73
+\pgfexternal@startupbox=\box75
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
@@ -573,7 +580,7 @@ File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfnodeparttextbox=\box74
+\pgfnodeparttextbox=\box76
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
@@ -587,13 +594,13 @@ Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
 \pgffor@iter=\dimen300
 \pgffor@skip=\dimen301
-\pgffor@stack=\toks40
-\pgffor@toks=\toks41
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
 )) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count350
+\pgf@plot@mark@count=\count351
 \pgfplotmarksize=\dimen302
 )
 \tikz@lastx=\dimen303
@@ -604,21 +611,21 @@ File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \tikz@lastmovetoy=\dimen308
 \tikzleveldistance=\dimen309
 \tikzsiblingdistance=\dimen310
-\tikz@figbox=\box75
-\tikz@figbox@bg=\box76
-\tikz@tempbox=\box77
-\tikz@tempbox@bg=\box78
-\tikztreelevel=\count351
-\tikznumberofchildren=\count352
-\tikznumberofcurrentchild=\count353
-\tikz@fig@count=\count354
+\tikz@figbox=\box77
+\tikz@figbox@bg=\box78
+\tikz@tempbox=\box79
+\tikz@tempbox@bg=\box80
+\tikztreelevel=\count352
+\tikznumberofchildren=\count353
+\tikznumberofcurrentchild=\count354
+\tikz@fig@count=\count355
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count355
-\pgfmatrixcurrentcolumn=\count356
-\pgf@matrix@numberofcolumns=\count357
+\pgfmatrixcurrentrow=\count356
+\pgfmatrixcurrentcolumn=\count357
+\pgf@matrix@numberofcolumns=\count358
 )
-\tikz@expandcount=\count358
+\tikz@expandcount=\count359
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/circuitikz\circuitikz.sty
@@ -648,9 +655,9 @@ File: pgflibrarycurvilinear.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )
 \pgf@arrows@the@rigidity=\dimen321
 )) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfpu.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirc.defines.tex
-\pgf@circ@count@a=\count359
-\pgf@circ@count@b=\count360
-\pgf@circ@count@c=\count361
+\pgf@circ@count@a=\count360
+\pgf@circ@count@b=\count361
+\pgf@circ@count@c=\count362
 \pgf@circ@res@up=\dimen322
 \pgf@circ@res@down=\dimen323
 \pgf@circ@res@zero=\dimen324
@@ -663,45 +670,45 @@ File: pgflibrarycurvilinear.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgf@circ@scaled@Rlen=\dimen331
 \pgfstartlinewidth=\dimen332
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircutils.tex
-\ctikz@scratchbox=\box79
+\ctikz@scratchbox=\box81
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircpath.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircshapes.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmonopoles.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircbipoles.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirctripoles.tex
-\pgf@circ@res@count=\count362
+\pgf@circ@res@count=\count363
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircquadpoles.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircmultipoles.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirclabel.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircvoltage.tex
 \pgfcirc@labelshift=\dimen333
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcirccurrent.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/circuitikz\pgfcircflow.tex)) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
-\t@pgfplots@toka=\toks42
-\t@pgfplots@tokb=\toks43
-\t@pgfplots@tokc=\toks44
+\t@pgfplots@toka=\toks44
+\t@pgfplots@tokb=\toks45
+\t@pgfplots@tokc=\toks46
 \pgfplots@tmpa=\dimen334
-\c@pgfplots@coordindex=\count363
-\c@pgfplots@scanlineindex=\count364
+\c@pgfplots@coordindex=\count364
+\c@pgfplots@scanlineindex=\count365
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks45
-\t@pgf@tokb=\toks46
-\t@pgf@tokc=\toks47
+\t@pgf@toka=\toks47
+\t@pgf@tokb=\toks48
+\t@pgf@tokc=\toks49
 (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count365
+\c@pgfplotsarray@tmp=\count366
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count366
-\t@pgfplotstable@a=\toks48
+\c@pgfplotstable@counta=\count367
+\t@pgfplotstable@a=\toks50
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count367
+\c@pgfplotslibrarysurf@no=\count368
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen335
 \pgfdecoratedremainingdistance=\dimen336
 \pgfdecoratedinputsegmentcompleteddistance=\dimen337
 \pgfdecoratedinputsegmentremainingdistance=\dimen338
 \pgf@decorate@distancetomove=\dimen339
-\pgf@decorate@repeatstate=\count368
+\pgf@decorate@repeatstate=\count369
 \pgfdecorationsegmentamplitude=\dimen340
 \pgfdecorationsegmentlength=\dimen341
 )
-\tikz@lib@dec@box=\box80
+\tikz@lib@dec@box=\box82
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count369
+\pgfplots@numplots=\count370
 \pgfplots@xmin@reg=\dimen342
 \pgfplots@xmax@reg=\dimen343
 \pgfplots@ymin@reg=\dimen344
@@ -713,9 +720,9 @@ File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.groupplots.code.tex
-\pgfplots@group@current@plot=\count370
-\pgfplots@group@current@row=\count371
-\pgfplots@group@current@column=\count372
+\pgfplots@group@current@plot=\count371
+\pgfplots@group@current@row=\count372
+\pgfplots@group@current@column=\count373
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
@@ -723,37 +730,37 @@ File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 32.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 48.
+Package hyperref Info: Option `colorlinks' set `true' on input line 33.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 49.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count373
+\l__color_backend_stack_int=\count374
 ) (main.aux
 Package babel Info: 'ngerman' activates 'ngerman' shorthands.
 (babel)             Reported on input line 8.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -789,13 +796,13 @@ LaTeX Font Info:    ... okay on input line 48.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 48.
-Package microtype Info: Applying patch `item' on input line 48.
-Package microtype Info: Applying patch `toc' on input line 48.
-Package microtype Info: Applying patch `eqnum' on input line 48.
-Package microtype Info: Applying patch `footnote' on input line 48.
-Package microtype Info: Applying patch `verbatim' on input line 48.
-LaTeX Info: Redefining \microtypesetup on input line 48.
+LaTeX Info: Redefining \microtypecontext on input line 49.
+Package microtype Info: Applying patch `item' on input line 49.
+Package microtype Info: Applying patch `toc' on input line 49.
+Package microtype Info: Applying patch `eqnum' on input line 49.
+Package microtype Info: Applying patch `footnote' on input line 49.
+Package microtype Info: Applying patch `verbatim' on input line 49.
+LaTeX Info: Redefining \microtypesetup on input line 49.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -811,27 +818,27 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-german.trsl
 File: translations-basic-dictionary-german.trsl (german translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 48.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `german'. on input line 49.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count374
+\scratchcounter=\count375
 \scratchdimen=\dimen348
-\scratchbox=\box81
-\nofMPsegments=\count375
-\nofMParguments=\count376
-\everyMPshowfont=\toks49
-\MPscratchCnt=\count377
+\scratchbox=\box83
+\nofMPsegments=\count376
+\nofMParguments=\count377
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count378
 \MPscratchDim=\dimen349
-\MPnumerator=\count378
-\makeMPintoPDFobject=\count379
-\everyMPtoPDFconversion=\toks50
+\MPnumerator=\count379
+\makeMPintoPDFobject=\count380
+\everyMPtoPDFconversion=\toks52
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 48.
+Package hyperref Info: Link coloring ON on input line 49.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -839,35 +846,35 @@ Package hyperref Info: Link coloring ON on input line 48.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 50.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 51.
 (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 50.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 51.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 50.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 51.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 50.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 51.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 50.
+(Font)              <12> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 50.
+(Font)              <8> on input line 51.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 50.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+(Font)              <6> on input line 51.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
@@ -895,7 +902,12 @@ PGFPlots: reading {data/signals_step_ramp_pulse.csv}
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 47.
  (C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (kapitel/zeitbereich-beschreibung.tex [4{C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]) (kapitel/laplace-uebertragungsfunktion.tex [5] (figures/fig_pt1_step.tex
+)) (kapitel/zeitbereich-beschreibung.tex [4
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.11 \]
+       {C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]) (kapitel/laplace-uebertragungsfunktion.tex [5] (figures/fig_pt1_step.tex
 PGFPlots: reading {data/pt1_step_K1_T1.csv}
 ) [6]) (kapitel/frequenzbereich.tex
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 22.
@@ -906,51 +918,117 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7]) (kapitel/bode-diagramme.tex (figures/fig_pt1_bode.tex
+ [7
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.28 \]
+       ] (figures/fig_nyquist_standardglieder.tex
+PGFPlots: reading {data/nyquist_PT1_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PT2_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PT3_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PT4_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PT7_K1_T1.csv}
+PGFPlots: reading {data/nyquist_I_K1.csv}
+PGFPlots: reading {data/nyquist_D_K1.csv}
+PGFPlots: reading {data/nyquist_PI_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PD_K1_T1.csv}
+) (figures/fig_nyquist_standardglieder_zoom0.tex
+PGFPlots: reading {data/nyquist_PT1_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PT2_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PT3_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PT4_K1_T1.csv}
+PGFPlots: reading {data/nyquist_PT7_K1_T1.csv}
+ [8
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.38 \end{figure}
+                 ])) (kapitel/bode-diagramme.tex [9
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 \]
+      
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.6 \]
+      ] (figures/fig_pt1_bode.tex
 Package pgfplots info on input line 17: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
 PGFPlots: reading {data/pt1_bode_K1_T1.csv}
 Package pgfplots info on input line 21: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
 PGFPlots: reading {data/pt1_bode_K1_T1.csv}
-) [8]) (kapitel/typische-lineare-uebertragungsglieder.tex [9] (figures/fig_pt2_rlc_schwingkreis.tex
+)) (kapitel/typische-lineare-uebertragungsglieder.tex [10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.9 
+    ] (figures/fig_pt2_rlc_schwingkreis.tex
 \absvshift=\dimen350
-) [10] (figures/fig_pt2_step_multiD.tex
+ [11]) (figures/fig_pt2_step_multiD.tex
 PGFPlots: reading {data/pt2_step_T1_K1_multiD.csv}
 PGFPlots: reading {data/pt2_step_T1_K1_multiD.csv}
 PGFPlots: reading {data/pt2_step_T1_K1_multiD.csv}
 PGFPlots: reading {data/pt2_step_T1_K1_multiD.csv}
 PGFPlots: reading {data/pt2_step_T1_K1_multiD.csv}
-) (figures/fig_pt2_overshoot_vs_damping.tex
+) [12] (figures/fig_pt2_overshoot_vs_damping.tex
 PGFPlots: reading {data/pt2_overshoot_vs_damping.csv}
-) [11] (figures/fig_pt2_mag_multiD.tex
+) [13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.128 \end{equation}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.128 \end{equation}
+                    ] (figures/fig_pt2_mag_multiD.tex
 Package pgfplots info on input line 18: Using 'lua backend=false' for axis: xmode=log unsupported (yet).
 PGFPlots: reading {data/pt2_mag_bode_T1_K1_multiD.csv}
 PGFPlots: reading {data/pt2_mag_bode_T1_K1_multiD.csv}
 PGFPlots: reading {data/pt2_mag_bode_T1_K1_multiD.csv}
 PGFPlots: reading {data/pt2_mag_bode_T1_K1_multiD.csv}
-)) (kapitel/07-blockdiagramm-umformung.tex [12] [13] [14] [15]) (kapitel/einschleifiger-regelkreis.tex
+)) (kapitel/07-blockdiagramm-umformung.tex [14
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.12 \end{itemize}
+                  ] [15] [16]) (kapitel/einschleifiger-regelkreis.tex
 
 Package pgf Warning: Returning node center instead of a point on node border. Did you specify a point identical to the center of node ``bfb''? on input line 26.
 
-[16]
+[17]
 Overfull \hbox (45.82321pt too wide) in paragraph at lines 66--75
  [] 
  []
 
-) (kapitel/stabilitaet-linearer-regelkreise.tex [17] (figures/fig_nyquist_3lag.tex
-<Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf, id=417, 520.34402pt x 404.712pt>
+) (kapitel/stabilitaet-linearer-regelkreise.tex [18] [19] (figures/fig_nyquist_3lag.tex
+<Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf, id=432, 520.34402pt x 404.712pt>
 File: Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf Graphic file (type pdf)
 <use Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf>
 Package pdftex.def Info: Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf  used on input line 4.
 (pdftex.def)             Requested size: 377.85419pt x 293.89963pt.
 
-Underfull \hbox (badness 4699) in paragraph at lines 9--9
-[]\T1/lmr/m/n/10.95 (+20) Abbildung 8: []Nyquist-Ortskurven (Zoom um $\OT1/lmr/m/n/10.95 (+20) (\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 (+20) 1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 (+20) 0)$\T1/lmr/m/n/10.95 (+20) ) der Kreis-ver-stär-kung $\OML/lmm/m/it/10.95 G[]\OT1/lmr/m/n/10.95 (+20) (\OML/lmm/m/it/10.95 p\OT1/lmr/m/n/10.95 (+20) ) =
+Underfull \hbox (badness 3568) in paragraph at lines 9--9
+[]\T1/lmr/m/n/10.95 (+20) Abbildung 10: []Nyquist-Ortskurven (Zoom um $\OT1/lmr/m/n/10.95 (+20) (\OMS/lmsy/m/n/10.95 ^^@\OT1/lmr/m/n/10.95 (+20) 1\OML/lmm/m/it/10.95 ; \OT1/lmr/m/n/10.95 (+20) 0)$\T1/lmr/m/n/10.95 (+20) ) der Kreis-ver-stär-kung $\OML/lmm/m/it/10.95 G[]\OT1/lmr/m/n/10.95 (+20) (\OML/lmm/m/it/10.95 p\OT1/lmr/m/n/10.95 (+20) ) =
  []
 
-) [18] [19 <./Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf>] (figures/fig_stability_region_pi_pt2.tex
+) [20] [21
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.183 \]
+         <./Abbildung7_neu_Paket_ZOOM/Abbildung7_neu_latex.pdf>] (figures/fig_stability_region_pi_pt2.tex
 PGFPlots: reading {data/stab_region_polygon_PI_PT2_KS1_D0p5_T1.csv}
 PGFPlots: reading {data/stab_region_PI_PT2_KS1_D0p5_T1.csv}
-)) (kapitel/reglerstrukturen-realisierung.tex [20] [21]) (kapitel/anhang-formelsammlung.tex) [22] (main.aux)
+)) (kapitel/reglerstrukturen-realisierung.tex [22]) (kapitel/anhang-formelsammlung.tex [23
+pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.16 \end{center}
+                 ]) [24] (main.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -959,17 +1037,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5E40A4BB3D2B8018A63AF36C231D414E;11995.
  ) 
 Here is how much of TeX's memory you used:
- 59970 strings out of 467871
- 1553914 string characters out of 5413500
- 4285606 words of memory out of 5000000
- 87684 multiletter control sequences out of 15000+600000
- 725881 words of font info for 232 fonts, out of 8000000 for 9000
+ 60156 strings out of 467871
+ 1557933 string characters out of 5413500
+ 4310162 words of memory out of 5000000
+ 87827 multiletter control sequences out of 15000+600000
+ 726296 words of font info for 237 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,19n,94p,1125b,2775s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,19n,94p,1125b,2777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy6.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy7.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Niclas Schwalbe/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (22 pages, 703034 bytes).
+Output written on main.pdf (24 pages, 757961 bytes).
 PDF statistics:
- 675 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
+ 689 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
  54202 words of extra memory for PDF output out of 61914 (max. 10000000)
 

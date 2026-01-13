@@ -1,0 +1,48 @@
+% Nyquist curves of standard elements (K=1, T=1)
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.9\linewidth,
+      height=0.6\linewidth,
+      axis lines=middle,
+      axis equal image,
+      xmin=-0.6, xmax=1.1,
+      ymin=-1.2, ymax=1.2,
+      grid=both,
+      grid style={line width=.1pt, draw=gray!20},
+      major grid style={line width=.2pt, draw=gray!35},
+      tick label style={font=\small},
+      label style={font=\small},
+      xlabel={$\Ree$},
+      ylabel={$\Imm$},
+      legend style={font=\small, at={(0.0,1.02)}, anchor=south west, legend columns=3},
+    ]
+      \addplot[thick, blue] table[x=re,y=im,col sep=comma] {data/nyquist_PT1_K1_T1.csv};
+      \addlegendentry{PT1}
+      \addplot[thick, red] table[x=re,y=im,col sep=comma] {data/nyquist_PT2_K1_T1.csv};
+      \addlegendentry{PT2}
+      \addplot[thick, green!60!black] table[x=re,y=im,col sep=comma] {data/nyquist_PT3_K1_T1.csv};
+      \addlegendentry{PT3}
+      \addplot[thick, orange] table[x=re,y=im,col sep=comma] {data/nyquist_PT4_K1_T1.csv};
+      \addlegendentry{PT4}
+      \addplot[thick, teal!70!black] table[x=re,y=im,col sep=comma] {data/nyquist_PT7_K1_T1.csv};
+      \addlegendentry{PT7}
+      \addplot[thick, gray, dashed, restrict y to domain=-1.2:1.2] table[x=re,y=im,col sep=comma] {data/nyquist_I_K1.csv};
+      \addlegendentry{I}
+      \addplot[thick, black, dotted, restrict y to domain=-1.2:1.2] table[x=re,y=im,col sep=comma] {data/nyquist_D_K1.csv};
+      \addlegendentry{D}
+      \addplot[thick, cyan!60!black, dashdotdotted, restrict y to domain=-1.2:1.2] table[x=re,y=im,col sep=comma] {data/nyquist_PI_K1_T1.csv};
+      \addlegendentry{PI}
+      \addplot[thick, brown, dashed, restrict y to domain=-1.2:1.2] table[x=re,y=im,col sep=comma] {data/nyquist_PD_K1_T1.csv};
+      \addlegendentry{PD}
+      \addplot[only marks, mark=*, mark size=1.6pt] coordinates {(1,0)};
+      \addlegendentry{P}
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Nyquist-Ortskurven der Standardglieder (Ausschnitt, $K=1$, $T=1$; PT1--PT4, PT7,
+  PI und PD). Gezeigt ist
+  $\omega>0$; die vollst\"andige Kurve ergibt sich durch Spiegelung an der reellen Achse.
+  Das I- und D-Glied verlaufen entlang der imagin\"aren Achse.}
+  \label{fig:nyquist_standardglieder}
+\end{figure}

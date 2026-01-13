@@ -149,6 +149,8 @@ INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\generic\uniquec
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\placeins\placeins.sty
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\placeins\placeins.sty
+INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\pgf\frontendlayer\tikz.sty
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\pgf\basiclayer\pgf.sty
@@ -488,6 +490,26 @@ INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\Niclas Schwalbe\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT .\figures\fig_nyquist_standardglieder.tex
+INPUT .\figures\fig_nyquist_standardglieder.tex
+INPUT figures\fig_nyquist_standardglieder.tex
+INPUT data\nyquist_PT1_K1_T1.csv
+INPUT data\nyquist_PT2_K1_T1.csv
+INPUT data\nyquist_PT3_K1_T1.csv
+INPUT data\nyquist_PT4_K1_T1.csv
+INPUT data\nyquist_PT7_K1_T1.csv
+INPUT data\nyquist_I_K1.csv
+INPUT data\nyquist_D_K1.csv
+INPUT data\nyquist_PI_K1_T1.csv
+INPUT data\nyquist_PD_K1_T1.csv
+INPUT .\figures\fig_nyquist_standardglieder_zoom0.tex
+INPUT .\figures\fig_nyquist_standardglieder_zoom0.tex
+INPUT figures\fig_nyquist_standardglieder_zoom0.tex
+INPUT data\nyquist_PT1_K1_T1.csv
+INPUT data\nyquist_PT2_K1_T1.csv
+INPUT data\nyquist_PT3_K1_T1.csv
+INPUT data\nyquist_PT4_K1_T1.csv
+INPUT data\nyquist_PT7_K1_T1.csv
 INPUT .\kapitel\bode-diagramme.tex
 INPUT .\kapitel\bode-diagramme.tex
 INPUT kapitel\bode-diagramme.tex

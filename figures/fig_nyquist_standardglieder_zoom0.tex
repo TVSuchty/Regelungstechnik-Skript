@@ -1,0 +1,38 @@
+% Nyquist curves of PT elements (zoom around origin)
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.82\linewidth,
+      height=0.55\linewidth,
+      axis lines=middle,
+      axis equal image,
+      xmin=-0.3, xmax=0.3,
+      ymin=-0.3, ymax=0.3,
+      grid=both,
+      grid style={line width=.1pt, draw=gray!20},
+      major grid style={line width=.2pt, draw=gray!35},
+      tick label style={font=\small},
+      label style={font=\small},
+      xlabel={$\Ree$},
+      ylabel={$\Imm$},
+      legend style={font=\small, at={(0.02,0.98)}, anchor=north west},
+    ]
+      \addplot[thick, blue] table[x=re,y=im,col sep=comma] {data/nyquist_PT1_K1_T1.csv};
+      \addlegendentry{PT1}
+      \addplot[thick, red] table[x=re,y=im,col sep=comma] {data/nyquist_PT2_K1_T1.csv};
+      \addlegendentry{PT2}
+      \addplot[thick, green!60!black] table[x=re,y=im,col sep=comma] {data/nyquist_PT3_K1_T1.csv};
+      \addlegendentry{PT3}
+      \addplot[thick, orange] table[x=re,y=im,col sep=comma] {data/nyquist_PT4_K1_T1.csv};
+      \addlegendentry{PT4}
+      \addplot[thick, teal!70!black] table[x=re,y=im,col sep=comma] {data/nyquist_PT7_K1_T1.csv};
+      \addlegendentry{PT7}
+      \filldraw (0,0) circle (1.2pt);
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Zoom um den Ursprung: Nyquist-Ortskurven der PT-Glieder ($K=1$, $T=1$; PT1--PT4 und PT7).
+  Mit wachsendem $n$ verl\"auft die Kurve n\"aher um $(0,0)$ und durchl\"auft dabei mehrere
+  Quadranten (nur $\omega>0$, Spiegelung an der reellen Achse ergibt die vollst\"andige Kurve).}
+  \label{fig:nyquist_standardglieder_zoom0}
+\end{figure}
