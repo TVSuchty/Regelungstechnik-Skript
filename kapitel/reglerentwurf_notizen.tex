@@ -1,0 +1,153 @@
+% -----------------------------------------------------------------------------
+% Zusammenfassung handschriftlicher Notizen: Entwurf analoger Regler
+% (als Einfuege-Abschnitt fuer das Skript)
+% -----------------------------------------------------------------------------
+
+\subsection{Entwurf analoger Regler}
+
+\subsubsection{Guetekriterien}
+Zur Bewertung des Zeitverhaltens (Fuehrungs- und Stoerantwort) werden oft
+Integralguetekriterien ueber den Regelfehler $e(t)$ verwendet:
+\begin{align}
+  IAE  &= \int_{0}^{\infty} \lvert e(t)\rvert\,\mathrm{d}t,\\
+  ISE  &= \int_{0}^{\infty} e^{2}(t)\,\mathrm{d}t,\\
+  ITAE &= \int_{0}^{\infty} t\,\lvert e(t)\rvert\,\mathrm{d}t.
+\end{align}
+
+\subsubsection{Reglerentwurf fuer gewuenschtes Folgeverhalten}
+Der betrachtete einschleifige Regelkreis (Einheitsrueckfuehrung) lautet
+schematisch
+\[\quad w \rightarrow \boxed{G_R(p)} \rightarrow \boxed{G_S(p)} \rightarrow x,\qquad e=w-x.\]
+
+\paragraph{Vorgehen (prinzipiell).}
+\begin{enumerate}
+  \item Streckenuebertragungsfunktion $G_S(p)$ ermitteln.
+  \item Gewuenschte Parameter der geschlossenen Fuehrungsuebertragungsfunktion
+        $G_w(p)=x(p)/w(p)$ festlegen (insbesondere Daempfung und Zeitmass).
+  \item Reglerparameter berechnen und anschliessend die Kennwerte des
+        geschlossenen Regelkreises pruefen.
+\end{enumerate}
+
+\paragraph{Gewuenschte Fuehrungs-UTF (Ansatz).}
+In den Notizen wird ein PT2-Verhalten des geschlossenen Kreises angesetzt:
+\begin{equation}
+  G_{w,\mathrm{soll}}(p)=\frac{1}{1+2D_{gw}T_{gw}p+T_{gw}^{2}p^{2}}.
+\end{equation}
+Wird zusaetzlich die statische Kreisverstaerkung $V_0=G_0(0)$ (mit
+$G_0(p)=G_R(p)G_S(p)$) beruecksichtigt, wird $G_w(p)$ naeherungsweise
+in der Form
+\begin{equation}
+  G_w(p)\approx \frac{V_0}{1+V_0}\,\frac{1}{1+2D_{gw}T_{gw}p+T_{gw}^{2}p^{2}}
+\end{equation}
+verwendet.
+Damit gilt: Bei endlichem $V_0$ ist der statische Verstaerkungsfaktor
+$V_0/(1+V_0)<1$, waehrend fuer PI- bzw. PID-Regler aufgrund des
+Integratoranteils typischerweise $V_0\to\infty$ und damit
+$\lim_{p\to 0}G_w(p)=1$ resultiert.
+
+\subsubsection{Hinweis zur Anwendbarkeit}
+Das in den Notizen skizzierte Verfahren ist \emph{nicht} uneingeschraenkt
+auf alle Strecken (insbesondere stark schwingfaehige oder unsichere Modelle)
+uebertragbar.
+
+\subsubsection{Strecken in Entwurfsform bringen (PT3$^{\ast}$-Form)}
+Fuer die anschliessende Parameterberechnung wird die Strecke naeherungsweise
+in eine PT3$^{\ast}$-Form ueberfuehrt:
+\begin{equation}
+  G_S(p)\approx \frac{K_S}{(1+T_1p)(1+T_2p)(1+T_3^{\ast}p)}.
+\end{equation}
+Diese Form kann naeherungsweise aus unterschiedlichen Strecken-UTF gewonnen
+werden, indem Summanden zusammengefasst und ggf. Verhaeltnisglieder
+(Nullstellen) beruecksichtigt werden, z.\,B.
+\begin{align}
+  &G_S(p)=\frac{K_S}{1+2D_ST_Sp+T_S^{2}p^{2}}, &&(D_S<1)\\
+  &G_S(p)=K_S\,\frac{1+T_Dp}{(1+T_1p)(1+T_2p)}\,e^{-T_t p},\\
+  &G_S(p)=K_S\,\frac{\prod_k(1+T_{Dk}p)}{\prod_i(1+T_ip)}\,e^{-T_t p},\\
+  &G_S(p)=\frac{K_S}{(1+Tp)^n},\qquad n\ge 3.
+\end{align}
+
+\paragraph{Effektive Zeitkonstante $T_3^{\ast}$.}
+In den Notizen wird $T_3^{\ast}$ durch Zusammenfassen bzw. Umformung
+(inkl. Totzeit/Transportzeit) gebildet. Als Merkschema:
+\begin{equation}
+  T_3^{\ast} \approx (T_3+T_4+\dots)\; -\; (T_{D1}+T_{D2}+\dots)\; +\; T_t.
+\end{equation}
+
+\paragraph{Integrierende Strecke (Sonderfall).}
+Fuer integrierende Strecken tritt als Ausgangsform z.\,B.
+$G_S(p)=K_{iS}/p\,(\dots)$ auf; hier kann ein P-Regler (anstatt PI)
+bereits eine endliche Regelabweichung vermeiden.
+
+\subsubsection{Sonderfall: PT2 mit definierter Daempfung}
+Wird eine (ueberdaempfte) PT2-Strecke betrachtet,
+\begin{equation}
+  G_S(p)=K_S\,\frac{1}{1+2D_ST_Sp+T_S^{2}p^{2}},\qquad D_S>1,
+\end{equation}
+so laesst sich der Nenner faktorisieren:
+\begin{equation}
+  1+2D_ST_Sp+T_S^{2}p^{2}=(1+T_1p)(1+T_2p)
+  =1+(T_1+T_2)p+T_1T_2p^{2}.
+\end{equation}
+In diesem Fall wird in den Notizen $T_3^{\ast}=0$ gesetzt.
+\medskip
+
+\noindent\textbf{Beachte:} PD- und PID-Regler sind nach dem in den Notizen
+verwendeten Berechnungsalgorithmus fuer diesen Spezialfall nicht geeignet,
+weil dabei $K_{PR}\to\infty$ resultieren kann.
+
+\subsubsection{Reglerstrukturen und Parameter (aus der Notiz-Tabelle)}
+Es werden die Standardstrukturen
+\begin{align}
+  \text{P:}\quad &G_R(p)=K_{PR},\\
+  \text{PI:}\quad &G_R(p)=K_{PR}\Bigl(1+\frac{1}{T_N p}\Bigr)=K_{PR}+\frac{K_{IR}}{p},\\
+  \text{PD:}\quad &G_R(p)=K_{PR}(1+T_V p)=K_{PR}+K_{DR}p,\\
+  \text{PID:}\quad &G_R(p)=K_{PR}\Bigl(1+\frac{1}{T_N p}+T_V p\Bigr)=K_{PR}+\frac{K_{IR}}{p}+K_{DR}p
+\end{align}
+verwendet. Fuer die PT3$^{\ast}$-Streckenform (mit $T_1,\,T_2,\,T_3^{\ast}$)
+geben die Notizen folgende Parameterzusammenhaenge an (mit $T_h$ als
+Zeitmass des gewuenschten Folgeverhaltens; in vielen Skripten entspricht dies
+$T_h\equiv T_{gw}$):
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{lccc}
+\hline
+ & PI & PD & PID\\
+\hline
+$K_{PR}$
+  & $\displaystyle \frac{T_h}{K_S\,(T_2+T_3^{\ast})\,4D_{gw}^{2}}$
+  & $\displaystyle \frac{T_h}{K_S\,T_3^{\ast}\,4D_{gw}^{2}}$
+  & $\displaystyle \frac{T_h+T_2}{K_S\,T_3^{\ast}\,4D_{gw}}$\\
+$T_N$ & $T_N=T_h$ & -- & $T_N=T_1+T_2$\\
+$T_V$ & -- & $T_V=T_2$ & $\displaystyle T_V=\frac{T_1T_2}{T_1+T_2}$\\
+\hline
+\end{tabular}
+\end{center}
+
+Die Umrechnung auf Parallelform-Parameter erfolgt ueber
+\begin{equation}
+  K_{IR}=\frac{K_{PR}}{T_N},\qquad K_{DR}=K_{PR}\,T_V.
+\end{equation}
+
+\subsubsection{Beispiel- und Uebungsangaben (aus den Notizen)}
+\paragraph{Beispiel (mit Totzeit).}
+\begin{equation}
+  G_S(p)=10\,\frac{1+0.2p}{(1+p)(1+0.5p)(1+0.4p)}\,e^{-0.5p}.
+\end{equation}
+Gesucht sind P-, PI-, PD- und PID-Regler. In den Notizen wird dazu eine
+Tabelle zur Gegenueberstellung der Reglerparameter (u.\,a. $K_{PR}$, $T_N$,
+$T_V$, $K_{IR}$, $K_{DR}$ sowie pruefbare Kennwerte des geschlossenen Kreises)
+angelegt.
+
+\paragraph{Ausschnitt aus einer Beispielrechnung (PD).}
+Fuer einen PD-Regler wurden notiert:
+\(K_{PR}=0.083\), \(T_V=10\,\mathrm{s}\) und damit \(K_{DR}=0.83\).
+Weiterhin: \(G_w(0)=1\) und \(T_{RK}\approx 1.5\,\mathrm{s}\).
+
+\paragraph{Hausaufgabe (integrierende Strecke).}
+\begin{equation}
+  G_S(p)=\frac{3}{p}\,\frac{1+p}{(1+4p)(1+7p)(1+6.5p)}.
+\end{equation}
+(Angabe in den Notizen: Entwurf eines P- bzw. PD-Reglers fuer gewuenschte
+Kenngroessen des Folgeverhaltens.)
+

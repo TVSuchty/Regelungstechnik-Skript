@@ -1,10 +1,3 @@
 Aufgabenliste aus den Kommentaren (Version1.0 mit Kommentaren.pdf)
 
 Achte stets auf Strukutur des Skriptes und lösche nie Inhalt, wenn es dir nicht ausdrücklich gesagt wird. Sei mathematisch direkt, aber stelle sicher, dass es Drittsemester ohne weiter Vorkenntisse verstehen.
-
-8) S. 20, Realisierungspol beim PD-Regler:
-   - Bezeichnung T_N fuer den Realisierungspol durch T_R ersetzen (T_N ist bereits als Nachstellzeit belegt); konsistent in Formeln und Text.
-   - genauer erklären, was ein Realisierungspol macht. 
-
-9) S. 21, PID-Regler:
-   - Einen realisierbaren PID-Regler mit Realisierungspol ergaenzen (z.B. D-Anteil mit Pol), inkl. Formel und kurzer Erlaeuterung der Parameter.

@@ -12,9 +12,11 @@
 \paragraph{Realisierbarer PD (mit Realisierungspol).}
 Ein idealer Differenzierer verst\"arkt hohe Frequenzen unbegrenzt; daher wird h\"aufig ein Pol eingef\"uhrt, z.\,B.
 \[
-  G_R(p)=K_{PR}\left(1+\frac{T_V p}{1+T_N p}\right),
+  G_R(p)=K_{PR}\left(1+\frac{T_V p}{1+T_R p}\right),
 \]
-wobei $T_N$ die Zeitkonstante des Realisierungspols ist.
+wobei $T_R$ die Zeitkonstante des Realisierungspols ist. Der Realisierungspol wirkt als Tiefpass
+im D-Anteil: f\"ur kleine Frequenzen gilt nahezu $T_V p$, f\"ur hohe Frequenzen wird die
+Verst\"arkung begrenzt (Rauschunterdr\"uckung, physikalische Realisierbarkeit).
 
 \paragraph{PID-Regler (ideal).}
 \[
@@ -23,6 +25,13 @@ wobei $T_N$ die Zeitkonstante des Realisierungspols ist.
   \qquad
   T_N=\frac{K_{PR}}{K_{IR}}.
 \]
+
+\paragraph{PID-Regler (realisierbar).}
+\[
+  G_R(p)=K_{PR}\left(1+\frac{1}{T_N p}+\frac{T_V p}{1+T_R p}\right),
+  \qquad T_R \ll T_V.
+\]
+Hier ist $T_N$ die Nachstellzeit (I-Anteil) und $T_R$ der Realisierungspol des D-Anteils.
 
 \subsection{(Invertierender) OPV-Grundsatz}
 F\"ur einen idealen invertierenden Operationsverst\"arker gilt im Laplace-Bereich:
