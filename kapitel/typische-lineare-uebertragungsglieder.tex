@@ -50,6 +50,71 @@ Durch Gleichsetzen der Nennerkoeffizienten mit der Standardform $s^2+2\zeta\omeg
 \]
 Setzt man $K=1$ (normierte statische Verst\"arkung), ergibt sich direkt \eqref{eq:pt2}.
 
+\paragraph{Sprungantwort des Standard-PT2.}
+F\"ur den Einheitssprung gilt $X_e(s)=1/s$. Damit
+\[
+  Y(s)=G(s)X_e(s)=\frac{\omega_0^2}{s\left(s^2+2D\omega_0 s+\omega_0^2\right)}.
+\]
+Schreibe den Zaehler als Differenz:
+\begin{align*}
+  \frac{\omega_0^2}{s\left(s^2+2D\omega_0 s+\omega_0^2\right)}
+  &=\frac{\left(s^2+2D\omega_0 s+\omega_0^2\right)-\left(s^2+2D\omega_0 s\right)}
+          {s\left(s^2+2D\omega_0 s+\omega_0^2\right)}\\
+  &=\frac{1}{s}-\frac{s^2+2D\omega_0 s}{s\left(s^2+2D\omega_0 s+\omega_0^2\right)}\\
+  &=\frac{1}{s}-\frac{s+2D\omega_0}{s^2+2D\omega_0 s+\omega_0^2}.
+\end{align*}
+Quadratische Ergaenzung im Nenner (Schritt fuer Schritt):
+\begin{align*}
+  s^2+2D\omega_0 s+\omega_0^2
+  &=\bigl(s^2+2D\omega_0 s+D^2\omega_0^2\bigr)
+    +\omega_0^2-D^2\omega_0^2\\
+  &=(s+D\omega_0)^2+\bigl(1-D^2\bigr)\omega_0^2.
+\end{align*}
+Zaehler in zwei Teile zerlegen:
+\[
+  s+2D\omega_0=(s+D\omega_0)+D\omega_0.
+\]
+Definiere nun $\omega_d=\omega_0\sqrt{1-D^2}$, also $(1-D^2)\omega_0^2=\omega_d^2$. Damit:
+\[
+  Y(s)=\frac{1}{s}-\frac{s+D\omega_0}{(s+D\omega_0)^2+\omega_d^2}
+       -\frac{D\omega_0}{(s+D\omega_0)^2+\omega_d^2}.
+\]
+Ruecktransformation mit den bekannten Paaren (Herleitungen der Ruecktransformationen sind nicht Teil dieses Skripts):
+\begin{align}
+  \Laplace^{-1}\!\left\{\frac{1}{s}\right\}&=1, \tag{L1}\label{eq:laplace_pair_L1}\\
+  \Laplace^{-1}\!\left\{\frac{s+a}{(s+a)^2+\omega_d^2}\right\}&=\mathrm{e}^{-a t}\cos(\omega_d t), \tag{L2}\label{eq:laplace_pair_L2}\\
+  \Laplace^{-1}\!\left\{\frac{\omega_d}{(s+a)^2+\omega_d^2}\right\}&=\mathrm{e}^{-a t}\sin(\omega_d t). \tag{L3}\label{eq:laplace_pair_L3}
+\end{align}
+Im letzten Ausdruck stehen zwei Bruchterme mit Quadratterm im Nenner.
+Der Zaehler $s+D\omega_0$ passt direkt zum Cosinus-Paar in \eqref{eq:laplace_pair_L2}.
+Fuer den zweiten Bruchterm braucht man das Sinus-Paar in \eqref{eq:laplace_pair_L3}, dort steht $\omega_d$ im Zaehler.
+Wir nutzen dabei die Linearitaet der Ruecktransformation:
+\[
+  \Laplace^{-1}\!\{c\,F(s)\}=c\,\Laplace^{-1}\!\{F(s)\}.
+\]
+Daher wird der Bruchterm als Konstante mal Standardform geschrieben:
+\[
+  \frac{D\omega_0}{(s+a)^2+\omega_d^2}
+  =\frac{D\omega_0}{\omega_d}\,\frac{\omega_d}{(s+a)^2+\omega_d^2}.
+\]
+Herleitungen zu bekannten Fourier-Transformationspaaren finden sich z.\,B.\ in
+\href{https://en.wikipedia.org/wiki/Fourier_transform#Table_of_important_Fourier_transforms}{Fourier-Transformationspaaren}.
+Setze $a=D\omega_0$. Mit \eqref{eq:laplace_pair_L3} folgt:
+\[
+  \Laplace^{-1}\!\left\{\frac{D\omega_0}{(s+a)^2+\omega_d^2}\right\}
+  =\frac{D\omega_0}{\omega_d}\,\mathrm{e}^{-a t}\sin(\omega_d t).
+\]
+Da $\omega_d=\omega_0\sqrt{1-D^2}$ gilt, folgt
+\[
+  \frac{D\omega_0}{\omega_d}=\frac{D}{\sqrt{1-D^2}}.
+\]
+Damit ergibt sich
+\begin{equation}
+  x_a(t)=1-\mathrm{e}^{-D\omega_0 t}\!\left(\cos(\omega_d t)+\frac{D}{\sqrt{1-D^2}}\sin(\omega_d t)\right),
+  \qquad \omega_d=\omega_0\sqrt{1-D^2}.
+  \label{eq:pt2_step_response}
+\end{equation}
+
 \paragraph{Rechenweg f\"ur einen elektrischen Schwingkreis.}
 \input{figures/fig_pt2_rlc_schwingkreis.tex}
 
@@ -82,38 +147,16 @@ Die Polstellen von \eqref{eq:pt2} sind
   \item $D>1$ (\emph{\"uberd\"ampft}): zwei reelle Pole, monotone Sprungantwort ohne \"Uberschwingen.
 \end{itemize}
 
-\FloatBarrier
 \input{figures/fig_pt2_step_multiD.tex}
-
-\subsubsection{\"Uberschwingen bei der Sprungantwort}
-Betrachte einen Einheitssprung $u(t)=1\cdot \mathbf{1}(t)$ am Eingang eines stabilen Systems der Form
-\eqref{eq:pt2}. F\"ur $0<D<1$ zeigt die Sprungantwort typischerweise ein Maximum oberhalb des Endwerts.
-
-\textbf{\"Uberschwingma\ss} (relative peak overshoot) $M_p$:
-\[
-  M_p = \frac{y_\text{max}-y(\infty)}{y(\infty)}.
-\]
-Oft wird es in Prozent angegeben: $M_p[\%] = 100\cdot M_p$.
-
-F\"ur das Standard-PT2 gilt (bei Einheitssprung, $0<D<1$):
-\begin{equation}
-  M_p=\exp\!\left(-\frac{D\pi}{\sqrt{1-D^2}}\right).
-  \label{eq:overshoot}
-\end{equation}
-Umgekehrt:
-\[
-  D=\frac{-\ln(M_p)}{\sqrt{\pi^2+\ln^2(M_p)}}.
-\]
-
-\paragraph{Beispiel (\"Uberschwingen).}
-F\"ur $D=0{,}5$ ergibt sich
-$M_p=\exp\!\left(-\frac{0{,}5\pi}{\sqrt{1-0{,}25}}\right)\approx 0{,}16$,
-also etwa $16\,\%$ \"Uberschwingen.
-
-\input{figures/fig_pt2_overshoot_vs_damping.tex}
+\FloatBarrier
 
 \paragraph{Zeitpunkt des ersten Maximums.}
-Die Zeit bis zum ersten Peak (peak time) ist
+Aus der Sprungantwort (vgl. \eqref{eq:pt2_step_response}) folgt nach Ableitung
+\[
+  \dot x_a(t)=\frac{\omega_0}{\sqrt{1-D^2}}\,\mathrm{e}^{-D\omega_0 t}\,\sin(\omega_d t).
+\]
+Damit gilt $\dot x_a(t)=0$ f\"ur $t=k\pi/\omega_d$; der erste positive Extremwert liegt bei $k=1$.
+Die Zeit bis zum ersten Peak (peak time) ist somit
 \begin{equation}
   t_p = \frac{\pi}{\omega_d} = \frac{\pi}{\omega_0\sqrt{1-D^2}}.
   \label{eq:tp}
@@ -127,6 +170,72 @@ Als 2\,\%-Einschwingzeit wird h\"aufig die Faustregel verwendet:
   \label{eq:ts}
 \end{equation}
 (Die N\"aherung ist am besten im mittleren D\"ampfungsbereich und dient der schnellen Absch\"atzung.)
+
+\subsubsection{\"Uberschwingen bei der Sprungantwort}
+Betrachte einen Einheitssprung $u(t)=1\cdot \mathbf{1}(t)$ am Eingang eines stabilen Systems der Form
+\eqref{eq:pt2}. F\"ur $0<D<1$ zeigt die Sprungantwort typischerweise ein Maximum oberhalb des Endwerts.
+
+Die Sprungantwort lautet \eqref{eq:pt2_step_response}.
+
+\textbf{\"Uberschwingma\ss} (relative peak overshoot) $M_p$:
+\[
+  M_p = \frac{x_{a,\text{max}}-\lim_{t\to\infty}x_a(t)}{\lim_{t\to\infty}x_a(t)}.
+\]
+Oft wird es in Prozent angegeben: $M_p[\%] = 100\cdot M_p$.
+
+F\"ur das Standard-PT2 gilt (bei Einheitssprung, $0<D<1$):
+\begin{equation}
+  M_p=\exp\!\left(-\frac{D\pi}{\sqrt{1-D^2}}\right).
+  \label{eq:overshoot}
+\end{equation}
+Herleitung (kurz): Mit \eqref{eq:pt2_step_response} und $t_p=\pi/\omega_d$ (siehe \eqref{eq:tp}) folgt
+\[
+  x_a(t_p)=1-\mathrm{e}^{-D\omega_0 t_p}\cos(\pi)=1+\mathrm{e}^{-D\omega_0 t_p},
+\]
+und somit
+\[
+  M_p=\frac{x_a(t_p)-1}{1}=\mathrm{e}^{-D\omega_0 t_p}
+  =\exp\!\left(-D\omega_0\cdot\frac{\pi}{\omega_0\sqrt{1-D^2}}\right)
+  =\exp\!\left(-\frac{D\pi}{\sqrt{1-D^2}}\right).
+\]
+Umgekehrt:
+\[
+  \ln(M_p)=-\frac{D\pi}{\sqrt{1-D^2}}
+  \ \Rightarrow\ 
+  \ln^2(M_p)=\frac{D^2\pi^2}{1-D^2}
+  \ \Rightarrow\ 
+  D^2=\frac{\ln^2(M_p)}{\pi^2+\ln^2(M_p)}.
+\]
+\[
+  D=\frac{-\ln(M_p)}{\sqrt{\pi^2+\ln^2(M_p)}}.
+\]
+
+\paragraph{Logarithmisches Daempfungsdekrement.}
+F\"ur eine unterd\"ampfte PT2-Sprungantwort bezeichnen $x_k$ und $x_{k+1}$ zwei aufeinanderfolgende
+Maxima, $x_\infty$ den Endwert. Dann ist das logarithmische Daempfungsdekrement
+\[
+  \Lambda=\ln\!\left(\frac{x_k-x_\infty}{x_{k+1}-x_\infty}\right)
+  =\frac{2\pi D}{\sqrt{1-D^2}}.
+\]
+Zusammenhang zum \"Uberschwingma\ss: F\"ur den normierten Endwert $x_\infty=1$ gilt
+\[
+  M_p=\exp\!\left(-\frac{D\pi}{\sqrt{1-D^2}}\right)=\exp\!\left(-\frac{\Lambda}{2}\right),
+  \qquad
+  \Lambda=2\ln\!\left(\frac{1}{M_p}\right).
+\]
+Warum logarithmisch? Die H\"ullkurve der Schwingungsamplitude f\"allt exponentiell, d.\,h.\ die
+Verh\"altnisse aufeinanderfolgender Maxima sind konstant. Der Logarithmus macht diese
+multiplikative Abnahme additiv und unabh\"angig von der Anfangsamplitude. Vorteil: $D$ l\"asst
+sich direkt aus zwei (oder mehreren gemittelten) Peaks robust bestimmen.
+
+\input{figures/fig_log_decrement.tex}
+
+\paragraph{Beispiel (\"Uberschwingen).}
+F\"ur $D=0{,}5$ ergibt sich
+$M_p=\exp\!\left(-\frac{0{,}5\pi}{\sqrt{1-0{,}25}}\right)\approx 0{,}16$,
+also etwa $16\,\%$ \"Uberschwingen.
+
+\input{figures/fig_pt2_overshoot_vs_damping.tex}
 
 \subsubsection{Eigenfrequenz vs.\ Resonanzfrequenz}
 Die \textbf{Eigenfrequenz} beschreibt das freie Schwingverhalten (durch die Pole bestimmt).
