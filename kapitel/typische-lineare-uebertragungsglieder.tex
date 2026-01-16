@@ -38,6 +38,8 @@ H\"aufig wird die D\"ampfung \"uber den \textbf{G\"utefaktor} beschrieben:
 \]
 Gro\ss es $Q$ bedeutet geringe D\"ampfung $\Rightarrow$ ausgepr\"agtere Resonanzspitze und tendenziell mehr \"Uberschwingen; kleines $Q$ steht f\"ur starke D\"ampfung und rasches Abklingen.
 
+\input{figures/fig_pt2_mag_multiD.tex}
+
 \paragraph{Kurze Herleitung der Normform.}
 Ausgehend von $G(p)=\dfrac{K}{1+2DTp+T^2p^2}$ wird der Nenner durch $T^2$ normiert:
 \[
@@ -139,19 +141,9 @@ Die Polstellen von \eqref{eq:pt2} sind
   s_{1,2} = -\zeta\omega_0 \pm j\,\omega_0\sqrt{1-\zeta^2}.
 \]
 
-\subsubsection{D\"ampfungsf\"alle}
-\begin{itemize}[itemsep=2pt]
-  \item $D<0$ (\emph{negative D\"ampfung}): Energiezufuhr statt Verlust, Schwingungen wachsen an (instabil).
-  \item $0<D<1$ (\emph{unterd\"ampft}): komplex konjugierte Pole, schwingende Sprungantwort mit \"Uberschwingen.
-  \item $D=1$ (\emph{kritisch ged\"ampft}): Doppelpol, schnell ohne \"Uberschwingen (Grenzfall).
-  \item $D>1$ (\emph{\"uberd\"ampft}): zwei reelle Pole, monotone Sprungantwort ohne \"Uberschwingen.
-\end{itemize}
-
-\input{figures/fig_pt2_step_multiD.tex}
-\FloatBarrier
-
 \paragraph{Zeitpunkt des ersten Maximums.}
-Aus der Sprungantwort (vgl. \eqref{eq:pt2_step_response}) folgt nach Ableitung
+Ein Maximum liegt an einer Stelle mit $\dot x_a(t)=0$. Daher leiten wir die Sprungantwort
+(vgl. \eqref{eq:pt2_step_response}) ab:
 \[
   \dot x_a(t)=\frac{\omega_0}{\sqrt{1-D^2}}\,\mathrm{e}^{-D\omega_0 t}\,\sin(\omega_d t).
 \]
@@ -172,10 +164,39 @@ Als 2\,\%-Einschwingzeit wird h\"aufig die Faustregel verwendet:
 (Die N\"aherung ist am besten im mittleren D\"ampfungsbereich und dient der schnellen Absch\"atzung.)
 
 \subsubsection{\"Uberschwingen bei der Sprungantwort}
-Betrachte einen Einheitssprung $u(t)=1\cdot \mathbf{1}(t)$ am Eingang eines stabilen Systems der Form
+Betrachte einen Einheitssprung $x_e(t)=\sigma(t)$ am Eingang eines stabilen Systems der Form
 \eqref{eq:pt2}. F\"ur $0<D<1$ zeigt die Sprungantwort typischerweise ein Maximum oberhalb des Endwerts.
 
 Die Sprungantwort lautet \eqref{eq:pt2_step_response}.
+
+\paragraph{Differentialgleichung des Standard-PT2.}
+Aus \eqref{eq:pt2} folgt mit $G(s)=\dfrac{Y(s)}{X_e(s)}$ und damit $Y(s)=G(s)X_e(s)$:
+\[
+  Y(s)=\frac{\omega_0^2}{s^2+2D\omega_0 s+\omega_0^2}\,X_e(s).
+\]
+Multiplikation mit dem Nenner liefert
+\[
+  \left(s^2+2D\omega_0 s+\omega_0^2\right)Y(s)=\omega_0^2\,X_e(s).
+\]
+R\"ucktransformation (bei Null-Anfangsbedingungen) liefert im Zeitbereich
+\[
+  \ddot x_a(t)+2D\omega_0 \dot x_a(t)+\omega_0^2 x_a(t)=\omega_0^2 x_e(t).
+\]
+F\"ur den Einheitssprung gilt $x_e(t)=\sigma(t)$, also
+\[
+  \ddot x_a+2D\omega_0 \dot x_a+\omega_0^2 x_a=\omega_0^2.
+\]
+
+\paragraph{D\"ampfungsf\"alle.}
+\begin{itemize}[itemsep=2pt]
+  \item $D<0$ (\emph{negative D\"ampfung}): Energiezufuhr statt Verlust, Schwingungen wachsen an (instabil).
+  \item $0<D<1$ (\emph{unterd\"ampft}): komplex konjugierte Pole, schwingende Sprungantwort mit \"Uberschwingen.
+  \item $D=1$ (\emph{kritisch ged\"ampft}): Doppelpol, schnell ohne \"Uberschwingen (Grenzfall).
+  \item $D>1$ (\emph{\"uberd\"ampft}): zwei reelle Pole, monotone Sprungantwort ohne \"Uberschwingen.
+\end{itemize}
+
+\input{figures/fig_pt2_step_multiD.tex}
+\FloatBarrier
 
 \textbf{\"Uberschwingma\ss} (relative peak overshoot) $M_p$:
 \[
@@ -217,6 +238,93 @@ Maxima, $x_\infty$ den Endwert. Dann ist das logarithmische Daempfungsdekrement
   \Lambda=\ln\!\left(\frac{x_k-x_\infty}{x_{k+1}-x_\infty}\right)
   =\frac{2\pi D}{\sqrt{1-D^2}}.
 \]
+Herleitung (kurz): F\"ur den normierten PT2 und den Einheitssprung $x_e(t)=\sigma(t)$ gilt im Zeitbereich
+\[
+  \ddot x_a + 2D\omega_0 \dot x_a + \omega_0^2 x_a = \omega_0^2.
+\]
+Homogene Gleichung: Ansatz $x_h=\mathrm{e}^{s t}$ liefert die charakteristische Gleichung
+\[
+  s^2+2D\omega_0 s+\omega_0^2=0,
+\]
+deren L\"osungen $s_{1,2}=-D\omega_0\pm \jj\,\omega_d$ mit $\omega_d=\omega_0\sqrt{1-D^2}$ sind.
+Zu jedem Eigenwert $s_i$ geh\"ort ein Summand $\mathrm{e}^{s_i t}$, daher
+\[
+  x_h(t)=C_1\,\mathrm{e}^{s_1 t}+C_2\,\mathrm{e}^{s_2 t}.
+\]
+Einsetzen von $s_{1,2}$ ergibt
+\[
+  x_h(t)=C_1\,\mathrm{e}^{(-D\omega_0+\jj\omega_d)t}+C_2\,\mathrm{e}^{(-D\omega_0-\jj\omega_d)t}.
+\]
+Aus $\mathrm{e}^{(a+b)t}=\mathrm{e}^{a t}\mathrm{e}^{b t}$ folgt durch Ausklammern von
+$\mathrm{e}^{-D\omega_0 t}$:
+\[
+  x_h(t)=\mathrm{e}^{-D\omega_0 t}\bigl(C_1\,\mathrm{e}^{\jj\omega_d t}+C_2\,\mathrm{e}^{-\jj\omega_d t}\bigr).
+\]
+Mit der Euler-Formel fasst man die komplexen Exponentialanteile zu Cosinus und Sinus zusammen:
+\[
+  x_h(t)=\mathrm{e}^{-D\omega_0 t}\bigl(A\cos(\omega_d t)+B\sin(\omega_d t)\bigr).
+\]
+Dabei gilt explizit
+\[
+  \mathrm{e}^{\jj\omega_d t}=\cos(\omega_d t)+\jj\sin(\omega_d t),\qquad
+  \mathrm{e}^{-\jj\omega_d t}=\cos(\omega_d t)-\jj\sin(\omega_d t),
+\]
+so dass sich die reelle Linearkombination in Cosinus- und Sinusanteile zerlegt.
+Die Gesamtl\"osung ist die Summe aus homogener und partikul\"arer L\"osung:
+\[
+  x_a(t)=x_h(t)+x_p(t).
+\]
+Die partikul\"are L\"osung ist der station\"are Anteil und gilt f\"ur alle Zeiten als
+$x_a(t)=x_p(t)+x_h(t)$. Bei stabilem System verschwindet der transiente Anteil
+$x_h(t)$ f\"ur $t\to\infty$, sodass dann $x_a(t)\to x_p(t)$.
+Rechte Seite ist konstant $\Rightarrow$ der station\"are Anteil ist konstant; daraus folgt
+$x_p(t)=x_\infty=1$.
+Damit gilt $x_a(t)-x_\infty=x_h(t)$. Die Linearkombination l\"asst sich zu einer Sinusform
+zusammenfassen, denn
+\[
+  A\cos(\omega_d t)+B\sin(\omega_d t)=R\sin(\omega_d t+\varphi).
+\]
+Beweis: Setze $R=\sqrt{A^2+B^2}$ und w\"ahle $\varphi$ mit
+\[
+  R\sin\varphi=A,\qquad R\cos\varphi=B \quad (\tan\varphi=A/B).
+\]
+Dann gilt
+\[
+  R\sin(\omega_d t+\varphi)
+  =R\bigl(\sin(\omega_d t)\cos\varphi+\cos(\omega_d t)\sin\varphi\bigr)
+  =R\sin(\omega_d t)\cos\varphi+R\cos(\omega_d t)\sin\varphi
+  =B\sin(\omega_d t)+A\cos(\omega_d t).
+\]
+Daher gilt fuer die Abweichung
+\[
+  x_a(t)-x_\infty=\mathrm{e}^{-D\omega_0 t}\bigl(A\cos(\omega_d t)+B\sin(\omega_d t)\bigr),
+\]
+und damit kann man schreiben
+\[
+  x_a(t)-x_\infty = R\,\mathrm{e}^{-D\omega_0 t}\sin(\omega_d t+\varphi).
+\]
+Sei $t_k$ der Zeitpunkt des $k$-ten Maximums der Sprungantwort, dann ist
+$x_k=x_a(t_k)$ und $x_\infty=\lim_{t\to\infty}x_a(t)$ der Endwert. Aus
+\[
+  x_a(t)-x_\infty=R\,\mathrm{e}^{-D\omega_0 t}\sin(\omega_d t+\varphi)
+\]
+folgt an einem Maximum $\sin(\omega_d t_k+\varphi)=1$ und damit
+\[
+  x_k-x_\infty=R\,\mathrm{e}^{-D\omega_0 t_k}.
+\]
+Der Sinus hat die Periode $T_d=\frac{2\pi}{\omega_d}$, daher liegen aufeinanderfolgende Maxima
+um genau eine Periode auseinander: $t_{k+1}-t_k=T_d$. Damit
+\[
+  \frac{x_k-x_\infty}{x_{k+1}-x_\infty}
+  =\frac{R\,\mathrm{e}^{-D\omega_0 t_k}}{R\,\mathrm{e}^{-D\omega_0 t_{k+1}}}
+  =\exp\!\bigl(D\omega_0(t_{k+1}-t_k)\bigr)
+  =\exp\!\left(D\omega_0\frac{2\pi}{\omega_d}\right),
+\]
+und mit $\omega_d=\omega_0\sqrt{1-D^2}$ folgt
+\[
+  \Lambda=\ln\!\left(\frac{x_k-x_\infty}{x_{k+1}-x_\infty}\right)
+  =\frac{2\pi D}{\sqrt{1-D^2}}.
+\]
 Zusammenhang zum \"Uberschwingma\ss: F\"ur den normierten Endwert $x_\infty=1$ gilt
 \[
   M_p=\exp\!\left(-\frac{D\pi}{\sqrt{1-D^2}}\right)=\exp\!\left(-\frac{\Lambda}{2}\right),
@@ -234,7 +342,6 @@ sich direkt aus zwei (oder mehreren gemittelten) Peaks robust bestimmen.
 F\"ur $D=0{,}5$ ergibt sich
 $M_p=\exp\!\left(-\frac{0{,}5\pi}{\sqrt{1-0{,}25}}\right)\approx 0{,}16$,
 also etwa $16\,\%$ \"Uberschwingen.
-
 \input{figures/fig_pt2_overshoot_vs_damping.tex}
 
 \subsubsection{Eigenfrequenz vs.\ Resonanzfrequenz}
@@ -254,5 +361,3 @@ Man sieht: $\omega_r$ liegt dann \emph{unter} $\omega_0$.
 Kleine D\"ampfung erzeugt eine Resonanzspitze im Betragsfrequenzgang in der N\"ahe von
 $\omega\approx\omega_0$. Diese Resonanz\"uberh\"ohung korreliert h\"aufig mit starkem
 \"Uberschwingen im Zeitbereich.
-
-\input{figures/fig_pt2_mag_multiD.tex}

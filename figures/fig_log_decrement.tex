@@ -13,7 +13,7 @@
       width=0.78\textwidth, height=0.36\textwidth,
       grid=both, grid style={line width=.1pt, draw=gray!20},
       major grid style={line width=.2pt, draw=gray!35},
-      xlabel={$t$}, ylabel={$x(t)$},
+      xlabel={$t$}, ylabel={},
       xmin=0, xmax=11,
       ymin=-0.2, ymax=1.7,
       axis lines=left,
@@ -23,6 +23,7 @@
     ]
       \addplot[thick, domain=0:11, samples=400]
         {1 - exp(-\damp*x)*(cos(\omegad*x) + (\damp/\omegad)*sin(\omegad*x))};
+      \node[anchor=south] at (axis description cs:-0.08,0.5) {$x(t)$};
       \addplot[dashed] coordinates {(0,1) (11,1)};
       % Daempfungskurve zwischen zwei Maxima (Envelope der Peak-Abstaende)
       \addplot[densely dashed, domain=\tpeakone:\tpeaktwo]
@@ -31,7 +32,7 @@
       \draw[->] (axis cs:\tpeakone,\xone) -- (axis cs:\tpeaktwo,\xtwo)
         node[midway, above] {$\Lambda=\ln\!\left(\frac{x_k-x_\infty}{x_{k+1}-x_\infty}\right)$};
       \node[anchor=west] at (axis cs:6.2,1.05) {$x_\infty$};
-      \node[anchor=west] at (axis cs:6.2,1.45) {D\"ampfungskurve};
+      \node[anchor=west] at (axis cs:7.2,1.55) {D\"ampfungskurve};
     \end{axis}
   \end{tikzpicture}
   \caption{Unterd\"ampfte PT2-Sprungantwort: Das logarithmische Daempfungsdekrement $\Lambda$ ergibt sich aus zwei aufeinanderfolgenden Maxima der Abweichung von $x_\infty$.}
