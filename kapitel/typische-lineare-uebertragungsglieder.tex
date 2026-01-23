@@ -147,6 +147,10 @@ Ein Maximum liegt an einer Stelle mit $\dot x_a(t)=0$. Daher leiten wir die Spru
 \[
   \dot x_a(t)=\frac{\omega_0}{\sqrt{1-D^2}}\,\mathrm{e}^{-D\omega_0 t}\,\sin(\omega_d t).
 \]
+Der Cosinus-Term faellt dabei weg, weil bei der Produktregel zwei Cosinus-Anteile mit
+entgegengesetztem Vorzeichen entstehen: Schreibe $x_a=1-\mathrm{e}^{-a t}\!\left(\cos(bt)+\tfrac{a}{b}\sin(bt)\right)$
+mit $a=D\omega_0$, $b=\omega_d$, dann gilt $\dot x_a=\mathrm{e}^{-a t}\bigl(a f - f'\bigr)$.
+Dabei heben sich die $a\cos(bt)$-Terme aus $a f$ und $f'$ exakt auf, so dass nur ein Sinus-Term bleibt.
 Damit gilt $\dot x_a(t)=0$ f\"ur $t=k\pi/\omega_d$; der erste positive Extremwert liegt bei $k=1$.
 Die Zeit bis zum ersten Peak (peak time) ist somit
 \begin{equation}
